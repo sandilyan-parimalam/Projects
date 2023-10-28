@@ -1,0 +1,1401 @@
+<html>
+<body>
+<script src='utility.js'></script> 
+<H3>Employees by Office </H3>
+&nbsp; <a href=dashboard.php>Dash Board</a>&nbsp;|&nbsp; <a href=iebyoffice.php>iEmployee</a>&nbsp;|&nbsp;<a href=devbyoffice.php> Devices</a> &nbsp;|&nbsp; <a href=adbyoffice.php>AD</a>&nbsp;|&nbsp;<a href=ldapbyoffice.php>Open LDAP</a>&nbsp;|&nbsp;<a href=exgbyoffice.php>Exchange</a>&nbsp;|&nbsp;<a href=dg.php>MailGroup</a>&nbsp;|&nbsp; <a href=rackbyoffice.php>RackSpace</a>&nbsp;|&nbsp; <a href=exgrsbyoffice.php>Exchange&RS</a>&nbsp;| &nbsp; <a href=show_adam_exchange.php>Adam Exchange</a>&nbsp; |&nbsp;<a href=antivirus.php>Trend Micro</a>&nbsp;|&nbsp; <a href=license.php>License </a> &nbsp;|&nbsp;<a href=byoffice.php>MIA</a> &nbsp;|&nbsp;<a href=softtrack.php>Software </a> &nbsp;|&nbsp;  <a href=laptop.php> Laptop</a>&nbsp;|&nbsp;  <a href=sparebyoffice.php>Spare</a>&nbsp;|&nbsp;<a href=orphan.php>Orphan</a>&nbsp;|&nbsp;<a href=duplicated.php>Duplicate</a>&nbsp;|&nbsp;<a href=uninstall.php>Uninstall</a>&nbsp;|&nbsp;<a href=javascript:exportToExcel('Savvis.tbl',50)>Export To Excel</a>&nbsp;|&nbsp; <table border="1" cellspacing="2" cellpadding="2" id=Savvis.tbl > 
+<tr  bgcolor= bbeeee >
+<th Rowspan=2>No<span class=sortarrow></span></a></th>
+<th RowSpan=2>Office<span class=sortarrow></span></a></th>
+<th colspan=4>iEmployees&nbsp;&nbsp;<a href=duplicated.php?db=iemp><img align=center src=attention.png width=20></a><br><font size=1>(2014-07-15)</font></th><th colspan=9>Devices <a href=duplicated.php?db=device><img align=center src=attention.png width=20></a><br><font size=1>(Current)</font></th><th colspan=3>Exchange&nbsp;&nbsp;<a href=duplicated.php?db=exchange><img align=center src=attention.png width=20></a><br><font size=1>(2014-07-15)</font></th><th colspan=3>RackSpace<br><font size=1>(2014-07-14)</font></th><th colspan=3>Active Directory<br><font size=1>(2014-07-15)</font></th><th colspan=3>Open LDAP<br><font size=1>(2014-07-15)</font></th><th colspan=1>T-Micro&nbsp;&nbsp;<a href=duplicated.php?db=trend><img align=center src=attention.png width=20></img></a><br><font size=1>(2014-07-15)</font></th>
+</tr><tr  bgcolor= bbeeee >
+<th >Cur<span class=sortarrow></span></a></th>
+<th > Ex <span class=sortarrow></span></a></th>
+<th >Tot<span class=sortarrow></span></a></th>
+<th >Uniq <span class=sortarrow></span></a></th>
+<th >Tot<span class=sortarrow></span></a></th>
+<th >N/Dev<span class=sortarrow></span></a></th>
+<th >ELA<span class=sortarrow></span></a></th>
+<th >SHD<span class=sortarrow></span></a></th>
+<th >NYP<span class=sortarrow></span></a></th>
+<th >CC<span class=sortarrow></span></a></th>
+<th >N/Ocs<span class=sortarrow></span></a></th>
+<th >SPD<span class=sortarrow></span></a></th>
+<th >Rmd<span class=sortarrow></span></a></th>
+<th >Cur<span class=sortarrow></span></a></th>
+<th >Ex <span class=sortarrow></span></a></th>
+<th >Tot<span class=sortarrow></span></a></th>
+<th >Cur<span class=sortarrow></span></a></th>
+<th >Ex <span class=sortarrow></span></a></th>
+<th >Tot<span class=sortarrow></span></a></th>
+<th >Cur<span class=sortarrow></span></a></th>
+<th >Ex <span class=sortarrow></span></a></th>
+<th >Tot<span class=sortarrow></span></a></th>
+<th >Cur<span class=sortarrow></span></a></th>
+<th >Ex <span class=sortarrow></span></a></th>
+<th >Tot<span class=sortarrow></span></a></th>
+<th >Cur<span class=sortarrow></span></a></th>
+
+</tr>
+
+<tr bgcolor = #dcd9c9><td><align=right>1</td>
+<td align=left>mytestorg (Atlanta)</td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Atlanta)&status=current>73</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Atlanta)&status=Ex-Employee>49</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Atlanta)&status=all>122</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Atlanta)&status=all&function=uniq>107</a></td>
+<td align=right><a href=ocs.php?wg=mytestorg%20(Atlanta)>71</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Atlanta)&status=current&function=nodev>24</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Atlanta)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Atlanta)&status=current&function=shared>1</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Atlanta)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Atlanta)&status=current&function=shared>1</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Atlanta)&status=current&function=nod>2</a></td>
+<td align=right><a href=spare.php?wg=mytestorg%20(Atlanta)&status=current>9</a></td>
+<td align=right><a href=removed.php?wg=mytestorg%20(Atlanta)&status=current>4</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20(Atlanta)&function=exchange&status=current>73</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20(Atlanta)&function=exchange&status=Ex-employee>15</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20(Atlanta)&function=exchange>88</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20(Atlanta)&status=current>1</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20(Atlanta)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20(Atlanta)>1</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20(Atlanta)&status=current>51</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20(Atlanta)&status=ex-employee>31</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20(Atlanta)>81</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20(Atlanta)&status=current>43</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20(Atlanta)&status=ex-employee>11</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20(Atlanta)>54</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorg%20(Atlanta)>44</a></td>
+
+</tr>
+
+<tr bgcolor = #ccc9c8><td><align=right>2</td>
+<td align=left>mytestorg (Europe)</td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Europe)&status=current>18</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Europe)&status=Ex-Employee>4</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Europe)&status=all>22</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Europe)&status=all&function=uniq>22</a></td>
+<td align=right><a href=ocs.php?wg=mytestorg%20(Europe)>20</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Europe)&status=current&function=nodev>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Europe)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Europe)&status=current&function=shared>1</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Europe)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Europe)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Europe)&status=current&function=nod>0</a></td>
+<td align=right><a href=spare.php?wg=mytestorg%20(Europe)&status=current>2</a></td>
+<td align=right><a href=removed.php?wg=mytestorg%20(Europe)&status=current>1</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20(Europe)&function=exchange&status=current>23</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20(Europe)&function=exchange&status=Ex-employee>1</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20(Europe)&function=exchange>24</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20(Europe)&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20(Europe)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20(Europe)>0</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20(Europe)&status=current>18</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20(Europe)&status=ex-employee>4</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20(Europe)>22</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20(Europe)&status=current>17</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20(Europe)&status=ex-employee>3</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20(Europe)>20</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorg%20(Europe)>22</a></td>
+
+</tr>
+
+<tr bgcolor = #dcd9c9><td><align=right>3</td>
+<td align=left>mytestorg (New Zealand)</td>
+<td align=right><a href=iemp.php?location=mytestorg%20(New%20Zealand)&status=current>12</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(New%20Zealand)&status=Ex-Employee>5</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(New%20Zealand)&status=all>17</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(New%20Zealand)&status=all&function=uniq>17</a></td>
+<td align=right><a href=ocs.php?wg=mytestorg%20(New%20Zealand)>13</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(New%20Zealand)&status=current&function=nodev>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(New%20Zealand)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(New%20Zealand)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(New%20Zealand)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(New%20Zealand)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(New%20Zealand)&status=current&function=nod>0</a></td>
+<td align=right><a href=spare.php?wg=mytestorg%20(New%20Zealand)&status=current>1</a></td>
+<td align=right><a href=removed.php?wg=mytestorg%20(New%20Zealand)&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20(New%20Zealand)&function=exchange&status=current>13</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20(New%20Zealand)&function=exchange&status=Ex-employee>1</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20(New%20Zealand)&function=exchange>14</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20(New%20Zealand)&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20(New%20Zealand)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20(New%20Zealand)>0</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20(New%20Zealand)&status=current>12</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20(New%20Zealand)&status=ex-employee>5</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20(New%20Zealand)>17</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20(New%20Zealand)&status=current>8</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20(New%20Zealand)&status=ex-employee>1</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20(New%20Zealand)>9</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorg%20(New%20Zealand)>15</a></td>
+
+</tr>
+
+<tr bgcolor = #ccc9c8><td><align=right>4</td>
+<td align=left>mytestorg (Singapore)</td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Singapore)&status=current>32</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Singapore)&status=Ex-Employee>18</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Singapore)&status=all>50</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Singapore)&status=all&function=uniq>49</a></td>
+<td align=right><a href=ocs.php?wg=mytestorg%20(Singapore)>32</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Singapore)&status=current&function=nodev>1</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Singapore)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Singapore)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Singapore)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Singapore)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Singapore)&status=current&function=nod>3</a></td>
+<td align=right><a href=spare.php?wg=mytestorg%20(Singapore)&status=current>4</a></td>
+<td align=right><a href=removed.php?wg=mytestorg%20(Singapore)&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20(Singapore)&function=exchange&status=current>30</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20(Singapore)&function=exchange&status=Ex-employee>3</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20(Singapore)&function=exchange>33</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20(Singapore)&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20(Singapore)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20(Singapore)>0</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20(Singapore)&status=current>31</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20(Singapore)&status=ex-employee>14</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20(Singapore)>45</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20(Singapore)&status=current>28</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20(Singapore)&status=ex-employee>4</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20(Singapore)>32</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorg%20(Singapore)>21</a></td>
+
+</tr>
+
+<tr bgcolor = #dcd9c9><td><align=right>5</td>
+<td align=left>mytestorg (Taimma)</td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Taimma)&status=current>68</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Taimma)&status=Ex-Employee>17</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Taimma)&status=all>85</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Taimma)&status=all&function=uniq>85</a></td>
+<td align=right><a href=ocs.php?wg=mytestorg%20(Taimma)>89</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Taimma)&status=current&function=nodev>3</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Taimma)&status=current&function=ela>3</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Taimma)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Taimma)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Taimma)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(Taimma)&status=current&function=nod>1</a></td>
+<td align=right><a href=spare.php?wg=mytestorg%20(Taimma)&status=current>11</a></td>
+<td align=right><a href=removed.php?wg=mytestorg%20(Taimma)&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20(Taimma)&function=exchange&status=current>67</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20(Taimma)&function=exchange&status=Ex-employee>3</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20(Taimma)&function=exchange>70</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20(Taimma)&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20(Taimma)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20(Taimma)>0</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20(Taimma)&status=current>67</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20(Taimma)&status=ex-employee>9</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20(Taimma)>76</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20(Taimma)&status=current>67</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20(Taimma)&status=ex-employee>2</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20(Taimma)>69</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorg%20(Taimma)>65</a></td>
+
+</tr>
+
+<tr bgcolor = #ccc9c8><td><align=right>6</td>
+<td align=left>mytestorg (UK)</td>
+<td align=right><a href=iemp.php?location=mytestorg%20(UK)&status=current>8</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(UK)&status=Ex-Employee>22</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(UK)&status=all>30</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(UK)&status=all&function=uniq>30</a></td>
+<td align=right><a href=ocs.php?wg=mytestorg%20(UK)>9</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(UK)&status=current&function=nodev>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(UK)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(UK)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(UK)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(UK)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20(UK)&status=current&function=nod>0</a></td>
+<td align=right><a href=spare.php?wg=mytestorg%20(UK)&status=current>1</a></td>
+<td align=right><a href=removed.php?wg=mytestorg%20(UK)&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20(UK)&function=exchange&status=current>11</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20(UK)&function=exchange&status=Ex-employee>1</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20(UK)&function=exchange>12</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20(UK)&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20(UK)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20(UK)>0</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20(UK)&status=current>8</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20(UK)&status=ex-employee>10</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20(UK)>18</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20(UK)&status=current>7</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20(UK)&status=ex-employee>2</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20(UK)>9</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorg%20(UK)>6</a></td>
+
+</tr>
+
+<tr bgcolor = #dcd9c9><td><align=right>7</td>
+<td align=left>mytestorg - Melbourne (Australia)</td>
+<td align=right><a href=iemp.php?location=mytestorg%20-%20Melbourne%20(Australia)&status=current>17</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20-%20Melbourne%20(Australia)&status=Ex-Employee>7</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20-%20Melbourne%20(Australia)&status=all>24</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20-%20Melbourne%20(Australia)&status=all&function=uniq>24</a></td>
+<td align=right><a href=ocs.php?wg=mytestorg%20-%20Melbourne%20(Australia)>17</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20-%20Melbourne%20(Australia)&status=current&function=nodev>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20-%20Melbourne%20(Australia)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20-%20Melbourne%20(Australia)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20-%20Melbourne%20(Australia)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20-%20Melbourne%20(Australia)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20-%20Melbourne%20(Australia)&status=current&function=nod>0</a></td>
+<td align=right><a href=spare.php?wg=mytestorg%20-%20Melbourne%20(Australia)&status=current>0</a></td>
+<td align=right><a href=removed.php?wg=mytestorg%20-%20Melbourne%20(Australia)&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20-%20Melbourne%20(Australia)&function=exchange&status=current>16</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20-%20Melbourne%20(Australia)&function=exchange&status=Ex-employee>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20-%20Melbourne%20(Australia)&function=exchange>16</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20-%20Melbourne%20(Australia)&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20-%20Melbourne%20(Australia)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20-%20Melbourne%20(Australia)>0</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20-%20Melbourne%20(Australia)&status=current>16</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20-%20Melbourne%20(Australia)&status=ex-employee>3</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20-%20Melbourne%20(Australia)>19</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20-%20Melbourne%20(Australia)&status=current>16</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20-%20Melbourne%20(Australia)&status=ex-employee>0</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20-%20Melbourne%20(Australia)>16</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorg%20-%20Melbourne%20(Australia)>12</a></td>
+
+</tr>
+
+<tr bgcolor = #ccc9c8><td><align=right>8</td>
+<td align=left>mytestorg - Sydney (Australia)</td>
+<td align=right><a href=iemp.php?location=mytestorg%20-%20Sydney%20(Australia)&status=current>79</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20-%20Sydney%20(Australia)&status=Ex-Employee>36</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20-%20Sydney%20(Australia)&status=all>115</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20-%20Sydney%20(Australia)&status=all&function=uniq>115</a></td>
+<td align=right><a href=ocs.php?wg=mytestorg%20-%20Sydney%20(Australia)>158</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20-%20Sydney%20(Australia)&status=current&function=nodev>3</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20-%20Sydney%20(Australia)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20-%20Sydney%20(Australia)&status=current&function=shared>1</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20-%20Sydney%20(Australia)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20-%20Sydney%20(Australia)&status=current&function=shared>1</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20-%20Sydney%20(Australia)&status=current&function=nod>3</a></td>
+<td align=right><a href=spare.php?wg=mytestorg%20-%20Sydney%20(Australia)&status=current>7</a></td>
+<td align=right><a href=removed.php?wg=mytestorg%20-%20Sydney%20(Australia)&status=current>2</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20-%20Sydney%20(Australia)&function=exchange&status=current>62</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20-%20Sydney%20(Australia)&function=exchange&status=Ex-employee>3</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20-%20Sydney%20(Australia)&function=exchange>65</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20-%20Sydney%20(Australia)&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20-%20Sydney%20(Australia)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20-%20Sydney%20(Australia)>0</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20-%20Sydney%20(Australia)&status=current>72</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20-%20Sydney%20(Australia)&status=ex-employee>9</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20-%20Sydney%20(Australia)>81</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20-%20Sydney%20(Australia)&status=current>62</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20-%20Sydney%20(Australia)&status=ex-employee>5</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20-%20Sydney%20(Australia)>67</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorg%20-%20Sydney%20(Australia)>57</a></td>
+
+</tr>
+
+<tr bgcolor = #dcd9c9><td><align=right>9</td>
+<td align=left>mytestorg BPO (Noida)</td>
+<td align=right><a href=iemp.php?location=mytestorg%20BPO%20(Noida)&status=current>99</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20BPO%20(Noida)&status=Ex-Employee>47</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20BPO%20(Noida)&status=all>146</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20BPO%20(Noida)&status=all&function=uniq>144</a></td>
+<td align=right><a href=ocs.php?wg=mytestorg%20BPO%20(Noida)>62</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20BPO%20(Noida)&status=current&function=nodev>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20BPO%20(Noida)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20BPO%20(Noida)&status=current&function=shared>52</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20BPO%20(Noida)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20BPO%20(Noida)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20BPO%20(Noida)&status=current&function=nod>0</a></td>
+<td align=right><a href=spare.php?wg=mytestorg%20BPO%20(Noida)&status=current>2</a></td>
+<td align=right><a href=removed.php?wg=mytestorg%20BPO%20(Noida)&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20BPO%20(Noida)&function=exchange&status=current>55</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20BPO%20(Noida)&function=exchange&status=Ex-employee>15</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20BPO%20(Noida)&function=exchange>70</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20BPO%20(Noida)&status=current>93</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20BPO%20(Noida)&status=ex-employee>8</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20BPO%20(Noida)>99</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20BPO%20(Noida)&status=current>3</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20BPO%20(Noida)&status=ex-employee>3</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20BPO%20(Noida)>6</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20BPO%20(Noida)&status=current>77</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20BPO%20(Noida)&status=ex-employee>21</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20BPO%20(Noida)>97</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorg%20BPO%20(Noida)>48</a></td>
+
+</tr>
+
+<tr bgcolor = #ccc9c8><td><align=right>10</td>
+<td align=left>mytestorg BPO Sales</td>
+<td align=right><a href=iemp.php?location=mytestorg%20BPO%20Sales&status=current>2</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20BPO%20Sales&status=Ex-Employee>4</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20BPO%20Sales&status=all>6</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20BPO%20Sales&status=all&function=uniq>6</a></td>
+<td align=right><a href=ocs.php?wg=mytestorg%20BPO%20Sales>2</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20BPO%20Sales&status=current&function=nodev>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20BPO%20Sales&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20BPO%20Sales&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20BPO%20Sales&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20BPO%20Sales&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20BPO%20Sales&status=current&function=nod>0</a></td>
+<td align=right><a href=spare.php?wg=mytestorg%20BPO%20Sales&status=current>0</a></td>
+<td align=right><a href=removed.php?wg=mytestorg%20BPO%20Sales&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20BPO%20Sales&function=exchange&status=current>2</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20BPO%20Sales&function=exchange&status=Ex-employee>3</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20BPO%20Sales&function=exchange>5</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20BPO%20Sales&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20BPO%20Sales&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20BPO%20Sales>0</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20BPO%20Sales&status=current>2</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20BPO%20Sales&status=ex-employee>4</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20BPO%20Sales>6</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20BPO%20Sales&status=current>2</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20BPO%20Sales&status=ex-employee>0</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20BPO%20Sales>2</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorg%20BPO%20Sales>1</a></td>
+
+</tr>
+
+<tr bgcolor = #dcd9c9><td><align=right>11</td>
+<td align=left>mytestorg India (Chennai)</td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Chennai)&status=current>57</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Chennai)&status=Ex-Employee>42</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Chennai)&status=all>99</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Chennai)&status=all&function=uniq>99</a></td>
+<td align=right><a href=ocs.php?wg=mytestorg%20India%20(Chennai)>63</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Chennai)&status=current&function=nodev>1</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Chennai)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Chennai)&status=current&function=shared>13</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Chennai)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Chennai)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Chennai)&status=current&function=nod>1</a></td>
+<td align=right><a href=spare.php?wg=mytestorg%20India%20(Chennai)&status=current>1</a></td>
+<td align=right><a href=removed.php?wg=mytestorg%20India%20(Chennai)&status=current>1</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20India%20(Chennai)&function=exchange&status=current>20</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20India%20(Chennai)&function=exchange&status=Ex-employee>3</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20India%20(Chennai)&function=exchange>23</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20India%20(Chennai)&status=current>38</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20India%20(Chennai)&status=ex-employee>1</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20India%20(Chennai)>39</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20India%20(Chennai)&status=current>17</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20India%20(Chennai)&status=ex-employee>3</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20India%20(Chennai)>20</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20India%20(Chennai)&status=current>54</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20India%20(Chennai)&status=ex-employee>4</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20India%20(Chennai)>58</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorg%20India%20(Chennai)>97</a></td>
+
+</tr>
+
+<tr bgcolor = #ccc9c8><td><align=right>12</td>
+<td align=left>mytestorg India (Nagpur)</td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Nagpur)&status=current>127</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Nagpur)&status=Ex-Employee>72</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Nagpur)&status=all>199</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Nagpur)&status=all&function=uniq>199</a></td>
+<td align=right><a href=ocs.php?wg=mytestorg%20India%20(Nagpur)>144</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Nagpur)&status=current&function=nodev>5</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Nagpur)&status=current&function=ela>2</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Nagpur)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Nagpur)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Nagpur)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Nagpur)&status=current&function=nod>1</a></td>
+<td align=right><a href=spare.php?wg=mytestorg%20India%20(Nagpur)&status=current>3</a></td>
+<td align=right><a href=removed.php?wg=mytestorg%20India%20(Nagpur)&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20India%20(Nagpur)&function=exchange&status=current>25</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20India%20(Nagpur)&function=exchange&status=Ex-employee>10</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20India%20(Nagpur)&function=exchange>35</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20India%20(Nagpur)&status=current>117</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20India%20(Nagpur)&status=ex-employee>2</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20India%20(Nagpur)>119</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20India%20(Nagpur)&status=current>6</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20India%20(Nagpur)&status=ex-employee>1</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20India%20(Nagpur)>7</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20India%20(Nagpur)&status=current>123</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20India%20(Nagpur)&status=ex-employee>9</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20India%20(Nagpur)>132</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorg%20India%20(Nagpur)>126</a></td>
+
+</tr>
+
+<tr bgcolor = #dcd9c9><td><align=right>13</td>
+<td align=left>mytestorg India (Noida)</td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Noida)&status=current>465</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Noida)&status=Ex-Employee>444</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Noida)&status=all>909</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Noida)&status=all&function=uniq>856</a></td>
+<td align=right><a href=ocs.php?wg=mytestorg%20India%20(Noida)>536</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Noida)&status=current&function=nodev>4</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Noida)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Noida)&status=current&function=shared>4</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Noida)&status=current&function=shared>12</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Noida)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Noida)&status=current&function=nod>4</a></td>
+<td align=right><a href=spare.php?wg=mytestorg%20India%20(Noida)&status=current>11</a></td>
+<td align=right><a href=removed.php?wg=mytestorg%20India%20(Noida)&status=current>1</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20India%20(Noida)&function=exchange&status=current>216</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20India%20(Noida)&function=exchange&status=Ex-employee>93</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20India%20(Noida)&function=exchange>308</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20India%20(Noida)&status=current>427</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20India%20(Noida)&status=ex-employee>11</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20India%20(Noida)>431</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20India%20(Noida)&status=current>30</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20India%20(Noida)&status=ex-employee>11</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20India%20(Noida)>41</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20India%20(Noida)&status=current>411</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20India%20(Noida)&status=ex-employee>80</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20India%20(Noida)>487</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorg%20India%20(Noida)>425</a></td>
+
+</tr>
+
+<tr bgcolor = #ccc9c8><td><align=right>14</td>
+<td align=left>mytestorg India (Rx Health care Magic)</td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Rx%20Health%20care%20Magic)&status=current>2</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Rx%20Health%20care%20Magic)&status=Ex-Employee>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Rx%20Health%20care%20Magic)&status=all>2</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Rx%20Health%20care%20Magic)&status=all&function=uniq>2</a></td>
+<td align=right><a href=ocs.php?wg=mytestorg%20India%20(Rx%20Health%20care%20Magic)>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Rx%20Health%20care%20Magic)&status=current&function=nodev>1</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Rx%20Health%20care%20Magic)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Rx%20Health%20care%20Magic)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Rx%20Health%20care%20Magic)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Rx%20Health%20care%20Magic)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Rx%20Health%20care%20Magic)&status=current&function=nod>1</a></td>
+<td align=right><a href=spare.php?wg=mytestorg%20India%20(Rx%20Health%20care%20Magic)&status=current>0</a></td>
+<td align=right><a href=removed.php?wg=mytestorg%20India%20(Rx%20Health%20care%20Magic)&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20India%20(Rx%20Health%20care%20Magic)&function=exchange&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20India%20(Rx%20Health%20care%20Magic)&function=exchange&status=Ex-employee>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20India%20(Rx%20Health%20care%20Magic)&function=exchange>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20India%20(Rx%20Health%20care%20Magic)&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20India%20(Rx%20Health%20care%20Magic)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20India%20(Rx%20Health%20care%20Magic)>0</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20India%20(Rx%20Health%20care%20Magic)&status=current>0</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20India%20(Rx%20Health%20care%20Magic)&status=ex-employee>0</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20India%20(Rx%20Health%20care%20Magic)>0</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20India%20(Rx%20Health%20care%20Magic)&status=current>0</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20India%20(Rx%20Health%20care%20Magic)&status=ex-employee>0</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20India%20(Rx%20Health%20care%20Magic)>0</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorg%20India%20(Rx%20Health%20care%20Magic)>0</a></td>
+
+</tr>
+
+<tr bgcolor = #dcd9c9><td><align=right>15</td>
+<td align=left>mytestorg India (Unified Solution)</td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Unified%20Solution)&status=current>1</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Unified%20Solution)&status=Ex-Employee>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Unified%20Solution)&status=all>1</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Unified%20Solution)&status=all&function=uniq>1</a></td>
+<td align=right><a href=ocs.php?wg=mytestorg%20India%20(Unified%20Solution)>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Unified%20Solution)&status=current&function=nodev>1</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Unified%20Solution)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Unified%20Solution)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Unified%20Solution)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Unified%20Solution)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20India%20(Unified%20Solution)&status=current&function=nod>0</a></td>
+<td align=right><a href=spare.php?wg=mytestorg%20India%20(Unified%20Solution)&status=current>0</a></td>
+<td align=right><a href=removed.php?wg=mytestorg%20India%20(Unified%20Solution)&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20India%20(Unified%20Solution)&function=exchange&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20India%20(Unified%20Solution)&function=exchange&status=Ex-employee>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20India%20(Unified%20Solution)&function=exchange>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20India%20(Unified%20Solution)&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20India%20(Unified%20Solution)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20India%20(Unified%20Solution)>0</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20India%20(Unified%20Solution)&status=current>0</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20India%20(Unified%20Solution)&status=ex-employee>0</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20India%20(Unified%20Solution)>0</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20India%20(Unified%20Solution)&status=current>0</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20India%20(Unified%20Solution)&status=ex-employee>0</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20India%20(Unified%20Solution)>0</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorg%20India%20(Unified%20Solution)>0</a></td>
+
+</tr>
+
+<tr bgcolor = #ccc9c8><td><align=right>16</td>
+<td align=left>mytestorg Latin America</td>
+<td align=right><a href=iemp.php?location=mytestorg%20Latin%20America&status=current>61</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20Latin%20America&status=Ex-Employee>34</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20Latin%20America&status=all>95</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20Latin%20America&status=all&function=uniq>93</a></td>
+<td align=right><a href=ocs.php?wg=mytestorg%20Latin%20America>89</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20Latin%20America&status=current&function=nodev>3</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20Latin%20America&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20Latin%20America&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20Latin%20America&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20Latin%20America&status=current&function=shared>5</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20Latin%20America&status=current&function=nod>2</a></td>
+<td align=right><a href=spare.php?wg=mytestorg%20Latin%20America&status=current>14</a></td>
+<td align=right><a href=removed.php?wg=mytestorg%20Latin%20America&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20Latin%20America&function=exchange&status=current>13</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20Latin%20America&function=exchange&status=Ex-employee>6</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20Latin%20America&function=exchange>19</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20Latin%20America&status=current>50</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20Latin%20America&status=ex-employee>4</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20Latin%20America>54</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20Latin%20America&status=current>6</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20Latin%20America&status=ex-employee>6</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20Latin%20America>12</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20Latin%20America&status=current>55</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20Latin%20America&status=ex-employee>24</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20Latin%20America>79</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorg%20Latin%20America>47</a></td>
+
+</tr>
+
+<tr bgcolor = #dcd9c9><td><align=right>17</td>
+<td align=left>mytestorg PlanetSoft India (Coimbatore)</td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India%20(Coimbatore)&status=current>90</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India%20(Coimbatore)&status=Ex-Employee>47</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India%20(Coimbatore)&status=all>137</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India%20(Coimbatore)&status=all&function=uniq>137</a></td>
+<td align=right><a href=ocs.php?wg=mytestorg%20PlanetSoft%20India%20(Coimbatore)>105</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India%20(Coimbatore)&status=current&function=nodev>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India%20(Coimbatore)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India%20(Coimbatore)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India%20(Coimbatore)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India%20(Coimbatore)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India%20(Coimbatore)&status=current&function=nod>0</a></td>
+<td align=right><a href=spare.php?wg=mytestorg%20PlanetSoft%20India%20(Coimbatore)&status=current>9</a></td>
+<td align=right><a href=removed.php?wg=mytestorg%20PlanetSoft%20India%20(Coimbatore)&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20PlanetSoft%20India%20(Coimbatore)&function=exchange&status=current>2</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20PlanetSoft%20India%20(Coimbatore)&function=exchange&status=Ex-employee>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20PlanetSoft%20India%20(Coimbatore)&function=exchange>2</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20PlanetSoft%20India%20(Coimbatore)&status=current>87</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20PlanetSoft%20India%20(Coimbatore)&status=ex-employee>4</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20PlanetSoft%20India%20(Coimbatore)>91</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20PlanetSoft%20India%20(Coimbatore)&status=current>2</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20PlanetSoft%20India%20(Coimbatore)&status=ex-employee>1</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20PlanetSoft%20India%20(Coimbatore)>3</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20PlanetSoft%20India%20(Coimbatore)&status=current>87</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20PlanetSoft%20India%20(Coimbatore)&status=ex-employee>28</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20PlanetSoft%20India%20(Coimbatore)>115</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorg%20PlanetSoft%20India%20(Coimbatore)>78</a></td>
+
+</tr>
+
+<tr bgcolor = #ccc9c8><td><align=right>18</td>
+<td align=left>mytestorg PlanetSoft India(Hyderabad NON SEZ)</td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20NON%20SEZ)&status=current>170</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20NON%20SEZ)&status=Ex-Employee>78</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20NON%20SEZ)&status=all>248</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20NON%20SEZ)&status=all&function=uniq>243</a></td>
+<td align=right><a href=ocs.php?wg=mytestorg%20PlanetSoft%20India(Hyderabad%20NON%20SEZ)>185</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20NON%20SEZ)&status=current&function=nodev>3</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20NON%20SEZ)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20NON%20SEZ)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20NON%20SEZ)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20NON%20SEZ)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20NON%20SEZ)&status=current&function=nod>0</a></td>
+<td align=right><a href=spare.php?wg=mytestorg%20PlanetSoft%20India(Hyderabad%20NON%20SEZ)&status=current>14</a></td>
+<td align=right><a href=removed.php?wg=mytestorg%20PlanetSoft%20India(Hyderabad%20NON%20SEZ)&status=current>1</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20NON%20SEZ)&function=exchange&status=current>17</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20NON%20SEZ)&function=exchange&status=Ex-employee>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20NON%20SEZ)&function=exchange>17</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20NON%20SEZ)&status=current>146</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20NON%20SEZ)&status=ex-employee>2</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20NON%20SEZ)>148</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20NON%20SEZ)&status=current>17</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20NON%20SEZ)&status=ex-employee>1</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20NON%20SEZ)>18</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20NON%20SEZ)&status=current>159</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20NON%20SEZ)&status=ex-employee>27</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20NON%20SEZ)>186</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20NON%20SEZ)>147</a></td>
+
+</tr>
+
+<tr bgcolor = #dcd9c9><td><align=right>19</td>
+<td align=left>mytestorg PlanetSoft India(Hyderabad SEZ)</td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20SEZ)&status=current>91</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20SEZ)&status=Ex-Employee>19</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20SEZ)&status=all>110</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20SEZ)&status=all&function=uniq>109</a></td>
+<td align=right><a href=ocs.php?wg=mytestorg%20PlanetSoft%20India(Hyderabad%20SEZ)>228</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20SEZ)&status=current&function=nodev>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20SEZ)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20SEZ)&status=current&function=shared>1</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20SEZ)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20SEZ)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20SEZ)&status=current&function=nod>1</a></td>
+<td align=right><a href=spare.php?wg=mytestorg%20PlanetSoft%20India(Hyderabad%20SEZ)&status=current>85</a></td>
+<td align=right><a href=removed.php?wg=mytestorg%20PlanetSoft%20India(Hyderabad%20SEZ)&status=current>1</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20SEZ)&function=exchange&status=current>1</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20SEZ)&function=exchange&status=Ex-employee>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20SEZ)&function=exchange>1</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20SEZ)&status=current>89</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20SEZ)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20SEZ)>89</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20SEZ)&status=current>1</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20SEZ)&status=ex-employee>0</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20SEZ)>1</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20SEZ)&status=current>90</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20SEZ)&status=ex-employee>9</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20SEZ)>99</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorg%20PlanetSoft%20India(Hyderabad%20SEZ)>81</a></td>
+
+</tr>
+
+<tr bgcolor = #ccc9c8><td><align=right>20</td>
+<td align=left>mytestorg US (Test)</td>
+<td align=right><a href=iemp.php?location=mytestorg%20US%20(Test)&status=current>8</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20US%20(Test)&status=Ex-Employee>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20US%20(Test)&status=all>8</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20US%20(Test)&status=all&function=uniq>1</a></td>
+<td align=right><a href=ocs.php?wg=mytestorg%20US%20(Test)>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20US%20(Test)&status=current&function=nodev>8</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20US%20(Test)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20US%20(Test)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20US%20(Test)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20US%20(Test)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorg%20US%20(Test)&status=current&function=nod>0</a></td>
+<td align=right><a href=spare.php?wg=mytestorg%20US%20(Test)&status=current>0</a></td>
+<td align=right><a href=removed.php?wg=mytestorg%20US%20(Test)&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20US%20(Test)&function=exchange&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20US%20(Test)&function=exchange&status=Ex-employee>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorg%20US%20(Test)&function=exchange>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20US%20(Test)&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20US%20(Test)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorg%20US%20(Test)>0</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20US%20(Test)&status=current>0</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20US%20(Test)&status=ex-employee>0</a></td>
+<td align=right><a href=ad.php?location=mytestorg%20US%20(Test)>0</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20US%20(Test)&status=current>0</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20US%20(Test)&status=ex-employee>0</a></td>
+<td align=right><a href=ldap.php?location=mytestorg%20US%20(Test)>0</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorg%20US%20(Test)>0</a></td>
+
+</tr>
+
+<tr bgcolor = #dcd9c9><td><align=right>21</td>
+<td align=left>mytestorgBPO (CA)</td>
+<td align=right><a href=iemp.php?location=mytestorgBPO%20(CA)&status=current>82</a></td>
+<td align=right><a href=iemp.php?location=mytestorgBPO%20(CA)&status=Ex-Employee>154</a></td>
+<td align=right><a href=iemp.php?location=mytestorgBPO%20(CA)&status=all>236</a></td>
+<td align=right><a href=iemp.php?location=mytestorgBPO%20(CA)&status=all&function=uniq>211</a></td>
+<td align=right><a href=ocs.php?wg=mytestorgBPO%20(CA)>81</a></td>
+<td align=right><a href=iemp.php?location=mytestorgBPO%20(CA)&status=current&function=nodev>6</a></td>
+<td align=right><a href=iemp.php?location=mytestorgBPO%20(CA)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgBPO%20(CA)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgBPO%20(CA)&status=current&function=shared>1</a></td>
+<td align=right><a href=iemp.php?location=mytestorgBPO%20(CA)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgBPO%20(CA)&status=current&function=nod>5</a></td>
+<td align=right><a href=spare.php?wg=mytestorgBPO%20(CA)&status=current>9</a></td>
+<td align=right><a href=removed.php?wg=mytestorgBPO%20(CA)&status=current>2</a></td>
+<td align=right><a href=exchange.php?location=mytestorgBPO%20(CA)&function=exchange&status=current>92</a></td>
+<td align=right><a href=exchange.php?location=mytestorgBPO%20(CA)&function=exchange&status=Ex-employee>12</a></td>
+<td align=right><a href=exchange.php?location=mytestorgBPO%20(CA)&function=exchange>104</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgBPO%20(CA)&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgBPO%20(CA)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgBPO%20(CA)>0</a></td>
+<td align=right><a href=ad.php?location=mytestorgBPO%20(CA)&status=current>79</a></td>
+<td align=right><a href=ad.php?location=mytestorgBPO%20(CA)&status=ex-employee>56</a></td>
+<td align=right><a href=ad.php?location=mytestorgBPO%20(CA)>135</a></td>
+<td align=right><a href=ldap.php?location=mytestorgBPO%20(CA)&status=current>64</a></td>
+<td align=right><a href=ldap.php?location=mytestorgBPO%20(CA)&status=ex-employee>14</a></td>
+<td align=right><a href=ldap.php?location=mytestorgBPO%20(CA)>78</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorgBPO%20(CA)>78</a></td>
+
+</tr>
+
+<tr bgcolor = #ccc9c8><td><align=right>22</td>
+<td align=left>mytestorgBPO (Outside CA)</td>
+<td align=right><a href=iemp.php?location=mytestorgBPO%20(Outside%20CA)&status=current>10</a></td>
+<td align=right><a href=iemp.php?location=mytestorgBPO%20(Outside%20CA)&status=Ex-Employee>1</a></td>
+<td align=right><a href=iemp.php?location=mytestorgBPO%20(Outside%20CA)&status=all>11</a></td>
+<td align=right><a href=iemp.php?location=mytestorgBPO%20(Outside%20CA)&status=all&function=uniq>11</a></td>
+<td align=right><a href=ocs.php?wg=mytestorgBPO%20(Outside%20CA)>12</a></td>
+<td align=right><a href=iemp.php?location=mytestorgBPO%20(Outside%20CA)&status=current&function=nodev>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgBPO%20(Outside%20CA)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgBPO%20(Outside%20CA)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgBPO%20(Outside%20CA)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgBPO%20(Outside%20CA)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgBPO%20(Outside%20CA)&status=current&function=nod>0</a></td>
+<td align=right><a href=spare.php?wg=mytestorgBPO%20(Outside%20CA)&status=current>1</a></td>
+<td align=right><a href=removed.php?wg=mytestorgBPO%20(Outside%20CA)&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorgBPO%20(Outside%20CA)&function=exchange&status=current>10</a></td>
+<td align=right><a href=exchange.php?location=mytestorgBPO%20(Outside%20CA)&function=exchange&status=Ex-employee>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorgBPO%20(Outside%20CA)&function=exchange>10</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgBPO%20(Outside%20CA)&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgBPO%20(Outside%20CA)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgBPO%20(Outside%20CA)>0</a></td>
+<td align=right><a href=ad.php?location=mytestorgBPO%20(Outside%20CA)&status=current>10</a></td>
+<td align=right><a href=ad.php?location=mytestorgBPO%20(Outside%20CA)&status=ex-employee>1</a></td>
+<td align=right><a href=ad.php?location=mytestorgBPO%20(Outside%20CA)>11</a></td>
+<td align=right><a href=ldap.php?location=mytestorgBPO%20(Outside%20CA)&status=current>8</a></td>
+<td align=right><a href=ldap.php?location=mytestorgBPO%20(Outside%20CA)&status=ex-employee>1</a></td>
+<td align=right><a href=ldap.php?location=mytestorgBPO%20(Outside%20CA)>9</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorgBPO%20(Outside%20CA)>9</a></td>
+
+</tr>
+
+<tr bgcolor = #dcd9c9><td><align=right>23</td>
+<td align=left>mytestorgExchange (Houston)</td>
+<td align=right><a href=iemp.php?location=mytestorgExchange%20(Houston)&status=current>3</a></td>
+<td align=right><a href=iemp.php?location=mytestorgExchange%20(Houston)&status=Ex-Employee>4</a></td>
+<td align=right><a href=iemp.php?location=mytestorgExchange%20(Houston)&status=all>7</a></td>
+<td align=right><a href=iemp.php?location=mytestorgExchange%20(Houston)&status=all&function=uniq>7</a></td>
+<td align=right><a href=ocs.php?wg=mytestorgExchange%20(Houston)>3</a></td>
+<td align=right><a href=iemp.php?location=mytestorgExchange%20(Houston)&status=current&function=nodev>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgExchange%20(Houston)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgExchange%20(Houston)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgExchange%20(Houston)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgExchange%20(Houston)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgExchange%20(Houston)&status=current&function=nod>0</a></td>
+<td align=right><a href=spare.php?wg=mytestorgExchange%20(Houston)&status=current>0</a></td>
+<td align=right><a href=removed.php?wg=mytestorgExchange%20(Houston)&status=current>1</a></td>
+<td align=right><a href=exchange.php?location=mytestorgExchange%20(Houston)&function=exchange&status=current>3</a></td>
+<td align=right><a href=exchange.php?location=mytestorgExchange%20(Houston)&function=exchange&status=Ex-employee>1</a></td>
+<td align=right><a href=exchange.php?location=mytestorgExchange%20(Houston)&function=exchange>4</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgExchange%20(Houston)&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgExchange%20(Houston)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgExchange%20(Houston)>0</a></td>
+<td align=right><a href=ad.php?location=mytestorgExchange%20(Houston)&status=current>3</a></td>
+<td align=right><a href=ad.php?location=mytestorgExchange%20(Houston)&status=ex-employee>3</a></td>
+<td align=right><a href=ad.php?location=mytestorgExchange%20(Houston)>6</a></td>
+<td align=right><a href=ldap.php?location=mytestorgExchange%20(Houston)&status=current>3</a></td>
+<td align=right><a href=ldap.php?location=mytestorgExchange%20(Houston)&status=ex-employee>1</a></td>
+<td align=right><a href=ldap.php?location=mytestorgExchange%20(Houston)>4</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorgExchange%20(Houston)>1</a></td>
+
+</tr>
+
+<tr bgcolor = #ccc9c8><td><align=right>24</td>
+<td align=left>mytestorgHealth (Adam)</td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(Adam)&status=current>49</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(Adam)&status=Ex-Employee>58</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(Adam)&status=all>107</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(Adam)&status=all&function=uniq>107</a></td>
+<td align=right><a href=ocs.php?wg=mytestorgHealth%20(Adam)>54</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(Adam)&status=current&function=nodev>2</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(Adam)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(Adam)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(Adam)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(Adam)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(Adam)&status=current&function=nod>1</a></td>
+<td align=right><a href=spare.php?wg=mytestorgHealth%20(Adam)&status=current>6</a></td>
+<td align=right><a href=removed.php?wg=mytestorgHealth%20(Adam)&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorgHealth%20(Adam)&function=exchange&status=current>55</a></td>
+<td align=right><a href=exchange.php?location=mytestorgHealth%20(Adam)&function=exchange&status=Ex-employee>9</a></td>
+<td align=right><a href=exchange.php?location=mytestorgHealth%20(Adam)&function=exchange>64</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgHealth%20(Adam)&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgHealth%20(Adam)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgHealth%20(Adam)>0</a></td>
+<td align=right><a href=ad.php?location=mytestorgHealth%20(Adam)&status=current>46</a></td>
+<td align=right><a href=ad.php?location=mytestorgHealth%20(Adam)&status=ex-employee>45</a></td>
+<td align=right><a href=ad.php?location=mytestorgHealth%20(Adam)>91</a></td>
+<td align=right><a href=ldap.php?location=mytestorgHealth%20(Adam)&status=current>27</a></td>
+<td align=right><a href=ldap.php?location=mytestorgHealth%20(Adam)&status=ex-employee>13</a></td>
+<td align=right><a href=ldap.php?location=mytestorgHealth%20(Adam)>40</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorgHealth%20(Adam)>33</a></td>
+
+</tr>
+
+<tr bgcolor = #dcd9c9><td><align=right>25</td>
+<td align=left>mytestorgHealth (BSI CA)</td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(BSI%20CA)&status=current>16</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(BSI%20CA)&status=Ex-Employee>4</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(BSI%20CA)&status=all>20</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(BSI%20CA)&status=all&function=uniq>20</a></td>
+<td align=right><a href=ocs.php?wg=mytestorgHealth%20(BSI%20CA)>21</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(BSI%20CA)&status=current&function=nodev>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(BSI%20CA)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(BSI%20CA)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(BSI%20CA)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(BSI%20CA)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(BSI%20CA)&status=current&function=nod>0</a></td>
+<td align=right><a href=spare.php?wg=mytestorgHealth%20(BSI%20CA)&status=current>2</a></td>
+<td align=right><a href=removed.php?wg=mytestorgHealth%20(BSI%20CA)&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorgHealth%20(BSI%20CA)&function=exchange&status=current>15</a></td>
+<td align=right><a href=exchange.php?location=mytestorgHealth%20(BSI%20CA)&function=exchange&status=Ex-employee>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorgHealth%20(BSI%20CA)&function=exchange>15</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgHealth%20(BSI%20CA)&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgHealth%20(BSI%20CA)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgHealth%20(BSI%20CA)>0</a></td>
+<td align=right><a href=ad.php?location=mytestorgHealth%20(BSI%20CA)&status=current>15</a></td>
+<td align=right><a href=ad.php?location=mytestorgHealth%20(BSI%20CA)&status=ex-employee>4</a></td>
+<td align=right><a href=ad.php?location=mytestorgHealth%20(BSI%20CA)>19</a></td>
+<td align=right><a href=ldap.php?location=mytestorgHealth%20(BSI%20CA)&status=current>15</a></td>
+<td align=right><a href=ldap.php?location=mytestorgHealth%20(BSI%20CA)&status=ex-employee>2</a></td>
+<td align=right><a href=ldap.php?location=mytestorgHealth%20(BSI%20CA)>17</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorgHealth%20(BSI%20CA)>16</a></td>
+
+</tr>
+
+<tr bgcolor = #ccc9c8><td><align=right>26</td>
+<td align=left>mytestorgHealth (BSI)</td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(BSI)&status=current>1</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(BSI)&status=Ex-Employee>1</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(BSI)&status=all>2</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(BSI)&status=all&function=uniq>2</a></td>
+<td align=right><a href=ocs.php?wg=mytestorgHealth%20(BSI)>2</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(BSI)&status=current&function=nodev>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(BSI)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(BSI)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(BSI)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(BSI)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(BSI)&status=current&function=nod>0</a></td>
+<td align=right><a href=spare.php?wg=mytestorgHealth%20(BSI)&status=current>1</a></td>
+<td align=right><a href=removed.php?wg=mytestorgHealth%20(BSI)&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorgHealth%20(BSI)&function=exchange&status=current>1</a></td>
+<td align=right><a href=exchange.php?location=mytestorgHealth%20(BSI)&function=exchange&status=Ex-employee>1</a></td>
+<td align=right><a href=exchange.php?location=mytestorgHealth%20(BSI)&function=exchange>2</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgHealth%20(BSI)&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgHealth%20(BSI)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgHealth%20(BSI)>0</a></td>
+<td align=right><a href=ad.php?location=mytestorgHealth%20(BSI)&status=current>1</a></td>
+<td align=right><a href=ad.php?location=mytestorgHealth%20(BSI)&status=ex-employee>1</a></td>
+<td align=right><a href=ad.php?location=mytestorgHealth%20(BSI)>2</a></td>
+<td align=right><a href=ldap.php?location=mytestorgHealth%20(BSI)&status=current>1</a></td>
+<td align=right><a href=ldap.php?location=mytestorgHealth%20(BSI)&status=ex-employee>1</a></td>
+<td align=right><a href=ldap.php?location=mytestorgHealth%20(BSI)>2</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorgHealth%20(BSI)>1</a></td>
+
+</tr>
+
+<tr bgcolor = #dcd9c9><td><align=right>27</td>
+<td align=left>mytestorgHealth (FACTS)</td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(FACTS)&status=current>9</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(FACTS)&status=Ex-Employee>5</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(FACTS)&status=all>14</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(FACTS)&status=all&function=uniq>14</a></td>
+<td align=right><a href=ocs.php?wg=mytestorgHealth%20(FACTS)>9</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(FACTS)&status=current&function=nodev>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(FACTS)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(FACTS)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(FACTS)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(FACTS)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(FACTS)&status=current&function=nod>0</a></td>
+<td align=right><a href=spare.php?wg=mytestorgHealth%20(FACTS)&status=current>0</a></td>
+<td align=right><a href=removed.php?wg=mytestorgHealth%20(FACTS)&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorgHealth%20(FACTS)&function=exchange&status=current>10</a></td>
+<td align=right><a href=exchange.php?location=mytestorgHealth%20(FACTS)&function=exchange&status=Ex-employee>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorgHealth%20(FACTS)&function=exchange>10</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgHealth%20(FACTS)&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgHealth%20(FACTS)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgHealth%20(FACTS)>0</a></td>
+<td align=right><a href=ad.php?location=mytestorgHealth%20(FACTS)&status=current>9</a></td>
+<td align=right><a href=ad.php?location=mytestorgHealth%20(FACTS)&status=ex-employee>4</a></td>
+<td align=right><a href=ad.php?location=mytestorgHealth%20(FACTS)>13</a></td>
+<td align=right><a href=ldap.php?location=mytestorgHealth%20(FACTS)&status=current>9</a></td>
+<td align=right><a href=ldap.php?location=mytestorgHealth%20(FACTS)&status=ex-employee>0</a></td>
+<td align=right><a href=ldap.php?location=mytestorgHealth%20(FACTS)>9</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorgHealth%20(FACTS)>7</a></td>
+
+</tr>
+
+<tr bgcolor = #ccc9c8><td><align=right>28</td>
+<td align=left>mytestorgHealth (HealthConnect)</td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(HealthConnect)&status=current>20</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(HealthConnect)&status=Ex-Employee>7</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(HealthConnect)&status=all>27</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(HealthConnect)&status=all&function=uniq>27</a></td>
+<td align=right><a href=ocs.php?wg=mytestorgHealth%20(HealthConnect)>36</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(HealthConnect)&status=current&function=nodev>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(HealthConnect)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(HealthConnect)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(HealthConnect)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(HealthConnect)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(HealthConnect)&status=current&function=nod>0</a></td>
+<td align=right><a href=spare.php?wg=mytestorgHealth%20(HealthConnect)&status=current>4</a></td>
+<td align=right><a href=removed.php?wg=mytestorgHealth%20(HealthConnect)&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorgHealth%20(HealthConnect)&function=exchange&status=current>20</a></td>
+<td align=right><a href=exchange.php?location=mytestorgHealth%20(HealthConnect)&function=exchange&status=Ex-employee>3</a></td>
+<td align=right><a href=exchange.php?location=mytestorgHealth%20(HealthConnect)&function=exchange>23</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgHealth%20(HealthConnect)&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgHealth%20(HealthConnect)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgHealth%20(HealthConnect)>0</a></td>
+<td align=right><a href=ad.php?location=mytestorgHealth%20(HealthConnect)&status=current>20</a></td>
+<td align=right><a href=ad.php?location=mytestorgHealth%20(HealthConnect)&status=ex-employee>4</a></td>
+<td align=right><a href=ad.php?location=mytestorgHealth%20(HealthConnect)>24</a></td>
+<td align=right><a href=ldap.php?location=mytestorgHealth%20(HealthConnect)&status=current>16</a></td>
+<td align=right><a href=ldap.php?location=mytestorgHealth%20(HealthConnect)&status=ex-employee>2</a></td>
+<td align=right><a href=ldap.php?location=mytestorgHealth%20(HealthConnect)>18</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorgHealth%20(HealthConnect)>21</a></td>
+
+</tr>
+
+<tr bgcolor = #dcd9c9><td><align=right>29</td>
+<td align=left>mytestorgHealth (Pittsburgh)</td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(Pittsburgh)&status=current>42</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(Pittsburgh)&status=Ex-Employee>29</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(Pittsburgh)&status=all>71</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(Pittsburgh)&status=all&function=uniq>71</a></td>
+<td align=right><a href=ocs.php?wg=mytestorgHealth%20(Pittsburgh)>42</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(Pittsburgh)&status=current&function=nodev>1</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(Pittsburgh)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(Pittsburgh)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(Pittsburgh)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(Pittsburgh)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20(Pittsburgh)&status=current&function=nod>1</a></td>
+<td align=right><a href=spare.php?wg=mytestorgHealth%20(Pittsburgh)&status=current>4</a></td>
+<td align=right><a href=removed.php?wg=mytestorgHealth%20(Pittsburgh)&status=current>3</a></td>
+<td align=right><a href=exchange.php?location=mytestorgHealth%20(Pittsburgh)&function=exchange&status=current>40</a></td>
+<td align=right><a href=exchange.php?location=mytestorgHealth%20(Pittsburgh)&function=exchange&status=Ex-employee>1</a></td>
+<td align=right><a href=exchange.php?location=mytestorgHealth%20(Pittsburgh)&function=exchange>41</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgHealth%20(Pittsburgh)&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgHealth%20(Pittsburgh)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgHealth%20(Pittsburgh)>0</a></td>
+<td align=right><a href=ad.php?location=mytestorgHealth%20(Pittsburgh)&status=current>40</a></td>
+<td align=right><a href=ad.php?location=mytestorgHealth%20(Pittsburgh)&status=ex-employee>16</a></td>
+<td align=right><a href=ad.php?location=mytestorgHealth%20(Pittsburgh)>56</a></td>
+<td align=right><a href=ldap.php?location=mytestorgHealth%20(Pittsburgh)&status=current>40</a></td>
+<td align=right><a href=ldap.php?location=mytestorgHealth%20(Pittsburgh)&status=ex-employee>3</a></td>
+<td align=right><a href=ldap.php?location=mytestorgHealth%20(Pittsburgh)>43</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorgHealth%20(Pittsburgh)>37</a></td>
+
+</tr>
+
+<tr bgcolor = #ccc9c8><td><align=right>30</td>
+<td align=left>mytestorgHealth Content (Adam)</td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20Content%20(Adam)&status=current>22</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20Content%20(Adam)&status=Ex-Employee>26</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20Content%20(Adam)&status=all>48</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20Content%20(Adam)&status=all&function=uniq>48</a></td>
+<td align=right><a href=ocs.php?wg=mytestorgHealth%20Content%20(Adam)>30</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20Content%20(Adam)&status=current&function=nodev>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20Content%20(Adam)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20Content%20(Adam)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20Content%20(Adam)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20Content%20(Adam)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20Content%20(Adam)&status=current&function=nod>0</a></td>
+<td align=right><a href=spare.php?wg=mytestorgHealth%20Content%20(Adam)&status=current>7</a></td>
+<td align=right><a href=removed.php?wg=mytestorgHealth%20Content%20(Adam)&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorgHealth%20Content%20(Adam)&function=exchange&status=current>29</a></td>
+<td align=right><a href=exchange.php?location=mytestorgHealth%20Content%20(Adam)&function=exchange&status=Ex-employee>8</a></td>
+<td align=right><a href=exchange.php?location=mytestorgHealth%20Content%20(Adam)&function=exchange>37</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgHealth%20Content%20(Adam)&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgHealth%20Content%20(Adam)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgHealth%20Content%20(Adam)>0</a></td>
+<td align=right><a href=ad.php?location=mytestorgHealth%20Content%20(Adam)&status=current>22</a></td>
+<td align=right><a href=ad.php?location=mytestorgHealth%20Content%20(Adam)&status=ex-employee>23</a></td>
+<td align=right><a href=ad.php?location=mytestorgHealth%20Content%20(Adam)>45</a></td>
+<td align=right><a href=ldap.php?location=mytestorgHealth%20Content%20(Adam)&status=current>14</a></td>
+<td align=right><a href=ldap.php?location=mytestorgHealth%20Content%20(Adam)&status=ex-employee>6</a></td>
+<td align=right><a href=ldap.php?location=mytestorgHealth%20Content%20(Adam)>20</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorgHealth%20Content%20(Adam)>15</a></td>
+
+</tr>
+
+<tr bgcolor = #dcd9c9><td><align=right>31</td>
+<td align=left>mytestorgHealth Content ADAM (CA)</td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20Content%20ADAM%20(CA)&status=current>3</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20Content%20ADAM%20(CA)&status=Ex-Employee>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20Content%20ADAM%20(CA)&status=all>3</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20Content%20ADAM%20(CA)&status=all&function=uniq>3</a></td>
+<td align=right><a href=ocs.php?wg=mytestorgHealth%20Content%20ADAM%20(CA)>3</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20Content%20ADAM%20(CA)&status=current&function=nodev>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20Content%20ADAM%20(CA)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20Content%20ADAM%20(CA)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20Content%20ADAM%20(CA)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20Content%20ADAM%20(CA)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20Content%20ADAM%20(CA)&status=current&function=nod>0</a></td>
+<td align=right><a href=spare.php?wg=mytestorgHealth%20Content%20ADAM%20(CA)&status=current>0</a></td>
+<td align=right><a href=removed.php?wg=mytestorgHealth%20Content%20ADAM%20(CA)&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorgHealth%20Content%20ADAM%20(CA)&function=exchange&status=current>4</a></td>
+<td align=right><a href=exchange.php?location=mytestorgHealth%20Content%20ADAM%20(CA)&function=exchange&status=Ex-employee>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorgHealth%20Content%20ADAM%20(CA)&function=exchange>4</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgHealth%20Content%20ADAM%20(CA)&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgHealth%20Content%20ADAM%20(CA)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgHealth%20Content%20ADAM%20(CA)>0</a></td>
+<td align=right><a href=ad.php?location=mytestorgHealth%20Content%20ADAM%20(CA)&status=current>3</a></td>
+<td align=right><a href=ad.php?location=mytestorgHealth%20Content%20ADAM%20(CA)&status=ex-employee>0</a></td>
+<td align=right><a href=ad.php?location=mytestorgHealth%20Content%20ADAM%20(CA)>3</a></td>
+<td align=right><a href=ldap.php?location=mytestorgHealth%20Content%20ADAM%20(CA)&status=current>1</a></td>
+<td align=right><a href=ldap.php?location=mytestorgHealth%20Content%20ADAM%20(CA)&status=ex-employee>0</a></td>
+<td align=right><a href=ldap.php?location=mytestorgHealth%20Content%20ADAM%20(CA)>1</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorgHealth%20Content%20ADAM%20(CA)>1</a></td>
+
+</tr>
+
+<tr bgcolor = #ccc9c8><td><align=right>32</td>
+<td align=left>mytestorgHealth HealthConnect(California)</td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20HealthConnect(California)&status=current>9</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20HealthConnect(California)&status=Ex-Employee>3</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20HealthConnect(California)&status=all>12</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20HealthConnect(California)&status=all&function=uniq>12</a></td>
+<td align=right><a href=ocs.php?wg=mytestorgHealth%20HealthConnect(California)>11</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20HealthConnect(California)&status=current&function=nodev>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20HealthConnect(California)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20HealthConnect(California)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20HealthConnect(California)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20HealthConnect(California)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgHealth%20HealthConnect(California)&status=current&function=nod>0</a></td>
+<td align=right><a href=spare.php?wg=mytestorgHealth%20HealthConnect(California)&status=current>2</a></td>
+<td align=right><a href=removed.php?wg=mytestorgHealth%20HealthConnect(California)&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorgHealth%20HealthConnect(California)&function=exchange&status=current>10</a></td>
+<td align=right><a href=exchange.php?location=mytestorgHealth%20HealthConnect(California)&function=exchange&status=Ex-employee>1</a></td>
+<td align=right><a href=exchange.php?location=mytestorgHealth%20HealthConnect(California)&function=exchange>11</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgHealth%20HealthConnect(California)&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgHealth%20HealthConnect(California)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgHealth%20HealthConnect(California)>0</a></td>
+<td align=right><a href=ad.php?location=mytestorgHealth%20HealthConnect(California)&status=current>9</a></td>
+<td align=right><a href=ad.php?location=mytestorgHealth%20HealthConnect(California)&status=ex-employee>3</a></td>
+<td align=right><a href=ad.php?location=mytestorgHealth%20HealthConnect(California)>12</a></td>
+<td align=right><a href=ldap.php?location=mytestorgHealth%20HealthConnect(California)&status=current>5</a></td>
+<td align=right><a href=ldap.php?location=mytestorgHealth%20HealthConnect(California)&status=ex-employee>1</a></td>
+<td align=right><a href=ldap.php?location=mytestorgHealth%20HealthConnect(California)>6</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorgHealth%20HealthConnect(California)>7</a></td>
+
+</tr>
+
+<tr bgcolor = #dcd9c9><td><align=right>33</td>
+<td align=left>mytestorgLife (Park City)</td>
+<td align=right><a href=iemp.php?location=mytestorgLife%20(Park%20City)&status=current>36</a></td>
+<td align=right><a href=iemp.php?location=mytestorgLife%20(Park%20City)&status=Ex-Employee>31</a></td>
+<td align=right><a href=iemp.php?location=mytestorgLife%20(Park%20City)&status=all>67</a></td>
+<td align=right><a href=iemp.php?location=mytestorgLife%20(Park%20City)&status=all&function=uniq>63</a></td>
+<td align=right><a href=ocs.php?wg=mytestorgLife%20(Park%20City)>38</a></td>
+<td align=right><a href=iemp.php?location=mytestorgLife%20(Park%20City)&status=current&function=nodev>1</a></td>
+<td align=right><a href=iemp.php?location=mytestorgLife%20(Park%20City)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgLife%20(Park%20City)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgLife%20(Park%20City)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=mytestorgLife%20(Park%20City)&status=current&function=shared>1</a></td>
+<td align=right><a href=iemp.php?location=mytestorgLife%20(Park%20City)&status=current&function=nod>1</a></td>
+<td align=right><a href=spare.php?wg=mytestorgLife%20(Park%20City)&status=current>4</a></td>
+<td align=right><a href=removed.php?wg=mytestorgLife%20(Park%20City)&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=mytestorgLife%20(Park%20City)&function=exchange&status=current>36</a></td>
+<td align=right><a href=exchange.php?location=mytestorgLife%20(Park%20City)&function=exchange&status=Ex-employee>2</a></td>
+<td align=right><a href=exchange.php?location=mytestorgLife%20(Park%20City)&function=exchange>38</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgLife%20(Park%20City)&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgLife%20(Park%20City)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=mytestorgLife%20(Park%20City)>0</a></td>
+<td align=right><a href=ad.php?location=mytestorgLife%20(Park%20City)&status=current>31</a></td>
+<td align=right><a href=ad.php?location=mytestorgLife%20(Park%20City)&status=ex-employee>15</a></td>
+<td align=right><a href=ad.php?location=mytestorgLife%20(Park%20City)>46</a></td>
+<td align=right><a href=ldap.php?location=mytestorgLife%20(Park%20City)&status=current>31</a></td>
+<td align=right><a href=ldap.php?location=mytestorgLife%20(Park%20City)&status=ex-employee>3</a></td>
+<td align=right><a href=ldap.php?location=mytestorgLife%20(Park%20City)>34</a></td>
+<td align=right><a href=trendmicro.php?location=mytestorgLife%20(Park%20City)>34</a></td>
+
+</tr>
+
+<tr bgcolor = #ccc9c8><td><align=right>34</td>
+<td align=left>EZ Data</td>
+<td align=right><a href=iemp.php?location=EZ%20Data&status=current>23</a></td>
+<td align=right><a href=iemp.php?location=EZ%20Data&status=Ex-Employee>44</a></td>
+<td align=right><a href=iemp.php?location=EZ%20Data&status=all>67</a></td>
+<td align=right><a href=iemp.php?location=EZ%20Data&status=all&function=uniq>64</a></td>
+<td align=right><a href=ocs.php?wg=EZ%20Data>23</a></td>
+<td align=right><a href=iemp.php?location=EZ%20Data&status=current&function=nodev>2</a></td>
+<td align=right><a href=iemp.php?location=EZ%20Data&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=EZ%20Data&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=EZ%20Data&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=EZ%20Data&status=current&function=shared>1</a></td>
+<td align=right><a href=iemp.php?location=EZ%20Data&status=current&function=nod>1</a></td>
+<td align=right><a href=spare.php?wg=EZ%20Data&status=current>2</a></td>
+<td align=right><a href=removed.php?wg=EZ%20Data&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=EZ%20Data&function=exchange&status=current>24</a></td>
+<td align=right><a href=exchange.php?location=EZ%20Data&function=exchange&status=Ex-employee>7</a></td>
+<td align=right><a href=exchange.php?location=EZ%20Data&function=exchange>31</a></td>
+<td align=right><a href=rackspace.php?location=EZ%20Data&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=EZ%20Data&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=EZ%20Data>0</a></td>
+<td align=right><a href=ad.php?location=EZ%20Data&status=current>22</a></td>
+<td align=right><a href=ad.php?location=EZ%20Data&status=ex-employee>32</a></td>
+<td align=right><a href=ad.php?location=EZ%20Data>54</a></td>
+<td align=right><a href=ldap.php?location=EZ%20Data&status=current>21</a></td>
+<td align=right><a href=ldap.php?location=EZ%20Data&status=ex-employee>6</a></td>
+<td align=right><a href=ldap.php?location=EZ%20Data>27</a></td>
+<td align=right><a href=trendmicro.php?location=EZ%20Data>25</a></td>
+
+</tr>
+
+<tr bgcolor = #dcd9c9><td><align=right>35</td>
+<td align=left>EZ DATA (CA)</td>
+<td align=right><a href=iemp.php?location=EZ%20DATA%20(CA)&status=current>57</a></td>
+<td align=right><a href=iemp.php?location=EZ%20DATA%20(CA)&status=Ex-Employee>20</a></td>
+<td align=right><a href=iemp.php?location=EZ%20DATA%20(CA)&status=all>77</a></td>
+<td align=right><a href=iemp.php?location=EZ%20DATA%20(CA)&status=all&function=uniq>76</a></td>
+<td align=right><a href=ocs.php?wg=EZ%20DATA%20(CA)>83</a></td>
+<td align=right><a href=iemp.php?location=EZ%20DATA%20(CA)&status=current&function=nodev>0</a></td>
+<td align=right><a href=iemp.php?location=EZ%20DATA%20(CA)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=EZ%20DATA%20(CA)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=EZ%20DATA%20(CA)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=EZ%20DATA%20(CA)&status=current&function=shared>1</a></td>
+<td align=right><a href=iemp.php?location=EZ%20DATA%20(CA)&status=current&function=nod>0</a></td>
+<td align=right><a href=spare.php?wg=EZ%20DATA%20(CA)&status=current>3</a></td>
+<td align=right><a href=removed.php?wg=EZ%20DATA%20(CA)&status=current>1</a></td>
+<td align=right><a href=exchange.php?location=EZ%20DATA%20(CA)&function=exchange&status=current>53</a></td>
+<td align=right><a href=exchange.php?location=EZ%20DATA%20(CA)&function=exchange&status=Ex-employee>4</a></td>
+<td align=right><a href=exchange.php?location=EZ%20DATA%20(CA)&function=exchange>56</a></td>
+<td align=right><a href=rackspace.php?location=EZ%20DATA%20(CA)&status=current>9</a></td>
+<td align=right><a href=rackspace.php?location=EZ%20DATA%20(CA)&status=ex-employee>1</a></td>
+<td align=right><a href=rackspace.php?location=EZ%20DATA%20(CA)>10</a></td>
+<td align=right><a href=ad.php?location=EZ%20DATA%20(CA)&status=current>48</a></td>
+<td align=right><a href=ad.php?location=EZ%20DATA%20(CA)&status=ex-employee>17</a></td>
+<td align=right><a href=ad.php?location=EZ%20DATA%20(CA)>64</a></td>
+<td align=right><a href=ldap.php?location=EZ%20DATA%20(CA)&status=current>52</a></td>
+<td align=right><a href=ldap.php?location=EZ%20DATA%20(CA)&status=ex-employee>10</a></td>
+<td align=right><a href=ldap.php?location=EZ%20DATA%20(CA)>61</a></td>
+<td align=right><a href=trendmicro.php?location=EZ%20DATA%20(CA)>51</a></td>
+
+</tr>
+
+<tr bgcolor = #ccc9c8><td><align=right>36</td>
+<td align=left>Finetre (Herndon)</td>
+<td align=right><a href=iemp.php?location=Finetre%20(Herndon)&status=current>37</a></td>
+<td align=right><a href=iemp.php?location=Finetre%20(Herndon)&status=Ex-Employee>52</a></td>
+<td align=right><a href=iemp.php?location=Finetre%20(Herndon)&status=all>89</a></td>
+<td align=right><a href=iemp.php?location=Finetre%20(Herndon)&status=all&function=uniq>82</a></td>
+<td align=right><a href=ocs.php?wg=Finetre%20(Herndon)>46</a></td>
+<td align=right><a href=iemp.php?location=Finetre%20(Herndon)&status=current&function=nodev>3</a></td>
+<td align=right><a href=iemp.php?location=Finetre%20(Herndon)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=Finetre%20(Herndon)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=Finetre%20(Herndon)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=Finetre%20(Herndon)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=Finetre%20(Herndon)&status=current&function=nod>1</a></td>
+<td align=right><a href=spare.php?wg=Finetre%20(Herndon)&status=current>1</a></td>
+<td align=right><a href=removed.php?wg=Finetre%20(Herndon)&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=Finetre%20(Herndon)&function=exchange&status=current>47</a></td>
+<td align=right><a href=exchange.php?location=Finetre%20(Herndon)&function=exchange&status=Ex-employee>1</a></td>
+<td align=right><a href=exchange.php?location=Finetre%20(Herndon)&function=exchange>48</a></td>
+<td align=right><a href=rackspace.php?location=Finetre%20(Herndon)&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=Finetre%20(Herndon)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=Finetre%20(Herndon)>0</a></td>
+<td align=right><a href=ad.php?location=Finetre%20(Herndon)&status=current>34</a></td>
+<td align=right><a href=ad.php?location=Finetre%20(Herndon)&status=ex-employee>26</a></td>
+<td align=right><a href=ad.php?location=Finetre%20(Herndon)>60</a></td>
+<td align=right><a href=ldap.php?location=Finetre%20(Herndon)&status=current>34</a></td>
+<td align=right><a href=ldap.php?location=Finetre%20(Herndon)&status=ex-employee>6</a></td>
+<td align=right><a href=ldap.php?location=Finetre%20(Herndon)>40</a></td>
+<td align=right><a href=trendmicro.php?location=Finetre%20(Herndon)>38</a></td>
+
+</tr>
+
+<tr bgcolor = #dcd9c9><td><align=right>37</td>
+<td align=left>Infinity (CA)</td>
+<td align=right><a href=iemp.php?location=Infinity%20(CA)&status=current>3</a></td>
+<td align=right><a href=iemp.php?location=Infinity%20(CA)&status=Ex-Employee>0</a></td>
+<td align=right><a href=iemp.php?location=Infinity%20(CA)&status=all>3</a></td>
+<td align=right><a href=iemp.php?location=Infinity%20(CA)&status=all&function=uniq>3</a></td>
+<td align=right><a href=ocs.php?wg=Infinity%20(CA)>3</a></td>
+<td align=right><a href=iemp.php?location=Infinity%20(CA)&status=current&function=nodev>0</a></td>
+<td align=right><a href=iemp.php?location=Infinity%20(CA)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=Infinity%20(CA)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=Infinity%20(CA)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=Infinity%20(CA)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=Infinity%20(CA)&status=current&function=nod>0</a></td>
+<td align=right><a href=spare.php?wg=Infinity%20(CA)&status=current>0</a></td>
+<td align=right><a href=removed.php?wg=Infinity%20(CA)&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=Infinity%20(CA)&function=exchange&status=current>7</a></td>
+<td align=right><a href=exchange.php?location=Infinity%20(CA)&function=exchange&status=Ex-employee>0</a></td>
+<td align=right><a href=exchange.php?location=Infinity%20(CA)&function=exchange>7</a></td>
+<td align=right><a href=rackspace.php?location=Infinity%20(CA)&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=Infinity%20(CA)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=Infinity%20(CA)>0</a></td>
+<td align=right><a href=ad.php?location=Infinity%20(CA)&status=current>3</a></td>
+<td align=right><a href=ad.php?location=Infinity%20(CA)&status=ex-employee>0</a></td>
+<td align=right><a href=ad.php?location=Infinity%20(CA)>3</a></td>
+<td align=right><a href=ldap.php?location=Infinity%20(CA)&status=current>3</a></td>
+<td align=right><a href=ldap.php?location=Infinity%20(CA)&status=ex-employee>0</a></td>
+<td align=right><a href=ldap.php?location=Infinity%20(CA)>3</a></td>
+<td align=right><a href=trendmicro.php?location=Infinity%20(CA)>4</a></td>
+
+</tr>
+
+<tr bgcolor = #ccc9c8><td><align=right>38</td>
+<td align=left>Infinity (Herndon)</td>
+<td align=right><a href=iemp.php?location=Infinity%20(Herndon)&status=current>11</a></td>
+<td align=right><a href=iemp.php?location=Infinity%20(Herndon)&status=Ex-Employee>27</a></td>
+<td align=right><a href=iemp.php?location=Infinity%20(Herndon)&status=all>38</a></td>
+<td align=right><a href=iemp.php?location=Infinity%20(Herndon)&status=all&function=uniq>38</a></td>
+<td align=right><a href=ocs.php?wg=Infinity%20(Herndon)>13</a></td>
+<td align=right><a href=iemp.php?location=Infinity%20(Herndon)&status=current&function=nodev>2</a></td>
+<td align=right><a href=iemp.php?location=Infinity%20(Herndon)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=Infinity%20(Herndon)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=Infinity%20(Herndon)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=Infinity%20(Herndon)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=Infinity%20(Herndon)&status=current&function=nod>0</a></td>
+<td align=right><a href=spare.php?wg=Infinity%20(Herndon)&status=current>3</a></td>
+<td align=right><a href=removed.php?wg=Infinity%20(Herndon)&status=current>0</a></td>
+<td align=right><a href=exchange.php?location=Infinity%20(Herndon)&function=exchange&status=current>10</a></td>
+<td align=right><a href=exchange.php?location=Infinity%20(Herndon)&function=exchange&status=Ex-employee>7</a></td>
+<td align=right><a href=exchange.php?location=Infinity%20(Herndon)&function=exchange>17</a></td>
+<td align=right><a href=rackspace.php?location=Infinity%20(Herndon)&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=Infinity%20(Herndon)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=Infinity%20(Herndon)>0</a></td>
+<td align=right><a href=ad.php?location=Infinity%20(Herndon)&status=current>9</a></td>
+<td align=right><a href=ad.php?location=Infinity%20(Herndon)&status=ex-employee>23</a></td>
+<td align=right><a href=ad.php?location=Infinity%20(Herndon)>32</a></td>
+<td align=right><a href=ldap.php?location=Infinity%20(Herndon)&status=current>8</a></td>
+<td align=right><a href=ldap.php?location=Infinity%20(Herndon)&status=ex-employee>2</a></td>
+<td align=right><a href=ldap.php?location=Infinity%20(Herndon)>10</a></td>
+<td align=right><a href=trendmicro.php?location=Infinity%20(Herndon)>10</a></td>
+
+</tr>
+
+<tr bgcolor = #dcd9c9><td><align=right>39</td>
+<td align=left>Peak (Ohio)</td>
+<td align=right><a href=iemp.php?location=Peak%20(Ohio)&status=current>19</a></td>
+<td align=right><a href=iemp.php?location=Peak%20(Ohio)&status=Ex-Employee>25</a></td>
+<td align=right><a href=iemp.php?location=Peak%20(Ohio)&status=all>44</a></td>
+<td align=right><a href=iemp.php?location=Peak%20(Ohio)&status=all&function=uniq>42</a></td>
+<td align=right><a href=ocs.php?wg=Peak%20(Ohio)>23</a></td>
+<td align=right><a href=iemp.php?location=Peak%20(Ohio)&status=current&function=nodev>0</a></td>
+<td align=right><a href=iemp.php?location=Peak%20(Ohio)&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=Peak%20(Ohio)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=Peak%20(Ohio)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=Peak%20(Ohio)&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=Peak%20(Ohio)&status=current&function=nod>0</a></td>
+<td align=right><a href=spare.php?wg=Peak%20(Ohio)&status=current>3</a></td>
+<td align=right><a href=removed.php?wg=Peak%20(Ohio)&status=current>1</a></td>
+<td align=right><a href=exchange.php?location=Peak%20(Ohio)&function=exchange&status=current>19</a></td>
+<td align=right><a href=exchange.php?location=Peak%20(Ohio)&function=exchange&status=Ex-employee>5</a></td>
+<td align=right><a href=exchange.php?location=Peak%20(Ohio)&function=exchange>24</a></td>
+<td align=right><a href=rackspace.php?location=Peak%20(Ohio)&status=current>0</a></td>
+<td align=right><a href=rackspace.php?location=Peak%20(Ohio)&status=ex-employee>0</a></td>
+<td align=right><a href=rackspace.php?location=Peak%20(Ohio)>0</a></td>
+<td align=right><a href=ad.php?location=Peak%20(Ohio)&status=current>18</a></td>
+<td align=right><a href=ad.php?location=Peak%20(Ohio)&status=ex-employee>15</a></td>
+<td align=right><a href=ad.php?location=Peak%20(Ohio)>33</a></td>
+<td align=right><a href=ldap.php?location=Peak%20(Ohio)&status=current>18</a></td>
+<td align=right><a href=ldap.php?location=Peak%20(Ohio)&status=ex-employee>2</a></td>
+<td align=right><a href=ldap.php?location=Peak%20(Ohio)>20</a></td>
+<td align=right><a href=trendmicro.php?location=Peak%20(Ohio)>19</a></td>
+
+</tr>
+
+<tr bgcolor = #ccc9c8><td><align=right>40</td>
+<td align=left>PlanetSoft CA</td>
+<td align=right><a href=iemp.php?location=PlanetSoft%20CA&status=current>2</a></td>
+<td align=right><a href=iemp.php?location=PlanetSoft%20CA&status=Ex-Employee>2</a></td>
+<td align=right><a href=iemp.php?location=PlanetSoft%20CA&status=all>4</a></td>
+<td align=right><a href=iemp.php?location=PlanetSoft%20CA&status=all&function=uniq>4</a></td>
+<td align=right><a href=ocs.php?wg=PlanetSoft%20CA>2</a></td>
+<td align=right><a href=iemp.php?location=PlanetSoft%20CA&status=current&function=nodev>1</a></td>
+<td align=right><a href=iemp.php?location=PlanetSoft%20CA&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=PlanetSoft%20CA&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=PlanetSoft%20CA&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=PlanetSoft%20CA&status=current&function=shared>0</a></td>
+<td align=right><a href=iemp.php?location=PlanetSoft%20CA&status=current&function=nod>0</a></td>
+<td align=right><a href=spare.php?wg=PlanetSoft%20CA&status=current>1</a></td>
+<td align=right><a href=removed.php?wg=PlanetSoft%20CA&status=current>1</a></td>
+<td align=right><a href=exchange.php?location=PlanetSoft%20CA&function=exchange&status=current>1</a></td>
+<td align=right><a href=exchange.php?location=PlanetSoft%20CA&function=exchange&status=Ex-employee>0</a></td>
+<td align=right><a href=exchange.php?location=PlanetSoft%20CA&function=exchange>1</a></td>
+<td align=right><a href=rackspace.php?location=PlanetSoft%20CA&status=current>1</a></td>
+<td align=right><a href=rackspace.php?location=PlanetSoft%20CA&status=ex-employee>1</a></td>
+<td align=right><a href=rackspace.php?location=PlanetSoft%20CA>2</a></td>
+<td align=right><a href=ad.php?location=PlanetSoft%20CA&status=current>1</a></td>
+<td align=right><a href=ad.php?location=PlanetSoft%20CA&status=ex-employee>1</a></td>
+<td align=right><a href=ad.php?location=PlanetSoft%20CA>2</a></td>
+<td align=right><a href=ldap.php?location=PlanetSoft%20CA&status=current>1</a></td>
+<td align=right><a href=ldap.php?location=PlanetSoft%20CA&status=ex-employee>0</a></td>
+<td align=right><a href=ldap.php?location=PlanetSoft%20CA>1</a></td>
+<td align=right><a href=trendmicro.php?location=PlanetSoft%20CA>2</a></td>
+
+</tr>
+
+<tr bgcolor = #dcd9c9><td><align=right>41</td>
+<td align=left>PlanetSoft US</td>
+<td align=right><a href=iemp.php?location=PlanetSoft%20US&status=current>34</a></td>
+<td align=right><a href=iemp.php?location=PlanetSoft%20US&status=Ex-Employee>15</a></td>
+<td align=right><a href=iemp.php?location=PlanetSoft%20US&status=all>49</a></td>
+<td align=right><a href=iemp.php?location=PlanetSoft%20US&status=all&function=uniq>44</a></td>
+<td align=right><a href=ocs.php?wg=PlanetSoft%20US>14</a></td>
+<td align=right><a href=iemp.php?location=PlanetSoft%20US&status=current&function=nodev>2</a></td>
+<td align=right><a href=iemp.php?location=PlanetSoft%20US&status=current&function=ela>0</a></td>
+<td align=right><a href=iemp.php?location=PlanetSoft%20US&status=current&function=shared>1</a></td>
+<td align=right><a href=iemp.php?location=PlanetSoft%20US&status=current&function=shared>1</a></td>
+<td align=right><a href=iemp.php?location=PlanetSoft%20US&status=current&function=shared>10</a></td>
+<td align=right><a href=iemp.php?location=PlanetSoft%20US&status=current&function=nod>6</a></td>
+<td align=right><a href=spare.php?wg=PlanetSoft%20US&status=current>0</a></td>
+<td align=right><a href=removed.php?wg=PlanetSoft%20US&status=current>4</a></td>
+<td align=right><a href=exchange.php?location=PlanetSoft%20US&function=exchange&status=current>8</a></td>
+<td align=right><a href=exchange.php?location=PlanetSoft%20US&function=exchange&status=Ex-employee>1</a></td>
+<td align=right><a href=exchange.php?location=PlanetSoft%20US&function=exchange>9</a></td>
+<td align=right><a href=rackspace.php?location=PlanetSoft%20US&status=current>23</a></td>
+<td align=right><a href=rackspace.php?location=PlanetSoft%20US&status=ex-employee>1</a></td>
+<td align=right><a href=rackspace.php?location=PlanetSoft%20US>23</a></td>
+<td align=right><a href=ad.php?location=PlanetSoft%20US&status=current>9</a></td>
+<td align=right><a href=ad.php?location=PlanetSoft%20US&status=ex-employee>1</a></td>
+<td align=right><a href=ad.php?location=PlanetSoft%20US>10</a></td>
+<td align=right><a href=ldap.php?location=PlanetSoft%20US&status=current>17</a></td>
+<td align=right><a href=ldap.php?location=PlanetSoft%20US&status=ex-employee>3</a></td>
+<td align=right><a href=ldap.php?location=PlanetSoft%20US>19</a></td>
+<td align=right><a href=trendmicro.php?location=PlanetSoft%20US>8</a></td>
+
+</tr>
+
+<tr class=sortbottom bgcolor="bbeeee">
+<th><align=right>42</td>
+<th align=left>EE Total</td>
+<td align=right><a href=iemp.php?location=all&status=current>1,968</a></td>
+<td align=right><a href=iemp.php?location=all&status=Ex-employee>1,453</a></td>
+<td align=right><a href=iemp.php?location=all&status=all>3,421</a></td>
+<td align=right><a href=iemp.php?location=all&status=current&function=uniq>3,288</a></td>
+<td align=right><a href=ocs.php?location=all&wg=all>2,364</a></td>
+<td align=right><a href=iemp.php?location=all&function=nodev>77</a></td>
+<td align=right><a href=iemp.php?location=all&function=ela>5</a></td>
+<td align=right><a href=iemp.php?location=all&function=shared>74</a></td>
+<td align=right><a href=iemp.php?location=all&fnction=nyp>14</a></td>
+<td align=right><a href=iemp.php?location=all&function=cc>20</a></td>
+<td align=right><a href=iemp.php?location=all&function=nod>35</a></td>
+<td align=right><a href=spare.php?wg=eeall>227</a></td>
+<td align=right><a href=removed.php?wg=eeall>24</a></td>
+<td align=right><a href=exchange.php?location=all&function=exchange&status=current>1,140</a></td>
+<td align=right><a href=exchange.php?location=all&function=exchange&status=ex-employee>220</a></td>
+<td align=right><a href=exchange.php?location=all&function=exchange>1,358</a></td>
+<td align=right><a href=rackspace.php?location=all&function=rackspace&status=current>1,081</a></td>
+<td align=right><a href=rackspace.php?location=all&function=rackspace&status=ex-employee>35</a></td>
+<td align=right><a href=rackspace.php?location=all&function=rackspace>1,106</a></td>
+<td align=right><a href=ad.php?location=all&function=ade&status=current>791</a></td>
+<td align=right><a href=ad.php?location=all&function=ade&status=ex-employee>405</a></td>
+<td align=right><a href=ad.php?location=all&function=ade>1,194</a></td>
+<td align=right><a href=ldap.php?location=all&function=ldape&status=current>1,694</a></td>
+<td align=right><a href=ldap.php?location=all&function=ldape&status=ex-employee>306</a></td>
+<td align=right><a href=ldap.php?location=all&function=ldape>1,993</a></td>
+<td align=right><a href=trendmicro.php?location=all&function=trend>1,709</a></td>
+
+</tr>
+<tr class=sortbottom bgcolor="bbeeee">
+<th align=right>43</td>
+<th align=left>Orphan</td>
+<td align=right></td>
+<td align=right></td>
+<td align=right></td>
+<td align=right></td>
+<td align=right><a href=ocs.php?orphan=294>294</a></td>
+<td align=right><a href=iemp.php?location=all&status=current&function=nodev></a></td>
+<td align=right><a href=iemp.php?location=all&status=current&function=ela></a></td>
+<td align=right><a href=iemp.php?location=all&status=current&function=shared></a></td>
+<td align=right><a href=iemp.php?location=all&status=current&function=shared></a></td>
+<td align=right><a href=iemp.php?location=all&status=current&function=shared></a></td>
+<td align=right><a href=iemp.php?location=all&status=current&function=nod></a></td>
+<td align=right><a href=spare.php?wg=orphan>26</a></td>
+<td align=right><a href=removed.php?wg=orphan>34</a></td>
+<td></td><td></td>
+<td align=right><a href=exchange.php?function=exchangeall&orphan=1206>1,206</a></td>
+<td></td><td></td>
+<td align=right><a href=rackspace.php?orphan=128>128</a></td>
+<td></td><td></td>
+<td align=right><a href=ad.php?orphan=1360>1,360</a></td>
+<td></td><td></td>
+<td align=right><a href=ldap.php?orphan=762>762</a></td>
+<td align=right><a href=trendmicro.php?orphan=365>365</a></td>
+
+</tr>
+<tr class=sortbottom bgcolor="bbeeee">
+<th><align=right>44</td>
+<th align=left>Total</td>
+<td align=right><a href=iemp.php?location=all&status=current>1,963</a></td>
+<td align=right><a href=iemp.php?location=all&status=Ex-employee>1,449</a></td>
+<td align=right><a href=iemp.php?location=all&status=all>3,412</a></td>
+<td align=right><a href=iemp.php?location=all&status=current&function=uniqall>3,256</a></td>
+<td align=right><a href=ocs.php?wg=everything>2,658</a></td>
+<td align=right><a href=iemp.php?location=all&status=current&function=nodev></a></td>
+<td align=right><a href=iemp.php?location=all&status=current&function=ela></a></td>
+<td align=right><a href=iemp.php?location=all&status=current&function=shared></a></td>
+<td align=right><a href=iemp.php?location=all&status=current&function=shared></a></td>
+<td align=right><a href=iemp.php?location=all&status=current&function=shared></a></td>
+<td align=right><a href=iemp.php?location=all&status=current&function=nod></a></td>
+<td align=right><a href=spare.php?wg=all>253</a></td>
+<td align=right><a href=removed.php?wg=all>58</a></td>
+<td></td><td></td>
+<td align=right><a href=exchange.php?location=everything&function=exchangeall>2,564</a></td>
+<td></td><td></td>
+<td align=right><a href=rackspace.php?location=everything&function=rackspaceall>1,234</a></td>
+<td></td><td></td>
+<td align=right><a href=ad.php?location=everything&function=adall>2,554</a></td>
+<td></td><td></td>
+<td align=right><a href=ldap.php?location=everything&function=ldapall>2,755</a></td>
+<td align=right><a href=trendmicro.php?location=everything&function=trendall>2,065</a></td>
+
+</tr>
+</table>
+<php?  include 'foot.php';
+?>
+</body>
+</html>
+

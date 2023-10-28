@@ -1,0 +1,18 @@
+-------------------------------------Adam Exchange project Doc-----------------------------------------------
+
+
+------------------------------------------needed info--------------------------------------------------------
+---->host related details<-----
+hsg portal host : 192.168.20.137
+portal home path: /srv/www/htdocs
+
+--->exchange user creadintials of FTP <----
+User Name : exchange-db
+Password : ATL@EXG918
+
+-------------------------------------------------------------------------------------------------------------
+
+
+<----------------------IMPORTAND QUERRYS-------------------->
+create table adamexchange values (DisplayName VARCHAR(20),TotalItemSize VARCHAR(20),ItemCount VARCHAR(20),DatabaseName VARCHAR(20));
+load data local infile 'ADAM-Mailbox-List-15-7-14.csv' into table adamexchange fields terminated by ',' enclosed by '"' lines terminated by '\n' (DisplayName,TotalItemSize,ItemCount,DatabaseName);

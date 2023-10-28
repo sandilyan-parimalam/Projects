@@ -1,0 +1,28 @@
+---
+#################################################################################################################################
+#                                                                                                                               #
+#        this playbook cannot be executed manually, this is a helper playbook of solr8-maintenance.yaml, Please run through it   #
+#                                                                                                                               #
+#################################################################################################################################
+
+
+ - name: Checking SSH again as it did not came up
+   local_action: shell telnet {{ server_IP }} 22 2>>/dev/null | grep -s Connected ;rc=1
+   register: result
+   ignore_errors: true
+
+   
+ - debug:
+     msg: "SSH is up, proceeding further"
+   when: ('Connected' in result.stdout)
+
+
+ - name: SSH still didn't came up, Please troubleshoot and make sure the SSH is up to proceed further
+   pause:
+     prompt: "Please press enter to check again or terminate the playbook with ctrl + c and 'A' after"
+   when: ('Connected' not in result.stdout)
+
+
+ - include_tasks: prompt_start_ssh.yaml
+   when: ('Connected' not in result.stdout)
+

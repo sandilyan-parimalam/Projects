@@ -1,0 +1,32 @@
+---
+#################################################################################################################################
+#                                                                                                                               #
+#        this playbook cannot be executed manually, this is a helper playbook of solr8-maintenance.yaml, Please run through it   #
+#                                                                                                                               #
+#################################################################################################################################
+
+
+
+
+ - name: Comparing {{ solr_instance }} instance's latest active collection count ({{ new_coll_count.stdout }}) to pre-{{ perform }} ({{ last_coll_count }})
+   shell: curl -s http://{{ server_IP }}:{{ upstream_port_no }}/solr/admin/cores?action=STATUS | grep -o active | wc -l;rc=0
+   register: new_coll_count
+   args:
+     warn: false
+   ignore_errors: true
+
+
+ - debug:
+     msg: "Active collection count matching wth pre-{{ perform }}, proceeding further"
+   when: "new_coll_count.stdout|int >= last_coll_count|int"
+
+
+ - name: Problem! Post {{ perform }} active collection count ({{ new_coll_count.stdout }}) is not matching wth pre-{{ perform }} collection count ({{ last_coll_count }}), Please troubleshoot to proceed futher 
+   pause:
+     prompt: "Please press enter to check again or terminate the playbook with ctrl + c and 'A' after"
+   when: "new_coll_count.stdout|int < last_coll_count|int"
+
+
+ - include_tasks: prompt_active_collection.yaml
+   when: "new_coll_count.stdout|int < last_coll_count|int"
+

@@ -1,0 +1,23 @@
+---
+# Action definition metadata
+pack: "st2autoremediation"
+name: "newrelic_maxwell_remediation"
+description: "Validate an incident and initiate auto-remediation for maxwell"
+runner_type: "orquesta"
+enabled: true
+entry_point: "workflows/newrelic_maxwell_remediation.yaml"
+ref: "st2autoremediation.newrelic_maxwell_remediation"
+parameters:
+  incident_id:
+    type: string
+    description: "Incident ID received"
+    required: true
+  payload:
+    type: string
+    description: "Payload from New Relic"
+    required: true
+  announce_in:
+    required: false
+    default: [ ]
+    type: "array"
+    description: "List of channels to make announcement in."

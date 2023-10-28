@@ -1,0 +1,37 @@
+---
+#################################################################################################################################
+#                                                                                                                               #
+#        this playbook cannot be executed manually, this is a helper playbook of solr8-maintenance.yaml, Please run through it   #
+#                                                                                                                               #
+#################################################################################################################################
+
+
+
+
+ - name: Fetching Upstreams related to {{ server_IP }}({{ server_name }})
+   shell: curl {{ all_upstreams_url }} | jq | egrep 'zone|name' | tr -d '[:space:]' | sed 's#""#"\n"#g' | grep {{ server_IP }} | rev | cut -d ':' -f1 | rev | sed 's#"##g' | sort | uniq
+   register: all_server_upstreams_op
+   args:
+     warn: false
+
+
+ - set_fact:
+     all_server_upstreams: "{{ all_server_upstreams_op.stdout_lines }}"
+
+
+ - name: Fetching Server ID of {{ server_IP }}({{ server_name }})
+   shell: curl {{ all_upstreams_url }} | jq | egrep 'id|name' | tr -d '[:space:]' | sed 's/"id/\n"id/g' | cut -d ':' -f1-3 | sort | grep "{{ server_IP }}" | uniq | cut -d ',' -f1 | cut -d ':' -f2
+   register: server_id_op
+   args:
+     warn: false
+
+
+ - set_fact:
+     server_id: "{{ server_id_op.stdout }}"
+
+
+ - debug:
+     msg: "Server ID of {{ server_IP }}({{ server_name }}) is {{ server_id }} and it has following Upstreams {{ all_server_upstreams }}"
+   when: (svc != 'zookeeper')
+
+

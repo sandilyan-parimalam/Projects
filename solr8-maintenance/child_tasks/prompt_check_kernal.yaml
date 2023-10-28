@@ -1,0 +1,32 @@
+---
+#################################################################################################################################
+#                                                                                                                               #
+#        this playbook cannot be executed manually, this is a helper playbook of solr8-maintenance.yaml, Please run through it   #
+#                                                                                                                               #
+#################################################################################################################################
+
+
+
+ - name: Checking the latest kernal availability on {{ server_IP }}({{ server_name }}) again
+   delegate_to: "{{ server_IP }}"
+   delegate_facts: True
+   shell: rpm -qa kernel | grep -w {{ latestkernal }};rc=0
+   args:
+     warn: false
+   register: serverkernal
+   when: perform == 'reboot' and latestkernal != 'NA' and latestkernal != ''
+
+ - debug:
+     msg: "Info: Given latest kernal {{ latestkernal }} is available in the server. Proceeding further"
+   when: perform == 'reboot' and latestkernal != 'NA' and latestkernal != '' and latestkernal == serverkernal.stdout
+
+ - name: Given latest kernal {{ latestkernal }} is still not available on {{ server_IP }}({{ server_name }}). 
+   vars_prompt:
+     - name: "user_prompt_input"
+       prompt: "Enter 'skip' to skip this check or 'retry' to try again"
+   when: perform == 'reboot' and latestkernal != 'NA' and latestkernal != '' and latestkernal != serverkernal.stdout
+
+
+ - include_task: prompt_check_kernal.yaml
+   when: perform == 'reboot' and latestkernal != 'NA' and latestkernal != '' and latestkernal != serverkernal.stdout 
+

@@ -1,0 +1,115 @@
+---
+#################################################################################################################################
+#                                                                                                                               #
+#        this playbook cannot be executed manually, this is a helper playbook of solr8-maintenance.yaml, Please run through it   #
+#                                                                                                                               #
+#################################################################################################################################
+
+   - set_fact:
+       solr_version_grep: "grep -i '_solr8_'"
+     when: newenv == "stg"
+
+
+   - set_fact:
+       solr_version_grep: "egrep -i '_solr{{ clusterno }}_{{ datacenter }}_'"
+     when: newenv == "prod"
+
+   - set_fact:
+       solr_version_grep: "grep -i '_solr8_' | grep {{ newenv }}{{ clusterno }}"
+     when: newenv != "stg" and newenv != "prod"
+
+
+   - name: "Fetching upstreams related to {{ userinput }}"
+     shell: "curl http://{{ nginxsrv }}{{ api_context }} | jq | {{ solr_version_grep }} | grep -i zone | sed 's#\"zone\":##g'| sed 's#\"##g' | sort | uniq"
+#     shell: "curl http://{{ nginxsrv }}{{ api_context }} | jq | {{ solr_version_grep }} | grep -i '{' | cut -d ':' -f1 | sort | uniq"
+
+     register: upstreams_tmp
+     args:
+       warn: false
+
+
+   - fail:
+       msg: "ERROR: Unable to retrive upstream info for given cluster. Please check the cluster number"
+     when: upstreams_tmp.stdout == ""
+
+
+   - set_fact:
+       upstreams: "{{ upstreams_tmp.stdout_lines | list }}"
+       prefix_tmp: "http://{{ nginxsrv }}{{ api_context }}"
+
+
+   - fail:
+       msg: "ERROR: Input required for 'upstream' variable. Please specify target upstream or provide 'all' if you are targetting all upstreams"
+     when: ( UPstream == '' or UPstream == 'na') and ( service != 'zookeeper' )
+
+
+
+   - fail:
+       msg: "ERROR: Given upstream is not located under given cluster on Nginx API. Please make sure the input 'upstream' matches current configuration and inventory file. Available upstream's under the given cluster are following {{ upstreams }}"
+     when: >
+       ( service != 'zookeeper' ) and
+       ( zookeeper_type != 'solr-less-srv' ) and
+       ( UPstream != 'all' ) and
+       ( UPstream not in upstreams | replace(' ', '') )
+
+
+
+   - set_fact:
+       upstreams: "{{ UPstream.splitlines() }}"
+     when: UPstream != 'all'
+
+
+
+   - set_fact:
+       upstreams_url_tmp: "{{ [] | zip_longest(upstreams, fillvalue=prefix_tmp) | map('join') | list | replace(' ', '') }}"
+
+
+   - set_fact:
+       all_upstreams_url: "{{ upstreams_url_tmp | join(' ') }}"
+
+
+   - name: Fetching IP address of Nodes in the {{ userinput }} cluster
+     shell: "curl {{ all_upstreams_url }} | jq | grep 'name' | cut -d ':' -f2 | sort | uniq "
+     register: clusterip_op
+     args:
+       warn: false
+
+
+   - fail:
+       msg: "ERROR: Unable to fetch servers in the given cluster, Please varify your input matches Nginx API and inventory"
+     when: clusterip_op.stdout_lines == ''
+
+
+   - set_fact:
+       cluster_ips: "{{ clusterip_op.stdout_lines | replace('\"', '') | replace(' ', '') }}"
+   
+   - fail:
+       msg: "ERROR: 'serverip' Required, Please specify a server IP under the given cluster OR specify 'all' if you intended to perform on all servers in the given cluster. Available given cluster has following servers {{ cluster_ips }}"
+     when: (serverIP == "na" or serverIP == "" )
+
+
+   - fail:
+       msg: "ERROR: Given server IP is invalid or not located under the given cluster. please make sure the 'serverip' input is valid or specify 'all' to run on all the servers in the cluster. Available servers under the given cluster are {{ cluster_ips }}"
+     when: >
+       ( serverIP != 'na' or serverIP != '' ) and
+       ( zookeeper_type != 'solr-less-srv' ) and
+       ( serverIP not in cluster_ips ) and
+       ( serverIP != 'all' ) 
+
+
+   - debug:
+       msg: "Validated the given IP {{ serverIP }}, Moving Forward"
+     when: >
+       ( serverIP != "" or serverIP != "" ) and
+       ( serverIP != 'all' ) and
+       ( zookeeper_type != 'solr-less-srv' )
+
+   - debug:
+       msg: "Info: Skipping cluster IP validation due to zookeeper_type=solr-less-srv"
+     when: ( zookeeper_type == 'solr-less-srv' )
+  
+   - set_fact:
+       cluster_ips: "{{ serverIP.splitlines() }}"
+     when: ( serverIP != "na" or serverIP != "" ) and ( serverIP != 'all' )
+
+

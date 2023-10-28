@@ -1,0 +1,42 @@
+#####################################################################################
+
+Solr8 Maintenance Playbook Help Document
+
+######################################################################################
+
+
+Primary Action
+	1) Reboot all servers and ensure latest kernel availability in a cluster with high availability 
+		"env=rn-dev-4 perform=reboot service=all  upstream=all serverip=all latestkernal=kernel-3.10.0-1160.81.1.el7.x86_64"
+	2) Reboot all servers without checking kernel in a cluster with high availability 
+		"env=rn-dev-4 perform=reboot service=all  upstream=all serverip=all"
+		
+
+Solr only Actions
+	1) Stop/start/restart one upstream on one server of the cluster
+		"env=rn-dev-4 perform=restart service=solr  upstream=backend_solr8_dev4_8080 serverip=10.142.16.88"
+	2) Stop/start/restart one upstream on all servers in the cluster
+		"env=rn-dev-4 perform=restart service=solr  upstream=backend_solr8_dev4_8080 serverip=all"
+	3) Stop/start/restart all upstreams in one server on cluster
+		"env=rn-dev-4 perform=restart service=solr  upstream=all serverip=10.142.16.88"
+	4) Stop/start/restart all upstreams in all servers on the cluster
+		"env=rn-dev-4 perform=restart service=solr  upstream=all serverip=all"
+
+Zookeeper Actions
+	1) Stop/start/restart zookeeper in one server on the cluster
+		"env=rn-dev-4 perform=restart service=zookeeper  upstream=NA serverip=10.142.16.88"
+	2) Stop/start/restart zookeeper in one server even the server is not part of a solr cluster
+		"env=rn-dev-4 perform=restart service=zookeeper  upstream=NA serverip=10.142.16.88 zookeeper_type=solr-less-srv"
+	
+	3) Stop/start/restart zookeeper in all servers on the cluster (followers are first and leaders are at the end )
+		"env=rn-dev-4 perform=restart service=zookeeper  upstream=NA serverip=all"
+
+
+Combined Actions
+	1) Stop/start/restart one upstream and zookeeper in one server 
+		"env=rn-dev-4 perform=restart service=all  upstream=backend_solr8_dev4_8080 serverip=10.142.16.88"
+	2) Stop/start/restart one upstream and zookeeper in all the servers with high availability if it’s a restart (followers are first and leaders are at the end )
+		"env=rn-dev-4 perform=restart service=all  upstream=backend_solr8_dev4_8080 serverip=all"
+	3) Stop/start/restart all upstreams and zookeeper in all servers on the cluster with high availability if it’s a restart
+		"env=rn-dev-4 perform=restart service=all  upstream=all serverip=all"
+

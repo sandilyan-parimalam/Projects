@@ -1,0 +1,55 @@
+---
+#################################################################################################################################
+#                                                                                                                               #
+#        this playbook cannot be executed manually, this is a helper playbook of solr8-maintenance.yaml, Please run through it   #
+#                                                                                                                               #
+#################################################################################################################################
+
+ - set_fact:
+     zk_avail: 0
+
+
+ - name: Checking if /usr/lib/systemd/system/zookeeper.service exist on {{ server_IP }}({{ server_name }})
+   delegate_to: "{{ server_IP }}"
+   delegate_facts: True
+   stat: path=/usr/lib/systemd/system/zookeeper.service
+   register: zk_avail_srv
+
+ - name: Checking if /var/lib/zookeeper/myid exist on {{ server_IP }}({{ server_name }})
+   delegate_to: "{{ server_IP }}"
+   delegate_facts: True
+   stat: path=/var/lib/zookeeper/myid
+   register: zk_avail_myid
+
+
+ - set_fact:
+     zk_avail: 1
+   when: zk_avail_srv.stat.exists and zk_avail_myid.stat.exists
+
+
+ - name: Starting Zookeeper on {{ server_IP }}({{ server_name }})
+   delegate_to: "{{ server_IP }}"
+   delegate_facts: True
+   systemd: name=zookeeper state=started
+   when: zk_avail == 1
+
+
+ - pause: seconds=10
+   when: zk_avail == 1
+
+
+ - name: Waiting for Zookeeper to pass health-check if exist on {{ server_IP }}({{ server_name }}) by making sure it becomes 'follower' or 'leader'
+   delegate_to: "{{ server_IP }}"
+   delegate_facts: True
+   shell: "echo srvr | nc localhost 2181 | grep Mode"
+   register: result
+   until: ("leader" in result.stdout) or ("follower" in result.stdout)
+   retries: 6
+   delay: 15
+   changed_when: false
+   ignore_errors: true
+   when: zk_avail == 1
+
+
+ - include_tasks: prompt_start_zk.yaml
+   when: ("leader" not in result.stdout) and ("follower" not in result.stdout) and "zk_avail == '1'"

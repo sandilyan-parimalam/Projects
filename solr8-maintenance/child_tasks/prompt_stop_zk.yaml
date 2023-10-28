@@ -1,0 +1,28 @@
+---
+#################################################################################################################################
+#                                                                                                                               #
+#        this playbook cannot be executed manually, this is a helper playbook of solr8-maintenance.yaml, Please run through it   #
+#                                                                                                                               #
+#################################################################################################################################
+
+
+
+ - name: Fetching active java processes for zookpr user on {{ server_IP }}({{ server_name }})
+   shell: "pgrep -u zookpr java| wc -l;rc=0"
+   delegate_to: "{{ server_IP }}"
+   delegate_facts: True
+   register: result
+   changed_when: false
+
+- debug:
+     msg: "zookeeper is Down, proceeding further"
+   when: result.stdout|int == 0
+
+ - name: zookeeper still Running for zookpr user on {{ server_IP }}({{ server_name }}), Please troubleshoot and make it's down to proceed further.
+   pause:
+     prompt: "Please press enter to check again or terminate the playbook with ctrl + c and 'A' after"
+   when: result.stdout|int != 0
+
+
+ - include_tasks: prompt_stop_zk.yaml
+   when: result.stdout|int != 0

@@ -1,0 +1,82 @@
+---
+
+- hosts: all
+  name: Solr8 Maintenance Playbook
+  gather_facts: no
+  become: yes
+
+
+  vars:
+    # Changing values of below variables requires code changes. please update the code accordingly
+    env: NA
+    perform: NA
+    serverip: NA
+    service: NA
+    upstream: NA
+    zookeeper_type: NA
+    latestkernal: "NA"
+
+    #Change the value of below variable if required
+    api_context: "/api/3/http/upstreams/"
+
+
+
+  tasks:
+
+
+   - set_fact:
+       required_playbooks:
+         - inventory
+         - child_tasks/check_user_input.yaml
+         - child_tasks/get_nginx_data.yaml
+         - child_tasks/task_handler.yaml
+         - child_tasks/stop_zk.yaml
+         - child_tasks/prompt_stop_zk.yaml
+         - child_tasks/get_solr_server_data.yaml
+         - child_tasks/stop_upstreams_and_solr.yaml
+         - child_tasks/prompt_stop_upstream.yaml
+         - child_tasks/prompt_stop_solr.yaml
+         - child_tasks/sort_ip_by_zk.yaml
+         - child_tasks/reboot_server.yaml
+         - child_tasks/prompt_start_ssh.yaml
+         - child_tasks/check_kernal.yaml
+         - child_tasks/check_kernal_again.yaml
+         - child_tasks/prompt_check_kernal.yaml
+         - child_tasks/prompt_stop_solr_all.yaml
+         - child_tasks/start_zk.yaml
+         - child_tasks/prompt_start_zk.yaml
+         - child_tasks/start_upstreams_and_solr.yaml
+         - child_tasks/prompt_active_collection.yaml
+         - child_tasks/prompt_start_upstream.yaml
+  
+
+   - set_fact:
+       failure_msg: "Info: Info: Info: Info: This Playbook requires {{ item }}. Please Check it's availability," 
+     when: "not item is exists"
+     with_items: "{{ required_playbooks }}"
+
+
+   - fail:
+       msg: "Info: Info: Info: Info: {{ failure_msg }}"
+     when: failure_msg is defined
+
+
+   - include_tasks: child_tasks/check_user_input.yaml
+   - include_tasks: child_tasks/get_nginx_data.yaml
+
+
+   - include_tasks: child_tasks/sort_ip_by_zk.yaml
+     loop: "{{ cluster_ips }}"
+     when: ( perform == 'restart' and serverip == 'all' and ( svc == 'zookeeper' or svc == 'all' )) or ( perform == "reboot" and serverip == "all" )
+     loop_control:
+       loop_var: zk_srv
+
+   - set_fact:
+       cluster_ips: "{{ followers + leaders }}"
+     when: ( perform == 'restart' and serverip == 'all' and ( svc == 'zookeeper' or svc == 'all' )) or ( perform == "reboot" and serverip == "all" )
+
+
+   - name: "Calling Nested tasks"
+     include_tasks: child_tasks/task_handler.yaml
+     loop: "{{ cluster_ips }}"
+

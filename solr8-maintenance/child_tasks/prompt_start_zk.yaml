@@ -1,0 +1,30 @@
+---
+#################################################################################################################################
+#                                                                                                                               #
+#        this playbook cannot be executed manually, this is a helper playbook of solr8-maintenance.yaml, Please run through it   #
+#                                                                                                                               #
+#################################################################################################################################
+
+
+
+ - name: Checking Zookeeper health again
+   delegate_to: "{{ server_IP }}"
+   delegate_facts: True
+   shell: "echo srvr | nc localhost 2181 | grep -s Mode;rc=0"
+   register: result
+
+
+ - debug:
+     msg: "Zookeeper is up, proceeding further"
+   when: ("leader" in result.stdout) or ("follower" in result.stdout)
+
+
+ - name: Zookeeper did not become as either leader or follower. Please troubleshoot and make sure the zk role is correct to proceed further.
+   pause:
+     prompt: "Please press enter to check again or terminate the playbook with ctrl + c and 'A' after"
+   when: ("leader" not in result.stdout) and ("follower" not in result.stdout)
+
+
+ - include_tasks: prompt_start_zk.yaml
+   when: ("leader" not in result.stdout) and ("follower" not in result.stdout)
+

@@ -1,0 +1,2 @@
+[Ansible]
+localhost rn_dev_srv=testcorpng401.corp.testcorp.com rn_qa_srv=rnqcng401.corp.testcorp.com rn_stg_srv=rnscng201.corp.testcorp.com rn_prod_srv=rnpngx201.corp.testcorp.com

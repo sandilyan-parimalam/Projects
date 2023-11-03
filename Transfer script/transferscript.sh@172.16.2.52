@@ -1,0 +1,35 @@
+echo -e "\033[36m **************************************************  \033[0m"
+echo -e "\033[36m WELCOME TO THE NAGPUR PMGMS TRANSFER SCRIPT \033[0m"
+echo -e "\033[36m **************************************************  \033[0m"
+FTP_HOST=172.16.2.19
+FTP_USER=noc
+FTP_PASSWD=nocchennai
+$bno
+echo -e "\033[32;1m Enter the build no: \033[0m "
+read bno
+echo""
+echo""
+FTP_BUILD_PATH=/gen7.0.1/build_$bno/
+cd /opt/smartoffice/builds/
+  if test -d /opt/smartoffice/builds/build_$bno;
+     then
+        rm -rf build_$bno
+      fi
+mkdir build_$bno
+cd build_$bno
+wget ftp://$FTP_USER:$FTP_PASSWD@$FTP_HOST/${FTP_BUILD_PATH}/* .
+echo ""
+echo ""
+echo "********************************************************************"
+echo "********************************************************************"
+echo "THE PROCCESS HAS BEEN COMPLETED"
+echo -e " \033[31;1m BUILD PATH : \033[0m "
+PWD=`pwd`
+LS=`ls`
+SL=/
+echo $PWD$SL$LS
+echo -e "\033[32m THANK YOU \033[0m "
+echo "********************************************************************"
+echo "********************************************************************"
+
+

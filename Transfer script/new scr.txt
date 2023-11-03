@@ -1,0 +1,91 @@
+!/bin/bash
+#Nagpur PMGMS build Transfer script
+#Author=Sandilyan
+#varriable diclaretion
+$bno
+FTP_HOST=ftp.ezdata.com
+FTP_USER=ecprelease
+FTP_PASSWD=ecprelease
+FTP_BUILD_PATH=/gen7.0.1/build_$bno/
+HOST=172.16.2.19
+USER=noc
+PASS=nocchennai
+#--------------#
+clear
+echo " **************************************************  "
+echo " WELCOME TO THE NAGPUR PMGMS TRANSFER SCRIPT "
+echo " **************************************************  "
+echo""
+
+#Getting build numbet from the user
+
+while read -p "Please enter the build number " bno;
+ do
+   if [[ -z "${bno}" ]]; then   # Checkin for empty vallue
+     echo ""
+     echo " That was empty, do it again! "
+   else
+       if [ "$bno" -eq "$bno" ] 2>/dev/null; # checking for any STRING value
+         then
+             if [ $bno -lt 6400 ] || [ $bno -gt 10000 ] # Checking invalid digits of number(invalid build number for now
+               then
+		   echo ""
+                   echo $bno "is not a valid build number "
+               else
+	           echo ""
+                   echo "FINDING THE BUILD ON FTP "
+                   break
+             fi
+        else
+	    echo ""
+            echo $bno "is not a valid build number "
+      fi
+   fi
+ done
+
+echo ""
+echo""
+
+echo "Creating directory "
+echo ""
+echo ""
+  if test -d /opt/smartoffice/builds;
+     then
+	if test -d /opt/smartoffice/builds/build_$bno
+	  then
+	        rm -rf build_$bno
+ 	  else	       
+		mkdir build_$bno
+		echo ""
+		echo ""
+		echo "LOCAL DIRECTORY CREATED "     
+	  fi
+     else
+	echo ""
+	echo ""
+	echo "CREATING LOCAL DIRECTORY "
+               cd /opt/smartoffice/
+	       mkdir builds
+	       cd builds
+	       mkdir build_$bno
+	echo ""
+	echo ""
+	echo "LOCAL DIRECTORY CREATED "
+ fi
+cd /opt/smartoffice/builds/build_$bno/
+echo "BUILD TRANSFERING TO LOCAL MACHINE"
+wget ftp://$FTP_USER:$FTP_PASSWD@$FTP_HOST/${FTP_BUILD_PATH}/* .
+echo ""
+echo ""
+echo "BUILD TRANSFERED FROM PASADENA FTP "
+echo ""
+echo ""
+echo "BUILD TRANSFERING TO NAGPUR FTP "
+ftp -inv $HOST <<EOF
+user $USER $PASS
+cd gen7.0.1
+mkdir build_$bno
+cd build_$bno
+bin
+put gen-ear-7.0.1-$bno.ear
+bye

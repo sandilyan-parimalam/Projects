@@ -1,0 +1,34 @@
+#####################################
+#Script developed by P.sandilyan
+#maintaning and using by NOC
+####################################
+
+clear
+echo "*******************************************"
+echo "WELCOME TO THE NAGPUR PMGMS TRANSFER SCRIPT"
+echo "*******************************************"
+echo""
+
+
+ $bno
+ read -ep "Enter the build no:" bno
+
+
+
+
+
+#####################################
+#Script developed by P.sandilyan
+#maintaning and using by NOC
+####################################
+
+clear
+echo "*******************************************"
+echo "WELCOME TO THE NAGPUR PMGMS TRANSFER SCRIPT"
+echo "*******************************************"
+echo""
+$bno
+ read -ep "Enter the build no:" bno
+export bno
+# ./transferscript.sh
+ ssh -i $HOME/.ssh/id_dsa 172.16.2.52 `/opt/smartoffice/transferscript/./transferscript.sh $bno`

@@ -1,0 +1,31 @@
+FTP_HOST=172.16.2.19
+FTP_USER=noc
+FTP_PASSWD=nocchennai
+$bno
+echo "Enter the build no again:"
+read bno
+echo""
+echo""
+FTP_BUILD_PATH=/gen7.0.1/build_$bno/
+cd /opt/smartoffice/builds/
+  if test -d /opt/smartoffice/builds/build_$bno;
+     then
+        rm -rf build_$bno
+      fi
+mkdir build_$bno
+cd build_$bno
+wget ftp://$FTP_USER:$FTP_PASSWD@$FTP_HOST/${FTP_BUILD_PATH}/* .
+echo ""
+echo ""
+echo "********************************************************************"
+echo "********************************************************************"
+echo "THE PROCCESS HAS BEEN COMPLETED"
+echo "BUILD PATH :"
+PWD=`pwd`
+LS=`ls`
+SL=/
+echo $PWD$SL$LS
+echo "THANK YOU"
+echo "********************************************************************"
+echo "********************************************************************"
+

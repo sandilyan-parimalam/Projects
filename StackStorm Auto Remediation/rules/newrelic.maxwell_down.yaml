@@ -1,0 +1,26 @@
+---
+name: "newrelic.maxwell_down"
+description: "Maxwell Auto Remediation Rule"
+pack: "st2autoremediation"
+enabled: True
+
+trigger:
+  type: "core.st2.webhook"
+  parameters:
+    url: "newrelic"
+
+criteria:
+  trigger.body.state:
+    pattern: 'CLOSED'
+    type: "neq"
+  trigger.body.trigger:
+    pattern: 'INCIDENT_CLOSED'
+    type: "neq"
+  trigger.body.title:
+    pattern: 'Maxwell is down'
+    type: "contains"
+
+action:
+  ref: st2autoremediation.maxwell_auto_remediation
+  parameters:
+    payload: "{{ trigger }}"

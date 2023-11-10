@@ -1,0 +1,22 @@
+---
+#################################################################################################################################
+#                                                                                                                               #
+#        this playbook cannot be executed manually, this is a helper playbook of solr8-maintenance.yaml, Please run through it   #
+#                                                                                                                               #
+#################################################################################################################################
+
+
+
+ - name: Checking the latest kernal availability after the reboot on {{ server_IP }}({{ server_name }})
+   delegate_to: "{{ server_IP }}"
+   delegate_facts: True
+   shell: rpm -qa kernel | grep -w {{ latestkernal }};rc=0
+   register: serverkernal
+   args:
+     warn: false
+   when: perform == 'reboot' and latestkernal != 'NA' and latestkernal != ''
+
+
+ - include_tasks: prompt_check_kernal.yaml
+   when: perform == 'reboot' and latestkernal != 'NA' and latestkernal != '' and latestkernal != serverkernal.stdout
+

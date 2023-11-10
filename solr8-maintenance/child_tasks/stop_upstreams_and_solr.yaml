@@ -1,0 +1,105 @@
+---
+#################################################################################################################################
+#                                                                                                                               #
+#        this playbook cannot be executed manually, this is a helper playbook of solr8-maintenance.yaml, Please run through it   #
+#                                                                                                                               #
+#################################################################################################################################
+
+
+
+
+
+ - name: Fetching Port number of {{ server_upstream }}
+   shell: curl http://{{ nginxsrv }}{{ api_context }}{{ server_upstream }} | jq | grep name | grep {{ server_IP }} | cut -d ':' -f3 | sed 's#",##g'
+   register: upstream_port_no_op
+   args:
+     warn: false
+   when: '"_update" not in server_upstream'
+
+
+
+ - fail:
+     msg: "ERROR: unable to get the port number for {{ server_upstream }} , Please check"
+   when: upstream_port_no_op == "" and '"_update" not in server_upstream'
+
+ - set_fact:
+     upstream_port_no: "{{ upstream_port_no_op.stdout }}"
+   when: '"_update" not in server_upstream'
+
+
+ - name: Fetching active collection count for {{ upstream_port_no }} on {{ server_IP }}({{ server_name }})
+   shell: curl -s http://{{ server_IP }}:{{ upstream_port_no }}/solr/admin/cores?action=STATUS | grep -o active | wc -l
+   register: active_coll_count_op
+   args:
+     warn: false
+   when: '"_update" not in server_upstream'
+
+
+ - set_fact:
+     active_coll_count: "{{ active_coll_count_op.stdout }}"
+   when: '"_update" not in server_upstream'
+
+
+
+ - set_fact:
+     active_coll_count_tmp: "{{ server_upstream }}-{{ server_IP }}-{{ upstream_port_no }}-{{ active_coll_count }}-{{ server_id }}-end"
+     solr_instance_count: "{{ solr_instance_count | int  + 1 }}"
+   when: '"_update" not in server_upstream'
+
+ - set_fact:
+     active_coll_count_tmp: "{{ server_upstream }}-{{ server_IP }}-{{ upstream_port_no }}-NA-{{ server_id }}-end"
+#     solr_instance_count: "{{ solr_instance_count | int  + 1 }}"
+   when: '"_update" in server_upstream'
+
+
+ - set_fact:
+     active_coll_counts: "{{ active_coll_counts | default([]) + [active_coll_count_tmp] }}"
+     solr_instance: "solr{{ solr_instance_count }}"
+   when: '"_update" not in server_upstream'
+
+ - debug:
+     msg: "{{ upstream_port_no }} has {{ active_coll_count }} active collections"
+   when: '"_update" not in server_upstream'
+
+
+ - name: Requesting NGINX to disable {{ server_IP }}({{ server_name }}) from  {{ server_upstream }}
+   shell: curl -X PATCH -d '{"down":true}' http://{{ nginxsrv }}{{ api_context }}{{ server_upstream }}/servers/{{ server_id }} | jq | grep down | cut -d ':' -f2 | tr -d ' ';sleep 2
+   register: upstream_shutdown_result_op
+   args:
+     warn: false
+
+
+ - include_tasks: prompt_stop_upstream.yaml
+   when: upstream_shutdown_result_op.stdout != "true"
+
+
+ - pause: seconds=10
+
+
+ - name: Stopping {{ solr_instance }} instance listening on {{ upstream_port_no }} and it Disabling from starting up during boot on {{ server_IP }}({{ server_name }})
+   delegate_to: "{{ server_IP }}"
+   delegate_facts: True
+   systemd: name={{ solr_instance }} state=stopped enabled=no
+   when: '"_update" not in server_upstream'
+
+ - pause: seconds=10
+
+
+ - name: Checking {{ solr_instance }} status on {{ server_IP }}({{ server_name }}) 
+   delegate_to: "{{ server_IP }}"
+   delegate_facts: True
+   shell: systemctl status {{ solr_instance }} | grep -s 'Active';rc=0
+   register: solr_stop_result
+   when: '"_update" not in server_upstream'
+   ignore_errors: yes
+   changed_when: false
+
+
+ - debug:
+     msg: "{{ solr_instance }} Stopped, Proceeding further"
+   when: '"dead" in solr_stop_result.stdout | default("NA")  and "_update" not in server_upstream'
+
+   
+ - include_tasks: prompt_stop_solr.yaml
+   when: '"running" in solr_stop_result.stdout | default("NA") and "_update" not in server_upstream' 
+

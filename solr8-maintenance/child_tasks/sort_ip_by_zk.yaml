@@ -1,0 +1,40 @@
+---
+#################################################################################################################################
+#                                                                                                                               #
+#        this playbook cannot be executed manually, this is a helper playbook of solr8-maintenance.yaml, Please run through it   #
+#                                                                                                                               #
+#################################################################################################################################
+
+
+
+ - fail:
+     msg: "ERROR: cluster_ips is not passed. This playbook is not safe to run independently. Please run solr8-maintenance.yaml to use this"
+   when: not zk_srv
+
+ - name: Installing nc package on {{ zk_srv }} if it is not already
+   delegate_to: "{{ zk_srv }}"
+   delegate_facts: True
+   yum: name=nc state=present
+
+ - name: Checking zookeeper role on {{ zk_srv }} to sort the IP
+   delegate_to: "{{ zk_srv }}"
+   delegate_facts: True
+   shell: "echo srvr | nc localhost 2181 | grep Mode | cut -d ':' -f2 | tr -d ' '"
+   register: result
+
+ - set_fact:
+     followers: "{{ followers | default([]) + [zk_srv] }}"
+   when: result.stdout == "follower"
+
+ - set_fact:
+     leaders: "{{ leaders | default([]) + [zk_srv] }}"
+   when: result.stdout == "leader"
+
+ - debug:
+     msg: "{{ zk_srv }} Role is {{ result.stdout }}"
+   when: result.stdout == "leader" or result.stdout == "follower"
+
+ - debug:
+     msg: "zookeeper is down on {{ zk_srv }} or unable  to get the role of it. Marking the role as follower to continue the execution"
+   when: result.stdout == ""
+

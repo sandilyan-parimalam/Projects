@@ -1,0 +1,391 @@
+---
+##########################################################################################
+# All running nodes in the cluster must have the same version of Erlang.
+# Erlang does not need to be upgraded every time that RabitMQ is upgraded.
+# Currently, RabbitMQ packages don't have socat as a dependency, so it's listed explicitly.
+##########################################################################################
+# Packages:
+# https://www.rabbitmq.com/releases/rabbitmq-server/
+# https://github.com/rabbitmq/erlang-rpm/releases/
+#
+########################################################################################################################
+########################################################################################################################
+## USAGE EXAMPLES:
+#
+## Stop rabbitMQ
+## ansible-playbook -i "testcorprq401,"  /etc/ansible/middleware/rabbitmq_maintenance.yml --tags stop
+#
+## Stop and kill if it doesn't stop rabbitMQ
+## ansible-playbook -i "testcorprq401,"  /etc/ansible/middleware/rabbitmq_maintenance.yml --tags kill
+#
+## Start rabbitMQ
+## ansible-playbook -i "testcorprq401,"  /etc/ansible/middleware/rabbitmq_maintenance.yml --tags start
+#
+## Update configs which does the service restart
+## ansible-playbook -i "testcorprq401,"  /etc/ansible/middleware/rabbitmq_maintenance.yml --tags update-config
+#
+## Upgrade the current rabbitmq with package configued in "package_rabbit" and "package_erlang" variables inside the playbook. Check the values before use
+## ansible-playbook -i "testcorprq401,"  /etc/ansible/middleware/rabbitmq_maintenance.yml --tags upgrade
+#
+## Backup mnesia DB
+## ansible-playbook -i "testcorprq401,"  /etc/ansible/middleware/rabbitmq_maintenance.yml --tags backup
+#
+## Backup mnesia DB and notify DevOps Team (will be helpful when scheduling backups)
+## ansible-playbook -i "testcorprq401,"  /etc/ansible/middleware/rabbitmq_maintenance.yml --tags backup,notify-backup-failure
+#
+## List all available backups
+## ansible-playbook -i "testcorprq402," /etc/ansible/middleware/rabbitmq_maintenance.yml --tags list-backups
+#
+## Restore the mnesia DB from latest backup available under the backup path
+## ansible-playbook -i "testcorprq401,"  /etc/ansible/middleware/rabbitmq_maintenance.yml --tags restore
+#
+## Restore the mnesia DB from /var/lib/rabbitmq/mnesia_backup/mnesia_2023-03-15_16-53-46.tgz file
+## ansible-playbook -i "testcorprq401,"  /etc/ansible/middleware/rabbitmq_maintenance.yml --tags restore -e "backup_file="backup_file=/var/lib/rabbitmq/mnesia_backup/mnesia_2023-03-15_16-53-46.tgz"
+#
+## Cleanup 30 days old backup files
+## ansible-playbook -i "testcorprq401,"  /etc/ansible/middleware/rabbitmq_maintenance.yml --tags cleanup
+#
+## Cleanup 60 days old backup files
+## ansible-playbook -i "testcorprq401,"  /etc/ansible/middleware/rabbitmq_maintenance.yml --tags cleanup -e "cleanup_age=60d"
+#
+#########################################################################################################################
+
+
+
+- hosts: all
+  become: true
+  become_method: sudo
+  gather_facts: no
+  vars:
+    rabbit_path: "/etc/rabbitmq"
+    db_path: "/var/lib/rabbitmq/mnesia"
+    db_bkp_path: "/var/lib/rabbitmq/mnesia_backup"
+    db_restore_path: "/var/lib/rabbitmq"
+    config_path: "/etc/rabbitmq/rabbitmq.config"
+    local_package_path: "/etc/ansible/middleware/files/rabbitmq"
+#    package_rabbit: "rabbitmq-server-3.9.4-1.el7.noarch.rpm"
+#    package_erlang: "erlang-23.3.4.7-1.el7.x86_64.rpm"
+    package_rabbit: "rabbitmq-server-3.11.0-1.el8.noarch.rpm"
+    package_erlang: "erlang-25.1-1.el8.x86_64.rpm"
+    config_policy_json: "{{ {'ha-mode':'all','ha-sync-mode':'automatic'} | to_json }}"
+    plugin_path: "/etc/ansible/middleware/files/plugin"
+    plugin_rabbit: "rabbitmq_delayed_message_exchange-3.11.1.ez"
+    target_plugin_path: "/usr/lib/rabbitmq/lib/rabbitmq_server-3.11.0/plugins"
+    all_tags: "stop,kill,start,backup,list-backups,restore,update-config,upgrade,notify-backup-failure,cleanup"
+#    ansible_python_interpreter: /usr/bin/python3
+    ansible_date_time: "{{ lookup('pipe', 'date +%Y-%m-%d_%H-%M-%S') }}"
+    cleanup_age: "30d"
+
+
+
+  tasks:
+
+  - fail:
+      msg: "Error: Please specify the right tag related to the targeted action. available tags are {{ all_tags }}"
+    when: tags is not defined
+
+  - name: "FILE - push rabbitmq-server and erlang to servers"
+    tags: upgrade
+    copy: src={{ item.src }} dest={{ item.dest }} group=users mode=0644
+    with_items:
+      - { src: '{{ local_package_path }}/{{ package_rabbit }}', dest: '/tmp' }
+      - { src: '{{ local_package_path }}/{{ package_erlang }}', dest: '/tmp' }
+
+  - name: "Setting {{ inventory_hostname }} to maintanence mode"
+    tags:
+      - upgrade
+      - config-update
+      - restore
+    shell: rabbitmq-upgrade drain
+    ignore_errors: yes
+
+
+  - name: "FILE - insert ulimits"
+    tags:
+      - upgrade
+      - config-update
+    blockinfile:
+      dest: "/etc/security/limits.conf"
+      marker: "##### {mark} ANSIBLE MANAGED BLOCK #####"
+      insertafter: EOF
+      content: |
+        rabbitmq soft nproc 65535
+        rabbitmq hard nproc 65535
+        rabbitmq soft nofile 65535
+        rabbitmq hard nofile 65535
+
+    # See: https://www.rabbitmq.com/configure.html
+  - name: "FILE - insert config file properties"
+    tags:
+      - upgrade
+      - config-update
+    blockinfile:
+      create: true
+      dest: "{{ config_path }}"
+      marker: "%%%%% {mark} ANSIBLE MANAGED BLOCK %%%%%"
+      insertafter: EOF
+      content: |
+        [
+          {rabbit,
+            [
+              {frame_max, 262144},
+              {mnesia_table_loading_retry_limit, 3},
+              {mnesia_table_loading_retry_timeout, 10000},
+              {cluster_partition_handling, autoheal},
+              {vm_memory_high_watermark, 0.7}
+            ]
+          }
+        ].
+
+  - name: "PROCESS - stop rabbitmq"
+    tags:
+      - upgrade
+      - restore
+      - config-update
+      - stop
+    service:
+      name: rabbitmq-server
+      state: stopped
+    ignore_errors: true
+
+  - name: "PROCESS - kill all processes owned by user 'rabbitmq' or with args (Expect non-0 return codes)"
+    tags:
+      - upgrade
+      - config-update
+      - restore
+      - stop
+      - kill
+    shell: "pkill -u rabbitmq; sleep 2s; pkill -f rabbitmq"
+    args:
+      executable: /bin/bash
+    ignore_errors: true
+
+
+  - name: "Backing up mnesia folder: {{ db_path }}. Expected Backup file: {{ db_bkp_path }}/mnesia_{{ ansible_date_time }}.tgz"
+    tags:
+      - upgrade
+      - config-update
+      - backup
+    archive:
+      path: "{{ db_path }}"
+      dest: "{{ db_bkp_path }}/mnesia_{{ ansible_date_time }}.tgz"
+    delegate_to: "{{ inventory_hostname }}"
+    register: res
+    ignore_errors: yes
+
+  - name: send_notification_on_failure
+    tags:
+      - notify-backup-failure
+    mail:
+      to: "techinfradevops@testcorp.com"
+#      to: "sandilyan.parimalam@testcorp.com"
+      subject: "Scheduled mnesia DB backup failed on {{ inventory_hostname }}"
+      body: "The mnesia db backup task failed on {{ inventory_hostname }}. Backup initiated through svc.testcorpops@lvcops101:/etc/ansible/middleware/rabbitmq_maintenance.yml playbook. Please investigate the issue and take appropriate action."
+    when: res.failed
+
+  - name: Checking Backup
+    fail:
+      msg: "Please fix the backup issue to move further"
+    tags:
+      - upgrade
+      - config-update
+      - backup
+    when: res.failed
+
+
+  - name: "Backing up mnesia folder {{ db_path }} to {{ db_bkp_path }}/backup_created_by_ansible_restore before trying restore"
+    tags:
+      - restore
+    archive:
+      path: "{{ db_path }}"
+      dest: "{{ db_bkp_path }}/backup_created_by_ansible_restore_mnesia_{{ ansible_date_time }}.tgz"
+      exclude_path:
+      - mnesia-backup/
+    delegate_to: "{{ inventory_hostname }}"
+    register: res
+    ignore_errors: yes
+
+  - name: Checking Backup
+    fail:
+      msg: "Please fix the backup issue to move further with the restore"
+    tags:
+      - upgrade
+      - backup
+    when: res.failed
+
+
+  - name: Picking latest backup file for restore
+    tags:
+      - restore
+    shell: "ls -1t {{ db_bkp_path }}/mnesia_*.tgz | head -n 1"
+    register: latest_backup_op
+    delegate_to: "{{ inventory_hostname }}"
+    when: backup_file is undefined
+    ignore_errors: yes
+
+  - set_fact:
+      restore_backup_file: "{{ latest_backup_op.stdout }}"
+    tags:
+      - restore
+    when: backup_file is not defined
+
+  - set_fact:
+      restore_backup_file: "{{ backup_file }}"
+    tags:
+      - restore
+    when: backup_file is defined
+
+
+  - name: no backups there or given as input?
+    tags:
+      - restore
+    fail:
+      msg: "No backup file found to restore from, Please check the backups under {{ db_bkp_path }}"
+    when: restore_backup_file is not defined or restore_backup_file == ""
+
+
+  - name: Checking the backup file {{ restore_backup_file }} for restore
+    tags:
+      - restore
+    shell: "ls {{ restore_backup_file }}"
+    register: op
+    delegate_to: "{{ inventory_hostname }}"
+    ignore_errors: yes
+
+
+  - name: is {{ restore_backup_file }} not not there?
+    tags:
+      - restore
+    fail:
+      msg: "{{ restore_backup_file }} file not found to restore from, Please check the backups under {{ db_bkp_path }}"
+    when: op == ""
+
+
+
+  - name: "Restoring {{ restore_backup_file }} to mnesia DB {{ db_restore_path }}"
+    tags:
+      - restore
+    unarchive:
+      src: "{{ restore_backup_file }}"
+      dest: "{{ db_restore_path }}"
+      remote_src: yes
+    delegate_to: "{{ inventory_hostname }}"
+    ignore_errors: yes
+    register: res
+    failed_when: not res.changed
+
+
+  - name: "looking for backup files"
+    tags:
+      - list-backups
+    find:
+      paths: "{{ db_bkp_path }}"
+      patterns: "mnesia_*.tgz"
+    register: files_to_list
+
+  - name: Listing available backups
+    debug:
+      msg: "{{ files_to_list.files | to_nice_yaml | regex_findall('.*path.*') | map('regex_replace', '^.*:\\s*', '') | list }}"
+    tags:
+      - list-backups
+    when: files_to_list.files | length > 0
+
+  - name: Listing available backups
+    debug:
+      msg: "Error: No Backup files available"
+    tags:
+      - list-backups
+    when: files_to_list.files | length < 0
+
+
+  - name: "looking for backup files older than {{ cleanup_age }} to cleanup"
+    tags:
+      - cleanup
+    find:
+      paths: "{{ db_bkp_path }}"
+      patterns: "mnesia_*.tgz"
+      age: "{{ cleanup_age }}"
+    register: files_to_delete
+
+  - name: "Deleting backup files older than {{ cleanup_age }}"
+    tags:
+      - cleanup
+    file:
+      path: "{{ item.path }}"
+      state: absent
+    with_items: "{{ files_to_delete.files }}"
+    when: item.path is defined
+    register: result
+    no_log: true
+
+  - name: whats deleted?
+    debug:
+      msg: "{{ files_to_delete.files | to_nice_yaml | regex_findall('.*path.*') | map('regex_replace', '^.*:\\s*', '') | list }}"
+    tags:
+      - cleanup
+    when: files_to_delete.files | length > 0
+
+
+  #- name: "PACKAGE - uninstall old rabbitmq packages"
+  #  tags: upgrade
+  #  yum: name={{ item }} update_cache=no state=removed
+  #  with_items:
+  #    - pivotal-rabbitmq-server.noarch
+  #    - erlang.x86_64
+
+
+  - name: "PACKAGE - install packages"
+    tags: upgrade
+    dnf:
+      name:
+        - /tmp/{{ package_rabbit }}
+        - /tmp/{{ package_erlang }}
+        - socat.x86_64
+      state: installed
+      disable_gpg_check: yes
+
+  - name: "FILE - set proper permissions for {{ rabbit_path }}"
+    tags:
+      - upgrade
+    file:
+      path: "{{ rabbit_path }}"
+      owner: rabbitmq
+      group: root
+      mode: 0754
+      recurse: true
+
+  - name: "FILE - push plugin to servers"
+    tags: upgrade
+    copy: src={{ item.src }} dest={{ item.dest }} group=users mode=0644
+    with_items:
+      - { src: '{{ plugin_path }}/{{ plugin_rabbit }}', dest: '{{ target_plugin_path }}' }
+
+  - name: "PROCESS - start rabbitmq"
+    tags:
+      - upgrade
+      - config-update
+      - restore
+      - start
+    service:
+      name: rabbitmq-server
+      state: started
+      enabled: yes
+
+  - name: "Enabling {{ plugin_rabbit }} plugin"
+    shell: rabbitmq-plugins enable --all
+    tags:
+      - upgrade
+      - config-update
+      - restore
+
+  - name: "APP - Set default HA policies and default user 'readonly'"
+    tags:
+      - upgrade
+      - restore
+    shell: |
+      rabbitmqctl set_policy ha_all \"\" '{{ config_policy_json }}'
+      rabbitmqctl add_user readonly \"readonly\"
+      rabbitmqctl set_user_tags readonly monitoring
+      rabbitmqctl set_permissions -p / readonly \".*\" \".*\" \".*\"
+    ignore_errors: true
+

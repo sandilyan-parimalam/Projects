@@ -1,0 +1,62 @@
+conf file has been successfuly updated for CID 120
+Shutting down Tomcat:Shutting down Apache: 
+Tomcat is still running. Hang on a sec...
+Killing Tomcat:
+Checking for a lingering Tomcat...
+Starting Tomcat:Sleep for a wee bit...Starting Apache: 
+ 160  which you mentioned as container id is not present or invalid, unable to locate, please check
+conf file has been successfuly updated for CID 169
+Shutting down Tomcat:Shutting down Apache: 
+Tomcat is still running. Hang on a sec...
+Killing Tomcat:
+Checking for a lingering Tomcat...
+Starting Tomcat:Sleep for a wee bit...Starting Apache: 
+ 174  which you mentioned as container id is not present or invalid, unable to locate, please check
+conf file path  /usr/local/apache2/conf/extra  or name  httpd-ssl.conf  you mentioned not found for 156, please check and re-run
+conf file path  /usr/local/apache2/conf/extra  or name  httpd-ssl.conf  you mentioned not found for 159, please check and re-run
+ 164  which you mentioned as container id is not present or invalid, unable to locate, please check
+ 165  which you mentioned as container id is not present or invalid, unable to locate, please check
+conf file path  /usr/local/apache2/conf/extra  or name  httpd-ssl.conf  you mentioned not found for 166, please check and re-run
+conf file path  /usr/local/apache2/conf/extra  or name  httpd-ssl.conf  you mentioned not found for 167, please check and re-run
+conf file path  /usr/local/apache2/conf/extra  or name  httpd-ssl.conf  you mentioned not found for 129, please check and re-run
+conf file has been successfuly updated for CID 117
+Shutting down Tomcat:Shutting down Apache: 
+Tomcat is still running. Hang on a sec...
+Killing Tomcat:
+Checking for a lingering Tomcat...
+Starting Tomcat:Sleep for a wee bit...Starting Apache: 
+conf file has been successfuly updated for CID 157
+Shutting down Tomcat:Error occurred during initialization of VM
+Could not reserve enough space for object heap
+Shutting down Apache: 
+Tomcat is still running. Hang on a sec...
+Killing Tomcat:
+Checking for a lingering Tomcat...
+Starting Tomcat:Sleep for a wee bit...Starting Apache: 
+conf file has been successfuly updated for CID 171
+Shutting down Tomcat:Shutting down Apache: 
+Tomcat is still running. Hang on a sec...
+Killing Tomcat:
+Checking for a lingering Tomcat...
+Starting Tomcat:Sleep for a wee bit...Starting Apache: 
+conf file has been successfuly updated for CID 115
+Shutting down Tomcat:Shutting down Apache: 
+Tomcat is still running. Hang on a sec...
+Killing Tomcat:
+Checking for a lingering Tomcat...
+Starting Tomcat:Sleep for a wee bit...Starting Apache: 
+conf file has been successfuly updated for CID 140
+Shutting down Tomcat:Shutting down Apache: 
+Tomcat is still running. Hang on a sec...
+Killing Tomcat:
+Checking for a lingering Tomcat...
+Starting Tomcat:Sleep for a wee bit...Starting Apache: 
+conf file has been successfuly updated for CID 162
+Shutting down Tomcat:Shutting down Apache: 
+Tomcat is still running. Hang on a sec...
+Killing Tomcat:
+Checking for a lingering Tomcat...
+Starting Tomcat:Sleep for a wee bit...Starting Apache: 
+ 161  which you mentioned as container id is not present or invalid, unable to locate, please check
+ 176  which you mentioned as container id is not present or invalid, unable to locate, please check
+conf file path  /usr/local/apache2/conf/extra  or name  httpd-ssl.conf  you mentioned not found for 142, please check and re-run

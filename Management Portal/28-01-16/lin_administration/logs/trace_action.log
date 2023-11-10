@@ -1,0 +1,28 @@
+2016-01-28 09:01:07 sandy logging in
+2016-01-28 09:02:25 login failed - username is sandy
+2016-01-28 09:04:20 sandy logging in
+2016-01-28 09:05:10 logged out
+2016-01-28 09:06:42 login failed - username is cscsc and password is scscsc
+2016-01-28 09:06:53 sandy logging in
+2016-01-28 09:07:22 logged out
+2016-01-28 09:09:26 sandy logging in
+2016-01-28 09:09:53 logged out
+2016-01-28 09:10:52 sandy logging in
+2016-01-28 09:11:36 logged out
+2016-01-28 09:12:31 sandy logging in
+2016-01-28 09:12:58 logged out
+2016-01-28 09:14:12 sandy logging in
+2016-01-28 09:14:42 logged out
+2016-01-28 09:15:19 sandy logging in
+2016-01-28 09:15:50 sandy logged out
+2016-01-28 09:21:14 sandy logging in
+2016-01-28 09:21:52 handling a service by executing following command - start apache
+2016-01-28 09:23:58 sandy handling a service by executing following command - stop apache
+2016-01-28 09:27:29 sandy is starting a container - container ID is 900
+2016-01-28 09:47:34 sandy is starting a container - container ID is 900
+2016-01-28 09:48:30 sandy handling a service by executing following command - start apache
+2016-01-28 09:49:31 sandy is deploying a WAR file , check LIN update script log for deployment result - details - container ID:900 , tomcat name:tomcat , FTP Path: public/lin30/v4r1 , WAR Name: lin.war
+2016-01-28 09:49:45 sandy is deploying a WAR file , check LIN update script log for deployment result - details - container ID: , tomcat name: , FTP Path: , WAR Name:
+2016-01-28 09:49:54 sandy is deploying a WAR file , check LIN update script log for deployment result - details - container ID: , tomcat name: , FTP Path: , WAR Name:
+2016-01-28 09:50:10 sandy handling a service by executing following command - stop apache
+2016-01-28 09:52:36 sandy is deploying a WAR file , check LIN update script log for deployment result - details - container ID:900 , tomcat name:tomcat , FTP Path: public/lin30/v4r1 , WAR Name: lin.war

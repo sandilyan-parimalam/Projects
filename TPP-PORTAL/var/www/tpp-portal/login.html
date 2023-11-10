@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<link href="/tpp-portal/css/login_form.css" rel='stylesheet' type='text/css' />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!--webfonts-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text.css'/>
+		<!--//webfonts-->
+</head>
+ 
+<body>
+	<div class="main">
+		<form action="/tpp-portal/php/CheckLogin.php" method="post">
+    		<h1><span>Login</span> </h1>
+  			<div class="inset">
+	  			<p>
+	    		 <label for="username">USER</label>
+   	 			<input type="text" name=username id=username laceholder="" required/>
+				</p>
+  				<p>
+				    <label for="password">PASSWORD</label>
+				    <input type="password" name=password id=password placeholder="" required/>
+  				</p>
+ 			 </div>
+ 	 
+			  <p class="p-container">
+			    <span><a href="http://hsg.mytestorg.com/ldap/">Forgot password ?</a></span>
+			    <input type="submit" value="Login">
+			  </p>
+		</form>
+	</div>  
+   					<div class="copy-right">
+						<p>Copyright © 2016 mytestorg Inc. </p> 
+					</div>
+</body>
+</html>

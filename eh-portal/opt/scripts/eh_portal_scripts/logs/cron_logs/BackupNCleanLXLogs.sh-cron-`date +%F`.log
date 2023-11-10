@@ -1,0 +1,124 @@
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+backup up the logs from asp1m.mytestorghealth.com
+rm: cannot remove `backup/*.html': No such file or directory
+NewReport_2016-04-11_01-28-59.html
+NewReport_2016-04-11_01-33-03.html
+NewReport_2016-04-11_01-34-37.html
+NewReport_2016-04-11_01-37-35.html
+NewReport_2016-04-11_01-38-45.html
+NewReport_2016-04-11_06-24-52.html
+NewReport_2016-04-11_06-26-35.html
+NewReport_2016-04-11_06-29-01.html
+NewReport_2016-04-11_06-42-19.html
+NewReport_2016-04-11_06-44-30.html
+NewReport_2016-04-11_06-44-37.html
+NewReport_2016-04-11_06-46-01.html
+NewReport_2016-04-11_06-46-54.html
+NewReport_2016-04-11_06-52-23.html
+NewReport_2016-04-11_06-53-30.html
+NewReport_2016-04-11_07-29-02.html
+NewReport_2016-04-11_07-35-57.html
+NewReport_2016-04-11_08-12-22.html
+NewReport_2016-04-11_08-23-49.html
+NewReport_2016-04-11_09-57-36.html
+NewReport_2016-04-11_10-42-25.html
+NewReport_2016-04-11_10-47-10.html
+NewReport_2016-04-11_16-08-07.html
+NewReport_2016-04-11_17-25-14.html
+NewReport_2016-04-11_22-18-11.html
+2016-04-11 backup prepared asp1m.mytestorghealth.com
+2016-04-11 Report backup completed for asp1m 
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+backup up the logs from asp2m.mytestorghealth.com
+rm: cannot remove `backup/*.html': No such file or directory
+NewReport_2016-04-11_06-29-04.html
+NewReport_2016-04-11_06-30-23.html
+NewReport_2016-04-11_06-36-19.html
+NewReport_2016-04-11_07-31-21.html
+NewReport_2016-04-11_07-32-13.html
+2016-04-11 backup prepared asp2m.mytestorghealth.com
+2016-04-11 Report backup completed for asp2m 
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+backup up the logs from ncalive.mytestorghealth.com
+rm: cannot remove ‘backup/*.html’: No such file or directory
+NewReport_2016-04-11_05-01-31.html
+NewReport_2016-04-11_16-06-31.html
+2016-04-11 backup prepared ncalive.mytestorghealth.com
+2016-04-11 Report backup completed for ncalivenew 
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+backup up the logs from alicolive.mytestorghealth.com
+rm: cannot remove `backup/*.html': No such file or directory
+tar: *.html: Cannot stat: No such file or directory
+tar: Error exit delayed from previous errors
+2016-04-11 unable to tar files on alicolive.mytestorghealth.com
+2016-04-11 Report backup completed for alicolive 
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+backup up the logs from aiglive.mytestorghealth.com
+rm: cannot remove `backup/*.html': No such file or directory
+NewReport_2016-04-11_11-34-11.html
+NewReport_2016-04-11_11-36-09.html
+2016-04-11 backup prepared aiglive.mytestorghealth.com
+2016-04-11 Report backup completed for aiglive 
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+backup up the logs from ihcuat.mytestorghealth.com
+rm: cannot remove `backup/*.html': No such file or directory
+tar: *.html: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+2016-04-11 unable to tar files on ihcuat.mytestorghealth.com
+2016-04-11 Report backup completed for ihcuat 
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+backup up the logs from asptest1n.mytestorghealth.com
+rm: cannot remove `backup/*.html': No such file or directory
+NewReport_2016-04-11_01-12-05.html
+NewReport_2016-04-11_01-13-05.html
+NewReport_2016-04-11_01-15-06.html
+NewReport_2016-04-11_01-19-08.html
+NewReport_2016-04-11_01-22-13.html
+NewReport_2016-04-11_01-22-26.html
+NewReport_2016-04-11_01-26-50.html
+NewReport_2016-04-11_01-27-05.html
+NewReport_2016-04-11_01-45-23.html
+NewReport_2016-04-11_01-46-20.html
+NewReport_2016-04-11_01-48-08.html
+NewReport_2016-04-11_01-52-21.html
+NewReport_2016-04-11_01-54-04.html
+NewReport_2016-04-11_01-55-26.html
+NewReport_2016-04-11_01-58-45.html
+NewReport_2016-04-11_01-59-54.html
+NewReport_2016-04-11_02-01-01.html
+NewReport_2016-04-11_02-02-46.html
+NewReport_2016-04-11_02-03-41.html
+NewReport_2016-04-11_02-05-12.html
+NewReport_2016-04-11_02-07-33.html
+NewReport_2016-04-11_02-09-25.html
+NewReport_2016-04-11_02-13-38.html
+2016-04-11 backup prepared asptest1n.mytestorghealth.com
+2016-04-11 Report backup completed for asptest1n 
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+backup up the logs from asptest2n.mytestorghealth.com
+rm: cannot remove `backup/*.html': No such file or directory
+tar: *.html: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+2016-04-11 unable to tar files on asptest2n.mytestorghealth.com
+2016-04-11 Report backup completed for asptest2n 
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+backup up the logs from ncatestn.mytestorghealth.com
+rm: cannot remove `backup/*.html': No such file or directory
+tar: *.html: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+2016-04-11 unable to tar files on ncatestn.mytestorghealth.com
+2016-04-11 Report backup completed for ncatestn 
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+backup up the logs from alicotest.mytestorghealth.com
+rm: cannot remove `backup/*.html': No such file or directory
+tar: *.html: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+2016-04-11 unable to tar files on alicotest.mytestorghealth.com
+2016-04-11 Report backup completed for alicotest 
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+backup up the logs from aigtest.mytestorghealth.com
+rm: cannot remove `backup/*.html': No such file or directory
+tar: *.html: Cannot stat: No such file or directory
+tar: Error exit delayed from previous errors
+2016-04-11 unable to tar files on aigtest.mytestorghealth.com
+2016-04-11 Report backup completed for aigtestnew 

@@ -1,0 +1,10 @@
+cd /opt/testinstance/newbuild
+TEST_VAR=$(ls *.jar)
+K=0
+declare -a VAR
+for i in $TEST_VAR
+do 
+VAR[K++]=$i
+done
+ echo ${VAR[@]}
+echo $K

@@ -1,0 +1,106 @@
+---
+#################################################################################################################################
+#                                                                                                                               #
+#        this playbook cannot be executed manually, this is a helper playbook of solr8-maintenance.yaml, Please run through it   #
+#                                                                                                                               #
+#################################################################################################################################
+
+
+
+   - name: Checking for empty input
+     fail:
+       msg: "ERROR: This playbook needs 'env' variable as an input. Example input env variable Format: <datacenter>-<environment>-<clusternumber> Example: 'env=rn-dev-4' or 'env=rn-stg'"
+     when: env == "NA" or env == ""
+
+
+   - set_fact:
+       userinput: "{{ env | lower }}"
+       perform: "{{ perform | lower }}"
+       serverIP: "{{ serverip | lower }}"
+       svc: "{{ service | lower }}"
+       UPstream: "{{ upstream | lower }}"
+
+
+   - set_fact:
+       userinputcount: "{{ userinput | regex_findall('-') | length }}"
+
+
+   - name: validating cluster info
+     vars:
+       userinputcount: "{{ userinput | regex_findall('-') | length }}"
+     fail:
+       msg: "ERROR: Invalid input in 'env' variable. 'env' Input Format: <datacenter>-<environment>-<clusternumber> Example: 'env=rn-dev-4' or 'env=rn-stg'"
+     when: userinputcount != "1" and userinputcount != "2"
+
+
+   - set_fact:
+       datacenter: "{{ userinput.split('-')[0] }}"
+       newenv: "{{ userinput.split('-')[1] }}"
+
+
+   - fail:
+       msg: "ERROR: Invalid Environment name. Please provide dev, qa, stg or prod"
+     when: >
+       newenv != "dev" and
+       newenv != "qa" and
+       newenv != "stg" and
+       newenv != "prod"
+
+   - fail:
+       msg: "ERROR: Invalid Data center name. Please provide either rn or lv"
+     when: >
+       datacenter != "rn" and
+       datacenter != "lv" 
+
+
+   - fail:
+       msg: "ERROR: Invalid 'env' Input. Required input for Stage are datacenter and environment. Please check your input. Example Inputs: 'env=rn-stg'"
+     when: newenv == "stg" and userinputcount != "1"
+
+   - fail:
+       msg: "ERROR: Invalid 'env' Input. Required input for DEV,QA and PROD are datacenter, environment and cluster number. Please check your input. Example Inputs: 'env=rn-dev-4' or 'env=lv-prod-5'"
+     when: newenv != "stg" and userinputcount != "2"
+
+
+   - set_fact:
+       clusterno: "{{ userinput.split('-')[2] }}"
+     when: newenv != "stg"
+
+
+   - fail:
+       msg: "ERROR: Unsupported Cluster Number. Allowed clusters are 2,5 and 6 for production"
+     when: (newenv == "prod") and (clusterno != "2" and clusterno != "5" and clusterno != "6") 
+
+
+
+   - name: "Finding Nginx server info for {{ userinput }}"
+     set_fact:
+       nginxsrv: "{{ vars[userinput.split('-')[0]+'_'+userinput.split('-')[1]+'_srv'] }}"
+
+
+   - fail:
+       msg: "ERROR: unable to find the NGINX server details, Please check your input matches the inventory file"
+     when: nginxsrv is not defined
+
+   - fail:
+       msg: "ERROR: Please provide a valid action as an input to 'perform' variable. Available actions are stop, start, restart or reboot." 
+     when: ( perform != 'stop' ) and (perform != 'start' ) and (perform != 'restart' ) and (perform != 'reboot' )
+
+   - fail:
+       msg: "ERROR: Please provide a valid service as an input. Available options are solr, zookeeper and all"
+     when: ( svc != 'solr' ) and ( svc != 'zookeeper' ) and ( svc != 'all' )
+   
+   - fail:
+       msg: "ERROR: perform=reboot will reboot the server. please specify service=all and upstream=all if you intend to reboot the server"
+     when: ( svc != 'all' or UPstream != 'all' ) and ( perform == 'reboot' )
+
+   - fail:
+       msg: "WARNING: Handling an 'update' upstream will only handle the upstream on Nginx API level and will not handle it's solr instance as it will affect the native solr instance related to it. Please use upstream name without '_update' next time if you are also looking to handle it's native solr instance"
+     when: ( svc == 'solr' ) and ( "_update" in UPstream  )
+     ignore_errors: yes
+
+
+   - fail:
+       msg: "ERROR: Please specify the target upstream name in 'upstream' variable or provide 'all' to handle all upstreams"
+     when: ( svc == 'solr' ) and ( UPstream == 'na' or UPstream == '' )
+

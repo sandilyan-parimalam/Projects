@@ -1,0 +1,40 @@
+clear
+echo -e "\033[36m **************************************************  \033[0m"
+
+echo -e "\033[36m WELCOME TO THE NAGPUR PMGMS TRANSFER SCRIPT \033[0m"
+echo -e "\033[36m **************************************************  \033[0m"
+
+echo""
+
+FTP_HOST=ftp.ezdata.com
+FTP_USER=ecprelease
+FTP_PASSWD=ecprelease
+$bno
+echo -e "\033[32;1m Enter the build no: \033[0m " 
+read bno
+echo""
+echo""
+FTP_BUILD_PATH=/gen7.0.1/build_$bno/
+HOST=172.16.2.19
+USER=noc
+PASS=nocchennai
+cd /opt/smartoffice/builds/
+  if test -d /opt/smartoffice/builds/build_$bno;
+     then
+        rm -rf build_$bno
+      fi
+mkdir build_$bno
+cd build_$bno
+wget ftp://$FTP_USER:$FTP_PASSWD@$FTP_HOST/${FTP_BUILD_PATH}/* .
+
+
+ftp -inv $HOST <<EOF
+user $USER $PASS
+cd gen7.0.1
+mkdir build_$bno
+cd build_$bno
+bin
+put *
+bye
+
+

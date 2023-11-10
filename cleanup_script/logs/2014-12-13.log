@@ -1,0 +1,81 @@
+checking bacula_app configuration..........
+clean up in progress for bacula_app
+cleanable files for bacula_app with ( gz ) are below
+./bacula_app_bkp-2014-12-04.gz
+./bacula_app_bkp-2014-12-02.gz
+./bacula_app_bkp-2014-12-01.gz
+./bacula_app_bkp-2014-12-03.gz
+***********CLEANING UP **************
+**********CLEANED UP!!!!!!!************************
+checking bacula_db configuration..........
+clean up in progress for bacula_db
+ there is no cleanble file for bacula_db with ( gz ) patern
+checking openvz_bkp configuration..........
+clean up in progress for openvz_bkp
+cleanable files for openvz_bkp with ( tgz ) are below
+./vzdump-163-20141129-06:24:12.tgz
+./vzdump-158-20141129-06:17:47.tgz
+./vzdump-157-20141129-06:09:02.tgz
+./vzdump-173-20141129-06:55:36.tgz
+./vzdump-145-20141129-04:44:41.tgz
+./vzdump-164-20141129-06:28:07.tgz
+./vzdump-121-20141129-02:45:09.tgz
+./vzdump-138-20141129-04:00:01.tgz
+./vzdump-130-20141129-03:17:19.tgz
+./vzdump-142-20141129-04:34:55.tgz
+./vzdump-136-20141129-03:45:55.tgz
+./vzdump-168-20141129-06:36:31.tgz
+./vzdump-113-20141129-01:10:08.tgz
+./vzdump-172-20141129-06:51:02.tgz
+./vzdump-127-20141129-03:07:34.tgz
+./vzdump-106-20141129-00:34:46.tgz
+./vzdump-162-20141129-06:21:59.tgz
+./vzdump-132-20141129-03:27:25.tgz
+./vzdump-148-20141129-04:58:09.tgz
+./vzdump-118-20141129-02:28:32.tgz
+./vzdump-165-20141129-06:33:04.tgz
+./vzdump-134-20141129-03:35:42.tgz
+./vzdump-109-20141129-00:50:10.tgz
+./vzdump-117-20141129-02:23:14.tgz
+./vzdump-111-20141129-00:59:10.tgz
+./vzdump-112-20141129-01:04:34.tgz
+./vzdump-147-20141129-04:51:43.tgz
+./vzdump-170-20141129-06:43:11.tgz
+./vzdump-125-20141129-02:59:59.tgz
+./vzdump-137-20141129-03:53:01.tgz
+./vzdump-110-20141129-00:54:45.tgz
+./vzdump-149-20141129-05:02:17.tgz
+./vzdump-124-20141129-02:55:19.tgz
+./vzdump-135-20141129-03:41:24.tgz
+./vzdump-123-20141129-02:50:44.tgz
+./vzdump-126-20141129-03:03:16.tgz
+./vzdump-116-20141129-02:01:24.tgz
+./vzdump-141-20141129-04:29:13.tgz
+./vzdump-139-20141129-04:07:22.tgz
+./vzdump-105-20141129-00:22:03.tgz
+./vzdump-155-20141129-05:55:55.tgz
+./vzdump-171-20141129-06:47:06.tgz
+./vzdump-128-20141129-03:12:13.tgz
+./vzdump-114-20141129-01:14:58.tgz
+./vzdump-140-20141129-04:21:11.tgz
+./vzdump-102-20141129-00:10:06.tgz
+./vzdump-107-20141129-00:41:47.tgz
+./vzdump-101-20141129-00:05:23.tgz
+./vzdump-119-20141129-02:33:38.tgz
+./vzdump-103-20141129-00:14:21.tgz
+./vzdump-153-20141129-05:43:45.tgz
+./vzdump-150-20141129-05:07:35.tgz
+./vzdump-152-20141129-05:31:55.tgz
+./vzdump-104-20141129-00:18:31.tgz
+./vzdump-144-20141129-04:39:25.tgz
+./vzdump-146-20141129-04:48:06.tgz
+./vzdump-133-20141129-03:31:01.tgz
+./vzdump-115-20141129-01:19:18.tgz
+./vzdump-169-20141129-06:39:59.tgz
+./vzdump-151-20141129-05:11:29.tgz
+./vzdump-120-20141129-02:38:18.tgz
+./vzdump-108-20141129-00:46:05.tgz
+./vzdump-131-20141129-03:21:23.tgz
+./vzdump-154-20141129-05:50:58.tgz
+***********CLEANING UP **************
+**********CLEANED UP!!!!!!!************************

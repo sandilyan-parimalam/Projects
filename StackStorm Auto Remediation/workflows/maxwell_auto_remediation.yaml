@@ -1,0 +1,12 @@
+---
+# Action definition metadata
+name: "maxwell_auto_remediation"
+description: "Auto Remediation for Maxwell Transformers"
+runner_type: python-script
+entry_point: maxwell_auto_remediation.py
+enabled: true
+parameters:
+  payload:
+    type: string
+    required: true
+    description: Alert Payload

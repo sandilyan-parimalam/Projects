@@ -1,0 +1,22 @@
+checking bacula_app configuration..........
+clean up in progress for bacula_app
+cleanable files for bacula_app with ( gz ) are below
+./bacula_app_bkp-2014-12-17.gz
+./bacula_app_bkp-2014-12-15.gz
+./bacula_app_bkp-2014-12-16.gz
+./bacula_app_bkp-2014-12-18.gz
+./bacula_app_bkp-2014-12-14.gz
+./bacula_app_bkp-2014-12-13.gz
+./bacula_app_bkp-2014-12-12.gz
+***********CLEANING UP **************
+**********CLEANED UP!!!!!!!************************
+checking bacula_db configuration..........
+clean up in progress for bacula_db
+cleanable files for bacula_db with ( gz ) are below
+./bacula_db_bkp-2014-12-17.gz
+./bacula_db_bkp-2014-12-16.gz
+***********CLEANING UP **************
+**********CLEANED UP!!!!!!!************************
+checking openvz_bkp configuration..........
+clean up in progress for openvz_bkp
+ there is no cleanble file for openvz_bkp with ( tgz ) patern

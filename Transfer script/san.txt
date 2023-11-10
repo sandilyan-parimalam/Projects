@@ -1,0 +1,34 @@
+c=1
+while [ $c -le 5 ]
+do
+	echo "Welcone $c times"
+	(( c++ ))
+done
+
+
+
+
+
+
+$bld
+c=1
+if [$c -eq 1]
+  then
+    read -ep "Enter the build number once agin:" bld
+fi
+
+while [ $c -ne 5 ]
+  do
+    read -ep "Enter the build number once agin:" bld
+      if [ $bld -ne 0 -o $bld -eq 0 2>/dev/null ]
+        then
+	  elseif [$bld -lt 100]
+	    then
+          echo "Finding build on ftp"
+            c=5
+        else
+          echo "sorry not a valid build number"
+      fi
+done
+
+echo $bld

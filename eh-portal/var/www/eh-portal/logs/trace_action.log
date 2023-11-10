@@ -1,0 +1,1311 @@
+2016-02-10 08:00:34 login failed - username is sandy and password is sandy@123
+2016-02-10 08:00:42 sandy logging in
+2016-02-10 09:14:21 login failed - username is sandy and password is sandy@123
+2016-02-10 09:14:31 sandy logging in
+2016-02-11 02:12:15 login failed - username is sandy and password is sandy@123
+2016-02-11 02:12:24 sandy logging in
+2016-02-11 04:31:05 sandy logging in
+2016-02-11 04:45:16 login failed - username is Devendran and password is P@ssw0rd1
+2016-02-11 04:45:38 login failed - username is Devendran and password is
+2016-02-11 04:45:58 login failed - username is Devendran and password is Wellcome007@
+2016-02-11 04:49:38 sandy logged out
+2016-02-11 04:49:50 login failed - username is Devendran and password is Wellcome007@
+2016-02-11 04:50:04 login failed - username is Devendran and password is Password1
+2016-02-11 04:50:12 login failed - username is Devendran and password is Password@1
+2016-02-11 04:53:26 agaffur logging in
+2016-02-11 04:57:20 agaffur logged out
+2016-02-11 04:57:30 schinnadurai logging in
+2016-02-11 04:58:58 schinnadurai logged out
+2016-02-11 05:01:01 devendran logging in
+2016-02-11 05:01:09 devendran logged out
+2016-02-11 05:41:17 sandy logging in
+2016-02-11 06:47:53 sandy handling a service on asp1m by executing following command - lxcomsvr_idalive start
+2016-02-11 06:58:56 sandy handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-02-11 07:00:33 sandy handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-02-11 07:08:11 sandy handling a service on asp1m by executing following command - lxcomsvr_slilive_partiallydown: stop
+2016-02-11 07:10:34 sandy handling a service on asp1m by executing following command - lxcomsvr_slilive_down: stop
+2016-02-11 07:12:13 sandy handling a service on asp1m by executing following command - lxcomsvr_slilive stop
+2016-02-11 07:14:05 sandy handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-02-11 07:16:13 sandy handling a service on asp1m by executing following command - lxcomsvr_slilive restart
+2016-02-11 07:55:09 sandy handling a service on asptest1n by executing following command - lxcomsvr_gitlive restart
+2016-02-12 01:26:17 sandy logging in
+2016-02-12 01:26:55 login failed - username is guest and password is test@111
+2016-02-12 01:27:09 login failed - username is guest and password is test@111
+2016-02-12 01:27:27 login failed - username is psukumaran and password is P@ssw0rd
+2016-02-12 01:29:04 psukumaran logging in
+2016-02-12 01:30:53 psukumaran handling a service on aigtestnew by executing following command - dbcd_aig stop
+2016-02-12 01:31:25 psukumaran handling a service on aigtestnew by executing following command - dbcd_aig start
+2016-02-12 01:34:38 psukumaran handling a service on aigtestnew by executing following command - dbcfs_aig stop
+2016-02-12 01:35:00 psukumaran handling a service on aigtestnew by executing following command - dbcd_aig stop
+2016-02-12 01:35:31 psukumaran handling a service on aigtestnew by executing following command - lxcomsvr_aiglive stop
+2016-02-12 01:38:04 psukumaran handling a service on aigtestnew by executing following command - lxcomsvr_aigliveh stop
+2016-02-12 01:38:34 psukumaran handling a service on aigtestnew by executing following command - socketserver_aig stop
+2016-02-12 01:39:00 psukumaran handling a service on aigtestnew by executing following command - hipaa_aiglive stop
+2016-02-12 03:03:08 handling a service on aigtestnew by executing following command - dbcd_aig start
+2016-02-12 03:03:23 psukumaran logging in
+2016-02-12 03:03:42 psukumaran handling a service on aigtestnew by executing following command - dbcd_aig start
+2016-02-12 03:05:08 psukumaran logged out
+2016-02-12 03:05:29 psukumaran logging in
+2016-02-12 03:05:42 psukumaran handling a service on aigtestnew by executing following command - dbcfs_aig start
+2016-02-12 03:06:30 psukumaran logged out
+2016-02-12 03:07:03 login failed - username is psukumaran and password is P@ss0rd1
+2016-02-12 03:07:11 psukumaran logging in
+2016-02-12 03:07:31 psukumaran handling a service on aigtestnew by executing following command - lxcomsvr_aiglive start
+2016-02-12 03:09:15 psukumaran handling a service on aigtestnew by executing following command - lxcomsvr_aiglive restart
+2016-02-12 03:23:48 psukumaran handling a service on aigtestnew by executing following command - lxcomsvr_aigliveh start
+2016-02-12 03:25:56 psukumaran handling a service on aigtestnew by executing following command - hipaa_aiglive start
+2016-02-12 03:26:29 psukumaran handling a service on aigtestnew by executing following command - socketserver_aig start
+2016-02-12 03:29:46 sandy logging in
+2016-02-12 03:30:54 sandy handling a service on aigtestnew by executing following command - dbcd_aig stop
+2016-02-12 03:31:23 sandy handling a service on aigtestnew by executing following command - dbcd_aig start
+2016-02-12 03:34:23 sandy handling a service on aigtestnew by executing following command - dbcd_aig stop
+2016-02-12 03:34:31 sandy handling a service on aigtestnew by executing following command - dbcd_aig stop
+2016-02-12 03:34:55 sandy handling a service on aigtestnew by executing following command - dbcd_aig start
+2016-02-12 03:40:51 psukumaran logged out
+2016-02-12 03:41:25 sandy handling a service on aigtestnew by executing following command - dbcd_aig stop
+2016-02-12 03:43:01 psukumaran logging in
+2016-02-12 03:43:32 psukumaran logged out
+2016-02-12 05:17:43 handling a service on aigtestnew by executing following command - dbcd_aig stop
+2016-02-12 05:17:50 sandy logged out
+2016-02-12 05:17:52 sandy logging in
+2016-02-12 05:18:09 sandy handling a service on aigtestnew by executing following command - dbcd_aig stop
+2016-02-12 05:23:54 sandy handling a service on aigtestnew by executing following command - dbcd_aig stop
+2016-02-12 05:24:02 sandy handling a service on aigtestnew by executing following command - dbcd_aig stop
+2016-02-12 05:28:23 sandy handling a service on aigtestnew by executing following command - dbcfs_aig stop
+2016-02-12 05:33:53 sandy handling a service on aigtestnew by executing following command - dbcd_aig stop
+2016-02-12 05:34:08 sandy handling a service on aigtestnew by executing following command - dbcd_aig start
+2016-02-12 05:34:59 sandy handling a service on aigtestnew by executing following command - dbcd_aig stop
+2016-02-12 05:35:11 sandy handling a service on aigtestnew by executing following command - dbcd_aig start
+2016-02-12 05:35:41 sandy handling a service on aigtestnew by executing following command - dbcd_aig stop
+2016-02-12 05:35:52 sandy handling a service on aigtestnew by executing following command - dbcd_aig start
+2016-02-12 05:36:05 sandy handling a service on aigtestnew by executing following command - dbcd_aig restart
+2016-02-12 05:36:33 sandy handling a service on aigtestnew by executing following command - dbcd_aig restart
+2016-02-12 05:37:05 sandy handling a service on aigtestnew by executing following command - dbcd_aig restart
+2016-02-12 05:37:40 sandy handling a service on aigtestnew by executing following command - dbcd_aig stop
+2016-02-12 05:37:52 sandy handling a service on aigtestnew by executing following command - dbcd_aig start
+2016-02-12 05:38:57 sandy handling a service on aigtestnew by executing following command - dbcd_aig stop
+2016-02-12 05:39:09 sandy handling a service on aigtestnew by executing following command - dbcd_aig start
+2016-02-12 05:41:13 sandy handling a service on aigtestnew by executing following command - dbcd_aig stop
+2016-02-12 05:41:24 sandy handling a service on aigtestnew by executing following command - dbcd_aig start
+2016-02-12 05:42:10 sandy handling a service on aigtestnew by executing following command - dbcd_aig stop
+2016-02-12 05:42:22 sandy handling a service on aigtestnew by executing following command - dbcd_aig start
+2016-02-12 05:43:22 sandy handling a service on aigtestnew by executing following command - dbcd_aig stop
+2016-02-12 05:43:34 sandy handling a service on aigtestnew by executing following command - dbcd_aig start
+2016-02-12 05:44:37 sandy handling a service on aigtestnew by executing following command - dbcd_aig stop
+2016-02-12 05:44:48 sandy handling a service on aigtestnew by executing following command - dbcd_aig start
+2016-02-12 05:45:42 sandy handling a service on aigtestnew by executing following command - dbcd_aig stop
+2016-02-12 05:45:53 sandy handling a service on aigtestnew by executing following command - dbcd_aig start
+2016-02-12 05:47:36 sandy handling a service on aigtestnew by executing following command - dbcd_aig stop
+2016-02-12 05:47:46 sandy handling a service on aigtestnew by executing following command - dbcd_aig start
+2016-02-12 05:48:38 sandy handling a service on aigtestnew by executing following command - dbcd_aig stop
+2016-02-12 05:48:50 sandy handling a service on aigtestnew by executing following command - dbcd_aig start
+2016-02-12 05:50:12 sandy handling a service on aigtestnew by executing following command - dbcd_aig stop
+2016-02-12 05:50:25 sandy handling a service on aigtestnew by executing following command - dbcd_aig start
+2016-02-12 06:25:33 sandy handling a service on aigtestnew by executing following command - lxcomsvr_aiglive stop
+2016-02-12 06:26:26 sandy handling a service on aigtestnew by executing following command - lxcomsvr_aiglive start
+2016-02-12 06:27:43 sandy handling a service on aigtestnew by executing following command - lxcomsvr_aiglive start
+2016-02-12 06:28:42 sandy handling a service on aigtestnew by executing following command - lxcomsvr_aiglive stop
+2016-02-12 06:29:33 sandy handling a service on aigtestnew by executing following command - lxcomsvr_aiglive start
+2016-02-12 06:56:55 sandy handling a service on aigtestnew by executing following command - lxcomsvr_aiglive stop
+2016-02-12 06:57:47 sandy handling a service on aigtestnew by executing following command - lxcomsvr_aiglive start
+2016-02-12 07:50:49 login failed - username is guest and password is tset@111
+2016-02-12 07:50:59 login failed - username is guest and password is test@111
+2016-02-12 07:51:15 vinodk logging in
+2016-02-12 08:03:20 sandy logging in
+2016-02-12 08:09:41 sandy handling a service on aigtestnew by executing following command - lxcomsvr_aiglive start
+2016-02-12 08:12:36 sandy handling a service on aigtestnew by executing following command - lxcomsvr_aiglive stop
+2016-02-12 08:12:53 sandy handling a service on aigtestnew by executing following command - lxcomsvr_aiglive start
+2016-02-12 08:14:46 sandy handling a service on aigtestnew by executing following command - lxcomsvr_aiglive stop
+2016-02-12 08:15:48 sandy handling a service on aigtestnew by executing following command - lxcomsvr_aiglive start
+2016-02-12 08:17:27 sandy handling a service on aigtestnew by executing following command - dbcd_aig restart
+2016-02-12 08:17:47 sandy handling a service on aigtestnew by executing following command - dbcd_aig stop
+2016-02-12 08:18:01 sandy handling a service on aigtestnew by executing following command - dbcd_aig start
+2016-02-12 08:18:14 sandy handling a service on aigtestnew by executing following command - dbcfs_aig stop
+2016-02-12 08:18:36 sandy handling a service on aigtestnew by executing following command - dbcfs_aig stop
+2016-02-12 08:18:55 sandy handling a service on aigtestnew by executing following command - dbcfs_aig start
+2016-02-12 08:19:18 sandy handling a service on aigtestnew by executing following command - hipaa_aiglive stop
+2016-02-12 08:20:03 sandy handling a service on aigtestnew by executing following command - hipaa_aiglive start
+2016-02-12 08:20:24 sandy handling a service on aigtestnew by executing following command - socketserver_aig stop
+2016-02-12 08:20:59 sandy handling a service on aigtestnew by executing following command - socketserver_aig start
+2016-02-12 08:23:05 sandy logging in
+2016-02-12 08:23:46 sandy handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-02-14 22:37:29 sandy logging in
+2016-02-14 23:18:19 sandy logging in
+2016-02-16 10:00:58 login failed - username is guest and password is test123
+2016-02-16 10:01:09 login failed - username is guest and password is test111
+2016-02-16 10:01:18 login failed - username is guest and password is test111
+2016-02-16 10:02:32 vinoth logging in
+2016-02-16 18:04:06 vinoth logged out
+2016-02-17 02:06:48 sandy logging in
+2016-02-17 02:28:12 sandy handling a service on asptest2n by executing following command - dbcd_pca stop
+2016-02-17 02:31:41 sandy handling a service on asptest2n by executing following command - dbcd_pca start
+2016-02-18 00:29:04 sandy logging in
+2016-02-18 02:23:21 sandy logging in
+2016-02-18 06:11:43 sandy logging in
+2016-02-18 06:30:48 vinodk logging in
+2016-02-18 06:32:28 vinodk handling a service by executing following command - restart apache
+2016-02-18 06:33:33 vinodk handling a service by executing following command - restart apache
+2016-02-18 06:33:53 vinodk handling a service by executing following command - restart apache
+2016-02-18 06:36:49 vinodk handling a service by executing following command - start apache
+2016-02-18 06:48:07 vinodk handling a service by executing following command - restart apache
+2016-02-18 06:51:02 vinodk handling a service by executing following command - restart apache
+2016-02-18 06:52:24 vinodk handling a service by executing following command - restart apache
+2016-02-18 07:36:59 sandy logging in
+2016-02-19 13:03:25 login failed - username is guest and password is test@111
+2016-02-19 15:13:35 vinoth logging in
+2016-02-21 23:49:50 sandy logging in
+2016-02-21 23:57:52 sandy handling a service by executing following command - restart apache
+2016-02-22 00:03:08 sandy handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue restart
+2016-02-22 00:05:14 sandy handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue stop
+2016-02-22 00:05:38 sandy handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue start
+2016-02-22 00:35:56 sandy handling a service on ncatestn by executing following command - socketserver_nca start
+2016-02-22 01:14:54 vinodk logging in
+2016-02-22 01:15:09 msundaram logging in
+2016-02-22 01:16:08 vinodk handling a service by executing following command - start apache
+2016-02-22 01:16:47 vinodk handling a service by executing following command - start apache
+2016-02-22 01:17:03 vinodk handling a service by executing following command - start apache
+2016-02-22 01:18:41 vinodk handling a service by executing following command - start keepalive
+2016-02-22 01:18:55 vinodk handling a service by executing following command - start keepalive
+2016-02-22 01:19:53 vinodk handling a service by executing following command - start keepalive
+2016-02-22 01:20:30 vinodk handling a service by executing following command - start keepalive
+2016-02-22 01:31:42 msundaram handling a service by executing following command - start keepalivetest1
+2016-02-22 01:32:09 msundaram handling a service by executing following command - start tomcat_test1
+2016-02-22 01:39:57 vinodk is starting a container - container ID is 187
+2016-02-22 01:42:20 vinodk handling a service by executing following command - start keepalivetest1
+2016-02-22 01:42:32 vinodk handling a service by executing following command - start tomcat_test1
+2016-02-22 01:42:45 vinodk handling a service by executing following command - start tomcat_test1
+2016-02-22 01:44:01 vinodk handling a service by executing following command - start test_lin1
+2016-02-22 01:48:08 vinodk is starting a container - container ID is 187
+2016-02-22 01:48:54 vinodk handling a service by executing following command - start apache
+2016-02-22 01:49:23 vinodk handling a service by executing following command - start keepalive
+2016-02-22 02:25:23 vinodk handling a service by executing following command - start apache
+2016-02-22 02:32:39 vinodk handling a service by executing following command - start apache
+2016-02-22 02:46:46 handling a service by executing following command - start tomcat_test1
+2016-02-22 02:47:00 sandy logging in
+2016-02-22 02:47:48 sandy handling a service by executing following command - start tomcat_test1
+2016-02-22 02:50:02 sandy handling a service by executing following command - start keepalivetest1
+2016-02-22 02:57:24 sandy handling a service by executing following command - start tomcat_test
+2016-02-22 04:27:59 sandy logging in
+2016-02-22 05:36:13 sandy logging in
+2016-02-22 05:36:55 sandy handling a service by executing following command - start apache
+2016-02-22 05:42:02 sandy logging in
+2016-02-22 05:42:42 sandy handling a service by executing following command - restart apache
+2016-02-22 06:10:47 login failed - username is vinodk and password is Xsw2#edc
+2016-02-22 06:10:55 vinodk logging in
+2016-02-22 06:11:20 vinodk handling a service on ncatestn by executing following command - dbcfs_nca start
+2016-02-22 06:11:55 vinodk handling a service on ncatestn by executing following command - socketserver_nca start
+2016-02-22 06:12:08 vinodk handling a service on ncatestn by executing following command - socketserver_nca start
+2016-02-22 06:12:43 vinodk handling a service on ncatestn by executing following command - dbcd_nca restart
+2016-02-22 06:13:14 vinodk handling a service on ncatestn by executing following command - dbcd_nca stop
+2016-02-22 06:13:28 vinodk handling a service on ncatestn by executing following command - dbcfs_nca stop
+2016-02-22 06:13:43 vinodk handling a service on ncatestn by executing following command - dbcfs_nca stop
+2016-02-22 06:14:10 vinodk handling a service on ncatestn by executing following command - hipaa_ncav4l stop
+2016-02-22 06:15:22 vinodk handling a service on ncatestn by executing following command - hipaa_ncav4u stop
+2016-02-22 06:16:11 vinodk handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue stop
+2016-02-22 06:16:38 vinodk handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1live stop
+2016-02-22 06:17:06 vinodk handling a service on ncatestn by executing following command - socketserver_nca stop
+2016-02-22 06:17:49 vinodk handling a service on ncatestn by executing following command - dbcd_nca start
+2016-02-22 06:18:03 vinodk handling a service on ncatestn by executing following command - dbcfs_nca start
+2016-02-22 06:18:33 vinodk handling a service on ncatestn by executing following command - hipaa_ncav4l start
+2016-02-22 06:18:50 vinodk handling a service on ncatestn by executing following command - hipaa_ncav4u start
+2016-02-22 06:19:04 vinodk handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue start
+2016-02-22 06:19:48 vinodk handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1live start
+2016-02-22 06:20:00 vinodk handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1live start
+2016-02-22 06:20:34 vinodk handling a service on ncatestn by executing following command - socketserver_nca start
+2016-02-22 06:40:43 handling a service by executing following command - stop keepalive
+2016-02-22 06:41:12 sandy logging in
+2016-02-22 06:42:01 sandy handling a service by executing following command - stop keepalive
+2016-02-22 06:45:36 sandy handling a service by executing following command - start keepalive
+2016-02-22 07:59:01 login failed - username is vinodk and password is Xsw2#edc
+2016-02-22 07:59:13 vinodk logging in
+2016-02-22 08:00:05 vinodk handling a service by executing following command - start apache
+2016-02-23 09:30:54 login failed - username is vinodk and password is Xsw2#edc
+2016-02-23 09:31:42 vinodk logging in
+2016-02-23 09:37:08 vinodk handling a service by executing following command - start apache
+2016-02-23 09:39:54 vinodk handling a service by executing following command - restart apache
+2016-02-23 10:00:49 vinodk handling a service on asp2m by executing following command - lxcomsvr_alilive start
+2016-02-24 05:25:38 msundaram logging in
+2016-02-24 05:26:04 msundaram logging in
+2016-02-24 07:06:18 sandy logging in
+2016-02-24 08:13:54 sandy logged out
+2016-02-24 08:14:00 sandy logging in
+2016-02-24 08:17:37 sandy logging in
+2016-02-24 08:20:52 sandy logged out
+2016-02-24 08:24:51 vinodk logging in
+2016-02-24 08:43:36 sandy logging in
+2016-02-24 08:47:55 sandy logging in
+2016-02-24 08:50:16 login failed - username is psukumaran and password is Cde3
+2016-02-24 08:50:55 login failed - username is psukumaran and password is P2ssw0rd1
+2016-02-24 08:51:48 root logging in
+2016-02-24 08:59:15 root logged out
+2016-02-24 08:59:37 psukumaran logging in
+2016-02-24 09:00:02 psukumaran logged out
+2016-02-25 02:05:38 sandy logging in
+2016-02-25 03:18:30 login failed - username is vinodk and password is Xsw2#edc
+2016-02-25 03:18:39 vinodk logging in
+2016-02-25 03:22:15 vinodk handling a service by executing following command - restart apache
+2016-02-25 03:23:40 vinodk handling a service by executing following command - restart apache
+2016-02-25 03:24:56 vinodk handling a service by executing following command - restart apache
+2016-02-25 03:27:59 vinodk handling a service by executing following command - restart apache
+2016-02-25 03:30:29 vinodk handling a service by executing following command - restart apache
+2016-02-25 03:32:13 vinodk handling a service by executing following command - restart apache
+2016-02-25 03:35:05 vinodk handling a service by executing following command - restart apache
+2016-02-25 03:36:39 vinodk handling a service by executing following command - restart apache
+2016-02-25 03:38:35 vinodk handling a service by executing following command - restart apache
+2016-02-25 03:40:28 vinodk handling a service by executing following command - restart apache
+2016-02-25 03:42:55 vinodk handling a service by executing following command - restart apache
+2016-02-25 03:44:11 vinodk handling a service by executing following command - restart apache
+2016-02-25 03:45:33 vinodk handling a service by executing following command - restart apache
+2016-02-25 03:47:28 vinodk handling a service by executing following command - restart apache
+2016-02-25 05:43:31 root logging in
+2016-02-25 07:55:45 sandy logging in
+2016-02-25 08:51:47 sandy logging in
+2016-02-25 14:21:26 maxb logging in
+2016-02-26 01:59:50 vinodk logging in
+2016-02-26 02:03:03 login failed - username is Selvam.Ramamurthy and password is Ws7#s4X6p
+2016-02-26 02:03:17 sramamurthy logging in
+2016-02-26 02:03:46 vinodk handling a service on asptest1n by executing following command - hipaa_amwlive restart
+2016-02-26 02:04:30 vinodk handling a service on asptest1n by executing following command - lxcomsvr_amwlive restart
+2016-02-26 02:06:26 vinodk handling a service on asptest1n by executing following command - lxcomsvr_aomlive restart
+2016-02-26 02:07:55 vinodk handling a service on asptest1n by executing following command - lxcomsvr_applive restart
+2016-02-26 02:09:31 vinodk handling a service on asptest1n by executing following command - lxcomsvr_arclive restart
+2016-02-26 02:10:55 vinodk handling a service on asptest1n by executing following command - lxcomsvr_asilive restart
+2016-02-26 02:13:19 vinodk handling a service on asptest1n by executing following command - lxcomsvr_bcilive restart
+2016-02-26 02:16:36 vinodk handling a service on asptest1n by executing following command - lxcomsvr_bevlive restart
+2016-02-26 02:19:36 sandy logging in
+2016-02-26 02:22:03 vinodk handling a service on asptest1n by executing following command - lxcomsvr_bmslive restart
+2016-02-26 02:22:23 sandy handling a service on asptest2n by executing following command - dbcd_mba stop
+2016-02-26 02:25:00 vinodk handling a service on asptest1n by executing following command - lxcomsvr_cailive restart
+2016-02-26 02:26:48 vinodk handling a service on asptest1n by executing following command - lxcomsvr_cbrbba restart
+2016-02-26 02:27:44 vinodk handling a service on asptest1n by executing following command - lxcomsvr_cbrblue restart
+2016-02-26 02:29:10 vinodk handling a service on asptest1n by executing following command - lxcomsvr_cbrebpa restart
+2016-02-26 02:30:31 vinodk handling a service on asptest1n by executing following command - lxcomsvr_cbrlive restart
+2016-02-26 02:31:56 vinodk handling a service on asptest1n by executing following command - lxcomsvr_cbrlive2 restart
+2016-02-26 02:32:57 vinodk handling a service on asptest1n by executing following command - lxcomsvr_clflive restart
+2016-02-26 02:34:33 vinodk handling a service on asptest1n by executing following command - lxcomsvr_cwblive restart
+2016-02-26 02:35:41 vinodk handling a service on asptest1n by executing following command - lxcomsvr_gaslive restart
+2016-02-26 02:36:24 tkuppuswamy logging in
+2016-02-26 02:38:15 vinodk handling a service on asptest1n by executing following command - lxcomsvr_gitlive restart
+2016-02-26 02:39:27 vinodk handling a service on asptest1n by executing following command - lxcomsvr_hdmlive restart
+2016-02-26 02:40:16 tkuppuswamy logged out
+2016-02-26 02:40:21 tkuppuswamy logged out
+2016-02-26 02:41:13 vinodk handling a service on asptest1n by executing following command - lxcomsvr_hsglive restart
+2016-02-26 02:43:07 vinodk handling a service on asptest1n by executing following command - lxcomsvr_idalive restart
+2016-02-26 02:46:08 sandy handling a service on asptest2n by executing following command - dbcd_mba start
+2016-02-26 02:46:18 vinodk handling a service on asptest1n by executing following command - lxcomsvr_mbalive restart
+2016-02-26 02:47:11 sandy handling a service on asp1m by executing following command - dbcd_adp stop
+2016-02-26 02:48:49 sandy handling a service on asptest2n by executing following command - lxcomsvr_mbalive start
+2016-02-26 02:49:44 vinodk handling a service on asptest1n by executing following command - lxcomsvr_naalive restart
+2016-02-26 02:50:18 vinodk handling a service by executing following command - restart apache
+2016-02-26 02:51:22 vinodk handling a service on asptest1n by executing following command - lxcomsvr_naalive restart
+2016-02-26 02:52:52 vinodk handling a service by executing following command - restart apache
+2016-02-26 02:54:27 vinodk handling a service on asptest1n by executing following command - lxcomsvr_paslive restart
+2016-02-26 02:55:59 vinodk handling a service on asptest1n by executing following command - lxcomsvr_rhalive restart
+2016-02-26 02:57:20 vinodk handling a service on asptest1n by executing following command - lxcomsvr_slilive restart
+2016-02-26 03:01:56 vinodk handling a service on asptest1n by executing following command - lxcomsvr_tdalive restart
+2016-02-26 03:03:43 vinodk handling a service on asptest1n by executing following command - lxcomsvr_tfclive restart
+2016-02-26 03:05:37 vinodk handling a service on asptest1n by executing following command - lxcomsvr_tlclive restart
+2016-02-26 03:06:36 vinodk handling a service on asptest1n by executing following command - lxcomsvr_tpclive restart
+2016-02-26 03:07:36 vinodk handling a service on asptest1n by executing following command - lxcomsvr_txalive restart
+2016-02-26 03:09:13 vinodk handling a service on asptest1n by executing following command - lxcomsvr_wablive restart
+2016-02-26 03:10:16 vinodk handling a service on asptest1n by executing following command - lxcomsvr_wjslive restart
+2016-02-26 03:12:41 vinodk handling a service on asptest1n by executing following command - lxcomsvr_mbalive restart
+2016-02-26 03:14:25 vinodk handling a service on asptest1n by executing following command - lxcomsvr_rhalive restart
+2016-02-26 03:15:51 vinodk handling a service on asptest1n by executing following command - lxcomsvr_slilive restart
+2016-02-26 03:17:22 vinodk handling a service on asptest1n by executing following command - lxcomsvr_gaslive restart
+2016-02-26 03:21:13 vinodk handling a service by executing following command - restart apache
+2016-02-26 03:22:31 vinodk handling a service by executing following command - restart apache
+2016-02-26 03:24:25 vinodk handling a service by executing following command - restart apache
+2016-02-26 03:28:29 tkuppuswamy logging in
+2016-02-26 03:36:28 vinodk handling a service by executing following command - start apache
+2016-02-26 03:36:44 tkuppuswamy logging in
+2016-02-26 03:36:49 login failed - username is sramamurthy and password is Vei@004
+2016-02-26 03:36:59 sramamurthy logging in
+2016-02-26 03:37:42 tkuppuswamy handling a service on asp1m by executing following command - dbcd_adp start
+2016-02-26 03:40:28 sramamurthy logging in
+2016-02-26 03:41:57 vinodk handling a service by executing following command - start apache
+2016-02-26 04:26:52 tkuppuswamy logged out
+2016-02-26 05:23:21 root logging in
+2016-02-26 05:23:25 root logged out
+2016-02-26 05:23:32 vinodk logged out
+2016-02-26 05:23:41 vinodk logging in
+2016-02-26 05:26:12 root logging in
+2016-02-26 05:26:15 root logged out
+2016-02-26 05:26:28 vinodk handling a service by executing following command - restart apache
+2016-02-26 05:26:48 root logging in
+2016-02-26 05:26:50 root logged out
+2016-02-26 05:27:23 root logging in
+2016-02-26 05:27:25 root logged out
+2016-02-26 05:27:46 root logging in
+2016-02-26 05:28:08 root logging in
+2016-02-26 05:29:32 root logged out
+2016-02-26 05:29:38 login failed - username is fssfs and password is fsfsf
+2016-02-26 05:30:11 root logging in
+2016-02-26 05:30:14 root logged out
+2016-02-26 05:30:51 vinodk handling a service by executing following command - restart apache
+2016-02-26 05:31:00 root logging in
+2016-02-26 05:31:02 root logged out
+2016-02-26 05:32:08 login failed - username is root and password is sysc0nf
+2016-02-26 05:34:21 login failed - username is root and password is sysc0nf
+2016-02-26 05:34:40 sandy logging in
+2016-02-26 05:34:42 sandy logged out
+2016-02-26 05:34:46 login failed - username is root and password is sysc0nf
+2016-02-26 05:35:06 login failed - username is root and password is sysc0nf
+2016-02-26 05:35:25 login failed - username is root and password is sysc0nf
+2016-02-26 05:35:40 login failed - username is root and password is sysc0nf
+2016-02-26 05:37:30 vinodk handling a service by executing following command - restart apache
+2016-02-26 05:38:29 login failed - username is root and password is sysc0nf
+2016-02-26 05:39:15 login failed - username is root and password is sysc0nf
+2016-02-26 05:42:34 login failed - username is root and password is sysc0nf
+2016-02-26 05:43:12 login failed - username is root and password is sysc0nf
+2016-02-26 05:43:34 login failed - username is root and password is sysc0nf
+2016-02-26 05:43:44 login failed - username is root and password is sysc0nf
+2016-02-26 05:43:53 login failed - username is root and password is sysc0nf
+2016-02-26 05:46:02 vinodk handling a service by executing following command - restart apache
+2016-02-26 05:47:46 vinodk handling a service by executing following command - restart apache
+2016-02-26 05:49:28 vinodk handling a service by executing following command - restart apache
+2016-02-26 05:50:55 vinodk handling a service by executing following command - restart apache
+2016-02-26 05:52:31 vinodk handling a service by executing following command - restart apache
+2016-02-26 05:54:45 vinodk handling a service by executing following command - restart apache
+2016-02-26 05:58:52 vinodk handling a service by executing following command - restart apache
+2016-02-26 06:00:40 vinodk handling a service by executing following command - restart apache
+2016-02-26 06:03:26 vinodk handling a service by executing following command - restart apache
+2016-02-26 06:04:49 vinodk handling a service by executing following command - restart apache
+2016-02-26 06:06:20 vinodk handling a service by executing following command - restart apache
+2016-02-26 06:07:52 vinodk handling a service by executing following command - restart apache
+2016-02-26 06:11:05 login failed - username is root and password is sysc0nf
+2016-02-26 06:11:55 psukumaran logging in
+2016-02-26 07:07:53 vinodk logged out
+2016-02-26 07:08:01 login failed - username is vinodk and password is Xsw2#edc
+2016-02-26 07:08:07 vinodk logging in
+2016-02-28 22:19:15 login failed - username is ssangaraju and password is mytestorg@123
+2016-02-28 22:19:33 login failed - username is root and password is sysc0nf
+2016-02-28 22:20:00 sramamurthy logging in
+2016-02-28 22:21:27 sramamurthy logging in
+2016-02-29 00:03:47 sandy logging in
+2016-02-29 00:07:06 sandy handling a service by executing following command - start apache
+2016-02-29 00:53:08 sandy handling a service by executing following command - start apache
+2016-02-29 00:58:27 sandy handling a service on asptest2n by executing following command - lxcomsvr_cnflivet start
+2016-02-29 01:00:10 sandy handling a service on asptest2n by executing following command - lxcomsvr_cnflivet start
+2016-02-29 01:06:19 sandy handling a service on ihcuat by executing following command - lxcomsvr_cnflive restart
+2016-02-29 02:07:05 sandy logging in
+2016-02-29 02:07:30 sandy handling a service on alicotest by executing following command - lxcomsvr_tcn stop
+2016-02-29 02:07:45 sandy handling a service on alicotest by executing following command - lxcomsvr_tcn start
+2016-02-29 02:08:08 sandy handling a service on alicotest by executing following command - lxcomsvr_tcn stop
+2016-02-29 02:08:26 sandy handling a service on alicotest by executing following command - lxcomsvr_tcn start
+2016-02-29 02:08:41 sandy handling a service on alicotest by executing following command - lxcomsvr_tcn stop
+2016-02-29 02:08:54 sandy handling a service on alicotest by executing following command - lxcomsvr_tcn start
+2016-02-29 02:09:13 sandy handling a service on alicotest by executing following command - lxcomsvr_tcn stop
+2016-02-29 02:09:30 sandy handling a service on alicotest by executing following command - lxcomsvr_tcn start
+2016-02-29 02:09:54 sandy handling a service on alicotest by executing following command - lxcomsvr_tcn stop
+2016-02-29 02:09:59 sandy handling a service on alicotest by executing following command - lxcomsvr_tcn stop
+2016-02-29 02:10:12 sandy handling a service on alicotest by executing following command - lxcomsvr_tcn start
+2016-02-29 02:10:49 sandy handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1live stop
+2016-02-29 02:12:22 sandy handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1live start
+2016-02-29 02:13:29 sandy handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1live stop
+2016-02-29 02:13:46 sandy handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1live start
+2016-02-29 04:00:47 sandy logging in
+2016-02-29 04:02:25 sandy handling a service on alicotest by executing following command - lxcomsvr_tcn stop
+2016-02-29 04:02:42 sandy handling a service on alicotest by executing following command - lxcomsvr_tcn restart
+2016-02-29 04:04:09 sandy handling a service on ihcuat by executing following command - lxcomsvr_ihclive stop
+2016-02-29 04:04:20 sandy handling a service on ihcuat by executing following command - lxcomsvr_ihclive restart
+2016-02-29 04:09:57 sandy handling a service on ihcuat by executing following command - lxcomsvr_ihclive stop
+2016-02-29 04:10:00 sandy handling a service on ihcuat by executing following command - lxcomsvr_ihclive stop
+2016-02-29 04:10:07 sandy handling a service on ihcuat by executing following command - lxcomsvr_ihclive stop
+2016-02-29 04:10:16 sandy handling a service on ihcuat by executing following command - lxcomsvr_ihclive restart
+2016-02-29 04:10:43 sandy handling a service on ihcuat by executing following command - lxcomsvr_ihclive restart
+2016-02-29 04:11:07 sandy handling a service on ihcuat by executing following command - lxcomsvr_ihclive stop
+2016-02-29 04:11:11 sandy handling a service on ihcuat by executing following command - lxcomsvr_ihclive stop
+2016-02-29 04:11:19 sandy handling a service on ihcuat by executing following command - lxcomsvr_ihclive restart
+2016-02-29 04:12:47 sandy handling a service on ihcuat by executing following command - lxcomsvr_ihclive stop
+2016-02-29 04:12:51 sandy handling a service on ihcuat by executing following command - lxcomsvr_ihclive stop
+2016-02-29 04:13:07 sandy handling a service on ihcuat by executing following command - lxcomsvr_ihclive start
+2016-02-29 04:13:57 sandy handling a service on ihcuat by executing following command - lxcomsvr_ihclive stop
+2016-02-29 04:14:09 sandy handling a service on ihcuat by executing following command - lxcomsvr_ihclive start
+2016-02-29 04:14:52 sandy handling a service on ihcuat by executing following command - lxcomsvr_ihclive stop
+2016-02-29 04:15:13 sandy handling a service on ihcuat by executing following command - lxcomsvr_ihclive start
+2016-02-29 04:20:48 sandy handling a service on ihcuat by executing following command - lxcomsvr_ihclive stop
+2016-02-29 04:20:55 sandy handling a service on ihcuat by executing following command - lxcomsvr_ihclive stop
+2016-02-29 04:21:13 sandy handling a service on ihcuat by executing following command - lxcomsvr_ihclive stop
+2016-02-29 04:21:29 sandy handling a service on ihcuat by executing following command - lxcomsvr_ihclive restart
+2016-02-29 04:24:56 sandy handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1live stop
+2016-02-29 04:25:05 sandy handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue stop
+2016-02-29 04:25:20 sandy handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue start
+2016-02-29 04:25:29 sandy handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1live start
+2016-02-29 04:26:24 sandy handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue stop
+2016-02-29 04:26:29 sandy handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue restart
+2016-02-29 04:27:01 sandy handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue restart
+2016-02-29 04:27:14 sandy handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue restart
+2016-02-29 04:27:40 sandy handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1live restart
+2016-02-29 04:27:52 sandy handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1live restart
+2016-02-29 04:29:02 sandy handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue restart
+2016-02-29 04:29:18 sandy handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue restart
+2016-02-29 04:33:02 sandy handling a service on asptest2n by executing following command - lxcomsvr_alilive restart
+2016-02-29 04:33:28 sandy handling a service on asptest2n by executing following command - lxcomsvr_alilive restart
+2016-02-29 04:33:40 vinodk logging in
+2016-02-29 04:35:03 sandy handling a service on asptest2n by executing following command - lxcomsvr_alilive restart
+2016-02-29 04:35:04 vinodk handling a service on aigtestnew by executing following command - lxcomsvr_aigliveh start
+2016-02-29 04:36:26 vinodk logging in
+2016-02-29 04:39:48 vinodk handling a service by executing following command - restart apache
+2016-02-29 04:41:17 vinodk handling a service by executing following command - restart apache
+2016-02-29 04:44:28 vinodk handling a service by executing following command - restart apache
+2016-02-29 04:44:46 vinodk handling a service by executing following command - restart apache
+2016-02-29 05:11:18 agaffur logging in
+2016-02-29 13:09:03 sramamurthy logged out
+2016-02-29 13:17:28 tkuppuswamy logging in
+2016-02-29 13:21:39 tkuppuswamy logged out
+2016-02-29 13:23:11 tkuppuswamy logging in
+2016-02-29 13:30:00 tkuppuswamy logged out
+2016-02-29 14:29:29 tkuppuswamy logging in
+2016-02-29 14:31:26 tkuppuswamy logged out
+2016-02-29 14:31:50 tkuppuswamy logged out
+2016-03-01 02:52:43 vinodk logging in
+2016-03-01 02:53:25 vinodk handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue stop
+2016-03-01 02:54:04 vinodk handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue start
+2016-03-01 02:56:35 vinodk handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue restart
+2016-03-01 02:58:41 vinodk handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue restart
+2016-03-01 03:00:33 vinodk handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue stop
+2016-03-01 03:00:48 vinodk handling a service on ncatestn by executing following command - hipaa_ncav4u stop
+2016-03-01 03:01:25 vinodk handling a service on ncatestn by executing following command - dbcfs_nca stop
+2016-03-01 03:01:38 vinodk handling a service on ncatestn by executing following command - dbcfs_nca stop
+2016-03-01 03:02:13 vinodk handling a service on ncatestn by executing following command - dbcfs_nca start
+2016-03-01 03:02:28 vinodk handling a service on ncatestn by executing following command - hipaa_ncav4u start
+2016-03-01 03:02:39 vinodk handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue start
+2016-03-01 03:07:20 vinodk handling a service on ncatestn by executing following command - dbcd_nca stop
+2016-03-01 03:07:30 vinodk handling a service on ncatestn by executing following command - dbcfs_nca stop
+2016-03-01 03:07:41 vinodk handling a service on ncatestn by executing following command - dbcfs_nca stop
+2016-03-01 03:07:54 vinodk handling a service on ncatestn by executing following command - hipaa_ncav4u stop
+2016-03-01 03:08:37 vinodk handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue stop
+2016-03-01 03:09:03 vinodk handling a service on ncatestn by executing following command - socketserver_nca stop
+2016-03-01 03:09:30 vinodk handling a service on ncatestn by executing following command - socketserver_nca stop
+2016-03-01 03:09:59 vinodk handling a service on ncatestn by executing following command - dbcd_nca start
+2016-03-01 03:10:11 vinodk handling a service on ncatestn by executing following command - dbcfs_nca start
+2016-03-01 03:10:31 vinodk handling a service on ncatestn by executing following command - hipaa_ncav4u start
+2016-03-01 03:10:48 vinodk handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue start
+2016-03-01 03:11:09 vinodk handling a service on ncatestn by executing following command - socketserver_nca start
+2016-03-01 03:36:51 vinodk handling a service by executing following command - stop apache
+2016-03-01 03:38:03 vinodk handling a service by executing following command - start apache
+2016-03-01 04:49:46 vinodk logging in
+2016-03-01 05:27:27 psukumaran logging in
+2016-03-01 06:15:07 vinodk logging in
+2016-03-01 06:36:26 vinodk handling a service on asptest2n by executing following command - lxcomsvr_slilive restart
+2016-03-01 06:37:27 vinodk handling a service on ncalivenew by executing following command - lxcomsvr_ncalive start
+2016-03-01 06:37:48 vinodk handling a service on ncalivenew by executing following command - lxcomsvr_ncalive start
+2016-03-01 08:59:12 vinodk logging in
+2016-03-01 09:10:22 vinodk handling a service on ncatestn by executing following command - dbcfs_nca stop
+2016-03-01 09:10:34 vinodk handling a service on ncatestn by executing following command - dbcfs_nca stop
+2016-03-01 09:10:46 vinodk handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue stop
+2016-03-01 09:11:00 vinodk handling a service on ncatestn by executing following command - dbcfs_nca start
+2016-03-01 09:11:13 vinodk handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue start
+2016-03-01 09:33:10 vinodk handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue restart
+2016-03-01 09:37:17 vinodk handling a service on ncatestn by executing following command - dbcd_nca stop
+2016-03-01 09:37:33 vinodk handling a service on ncatestn by executing following command - dbcfs_nca stop
+2016-03-01 09:37:50 vinodk handling a service on ncatestn by executing following command - dbcfs_nca stop
+2016-03-01 09:38:08 vinodk handling a service on ncatestn by executing following command - hipaa_ncav4u stop
+2016-03-01 09:39:21 vinodk handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue stop
+2016-03-01 09:39:40 vinodk handling a service on ncatestn by executing following command - socketserver_nca stop
+2016-03-01 09:40:09 vinodk handling a service on ncatestn by executing following command - socketserver_nca stop
+2016-03-01 09:40:54 vinodk handling a service on ncatestn by executing following command - dbcd_nca start
+2016-03-01 09:41:20 vinodk handling a service on ncatestn by executing following command - dbcfs_nca start
+2016-03-01 09:41:41 vinodk handling a service on ncatestn by executing following command - hipaa_ncav4u start
+2016-03-01 09:42:03 vinodk handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue start
+2016-03-01 09:42:36 vinodk handling a service on ncatestn by executing following command - socketserver_nca start
+2016-03-01 16:54:05 maxb logging in
+2016-03-01 19:08:15 tkuppuswamy logging in
+2016-03-01 19:12:28 tkuppuswamy logged out
+2016-03-02 02:34:21 vinodk logging in
+2016-03-02 02:35:51 vinodk handling a service on ncatestn by executing following command - dbcd_nca stop
+2016-03-02 02:36:07 vinodk handling a service on ncatestn by executing following command - dbcfs_nca stop
+2016-03-02 02:36:21 vinodk handling a service on ncatestn by executing following command - dbcfs_nca stop
+2016-03-02 02:36:34 vinodk handling a service on ncatestn by executing following command - hipaa_ncav4u stop
+2016-03-02 02:37:15 vinodk handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue stop
+2016-03-02 02:38:35 vinodk handling a service on ncatestn by executing following command - socketserver_nca stop
+2016-03-02 02:39:01 vinodk handling a service on ncatestn by executing following command - socketserver_nca stop
+2016-03-02 02:39:25 vinodk handling a service on ncatestn by executing following command - dbcd_nca start
+2016-03-02 02:39:38 vinodk handling a service on ncatestn by executing following command - dbcfs_nca start
+2016-03-02 02:39:57 vinodk handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue start
+2016-03-02 02:40:38 vinodk handling a service on ncatestn by executing following command - hipaa_ncav4u start
+2016-03-02 02:40:53 vinodk handling a service on ncatestn by executing following command - socketserver_nca start
+2016-03-02 02:58:14 vinodk handling a service on ncatestn by executing following command - dbcd_nca stop
+2016-03-02 02:58:28 vinodk handling a service on ncatestn by executing following command - dbcfs_nca stop
+2016-03-02 02:59:03 vinodk handling a service on ncatestn by executing following command - dbcfs_nca stop
+2016-03-02 03:01:13 vinodk handling a service on ncatestn by executing following command - hipaa_ncav4u stop
+2016-03-02 03:01:52 vinodk handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue stop
+2016-03-02 03:02:29 vinodk handling a service on ncatestn by executing following command - socketserver_nca stop
+2016-03-02 03:02:54 vinodk handling a service on ncatestn by executing following command - socketserver_nca stop
+2016-03-02 03:03:35 vinodk handling a service on ncatestn by executing following command - dbcd_nca start
+2016-03-02 03:03:48 vinodk handling a service on ncatestn by executing following command - dbcfs_nca start
+2016-03-02 03:04:02 vinodk handling a service on ncatestn by executing following command - hipaa_ncav4u start
+2016-03-02 03:04:15 vinodk handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue start
+2016-03-02 03:04:42 vinodk handling a service on ncatestn by executing following command - socketserver_nca start
+2016-03-02 09:24:53 login failed - username is psukumaran and password is P2ssw0rd1
+2016-03-02 09:25:07 psukumaran logging in
+2016-03-03 02:01:17 login failed - username is psukumaran and password is P@ssw0rd
+2016-03-03 02:01:27 login failed - username is psukumaran and password is P@ssw0rd
+2016-03-03 02:01:42 psukumaran logging in
+2016-03-03 04:03:00 schinnadurai logging in
+2016-03-03 04:03:09 schinnadurai logging in
+2016-03-03 05:02:17 sandy logging in
+2016-03-03 05:41:17 handling a service by executing following command - restart apache
+2016-03-03 05:41:32 sandy logging in
+2016-03-03 05:41:34 sandy logged out
+2016-03-03 05:41:41 sandy logging in
+2016-03-03 05:42:57 sandy handling a service by executing following command - restart apache
+2016-03-03 05:48:16 sandy handling a service on asp2m by executing following command - dbcfs_hdm restart
+2016-03-03 05:48:51 sandy handling a service on asp2m by executing following command - dbcfs_hdm stop
+2016-03-03 05:50:04 sandy handling a service on asp2m by executing following command - dbcfs_hdm start
+2016-03-03 05:50:38 sandy handling a service on asp2m by executing following command - lxcomsvr_hdmlive restart
+2016-03-03 06:32:33 schinnadurai logging in
+2016-03-03 06:36:48 schinnadurai handling a service on asp2m by executing following command - lxcomsvr_mbalive restart
+2016-03-03 06:38:50 schinnadurai handling a service on asp2m by executing following command - lxcomsvr_mcslive restart
+2016-03-03 06:42:56 login failed - username is vinodk and password is Xsw2#edc
+2016-03-03 06:43:07 vinodk logging in
+2016-03-03 06:45:39 vinodk handling a service on asp2m by executing following command - hipaa_mbalive stop
+2016-03-03 06:48:03 vinodk handling a service on asp2m by executing following command - hipaa_mbalive start
+2016-03-03 06:53:01 sandy logging in
+2016-03-03 06:57:31 vinodk handling a service on asp2m by executing following command - lxcomsvr_mcslive restart
+2016-03-03 07:20:48 schinnadurai logging in
+2016-03-03 07:20:57 schinnadurai logging in
+2016-03-03 07:21:37 schinnadurai handling a service on asp2m by executing following command - lxcomsvr_mbalive restart
+2016-03-03 07:38:22 vinodk handling a service on asptest1n by executing following command - dbcd_cba start
+2016-03-03 07:38:41 vinodk handling a service on asptest1n by executing following command - dbcfs_cba start
+2016-03-03 07:38:56 vinodk handling a service on asptest1n by executing following command - hipaa_cbalive start
+2016-03-03 07:39:13 vinodk handling a service on asptest1n by executing following command - lxcomsvr_cbalive start
+2016-03-03 07:46:24 sandy logging in
+2016-03-03 08:00:37 vinodk handling a service on asp2m by executing following command - lxcomsvr_mcslive restart
+2016-03-03 08:29:14 sandy handling a service on asp1m by executing following command - lxcomsvr_adplive stop
+2016-03-03 08:34:00 sandy handling a service on asp1m by executing following command - lxcomsvr_adplive start
+2016-03-03 10:38:57 schinnadurai logged out
+2016-03-03 10:39:15 schinnadurai logging in
+2016-03-03 10:39:44 schinnadurai handling a service on asp2m by executing following command - lxcomsvr_slilive restart
+2016-03-03 11:00:08 login failed - username is max.baro and password is Gandolf@585
+2016-03-03 11:00:26 maxb logging in
+2016-03-03 12:35:43 tkuppuswamy logging in
+2016-03-03 12:36:29 login failed - username is jayaprakash and password is mytestorg@A111
+2016-03-03 12:37:06 tkuppuswamy handling a service on asp2m by executing following command - lxcomsvr_slilive start
+2016-03-03 12:41:08 tkuppuswamy logged out
+2016-03-03 12:41:08 tkuppuswamy handling a service on asp2m by executing following command - lxcomsvr_slilive start
+2016-03-03 12:41:16 tkuppuswamy logging in
+2016-03-03 12:43:45 tkuppuswamy logged out
+2016-03-03 12:44:15 tkuppuswamy logging in
+2016-03-03 12:46:49 tkuppuswamy handling a service on asp2m by executing following command - lxcomsvr_slilive start
+2016-03-03 12:59:03 tkuppuswamy logged out
+2016-03-03 12:59:07 tkuppuswamy logged out
+2016-03-03 13:29:45 login failed - username is jayaprakash and password is mytestorg@A111
+2016-03-03 13:29:59 jayaprakash logging in
+2016-03-03 18:56:08 login failed - username is tkuppuswamy and password is P@sw0rd11
+2016-03-03 18:56:23 tkuppuswamy logging in
+2016-03-03 19:09:10 jayaprakash logging in
+2016-03-03 19:25:59 tkuppuswamy logged out
+2016-03-03 19:26:03 tkuppuswamy logged out
+2016-03-04 02:27:35 sandy logging in
+2016-03-04 05:49:11 vinodk logging in
+2016-03-04 05:51:05 vinodk handling a service on asptest1n by executing following command - lxcomsvr_alilive start
+2016-03-04 07:40:00 sandy logging in
+2016-03-04 07:40:41 sandy handling a service on aiglive by executing following command - dbcfs_aig Select Action
+2016-03-04 09:08:46 login failed - username is cmohansundaram and password is Change@4t
+2016-03-04 09:08:49 login failed - username is cmohansundaram and password is Change@4t
+2016-03-04 09:09:35 login failed - username is cmohansundaram and password is Change@4t
+2016-03-04 09:09:50 cmohanasundaram logging in
+2016-03-04 09:25:16 cmohanasundaram logged out
+2016-03-05 10:22:45 schinnadurai logging in
+2016-03-05 10:22:46 schinnadurai logging in
+2016-03-05 10:24:16 schinnadurai handling a service on asp2m by executing following command - lxcomsvr_slilive start
+2016-03-05 22:21:02 jayaprakash logging in
+2016-03-06 21:50:16 jayaprakash logging in
+2016-03-06 23:20:09 sandy logging in
+2016-03-06 23:23:53 sandy logging in
+2016-03-06 23:30:49 jayaprakash logging in
+2016-03-06 23:31:54 jayaprakash handling a service on asp2m by executing following command - lxcomsvr_slilive start
+2016-03-06 23:33:18 sandy logging in
+2016-03-06 23:34:53 sandy handling a service by executing following command - start apache
+2016-03-06 23:39:41 sandy handling a service by executing following command - restart apache
+2016-03-07 00:12:10 sandy logging in
+2016-03-07 00:19:08 vinodk logging in
+2016-03-07 21:06:02 jayaprakash logging in
+2016-03-07 21:31:35 jayaprakash handling a service on asp2m by executing following command - lxcomsvr_mcslive start
+2016-03-07 21:34:19 jayaprakash handling a service on asp2m by executing following command - lxcomsvr_slilive start
+2016-03-07 21:53:38 jayaprakash handling a service on asp2m by executing following command - hipaa_mcslive start
+2016-03-07 21:54:38 jayaprakash handling a service on asp2m by executing following command - lxcomsvr_mcslive start
+2016-03-07 22:19:30 jayaprakash handling a service on asp2m by executing following command - lxcomsvr_slilive start
+2016-03-07 22:21:28 jayaprakash handling a service on asp2m by executing following command - lxcomsvr_slilive start
+2016-03-07 22:28:40 jayaprakash handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-08 05:02:14 msundaram logging in
+2016-03-08 05:07:36 jayaprakash logged out
+2016-03-08 09:51:17 login failed - username is vbalaji and password is Change5t
+2016-03-08 09:51:30 login failed - username is harir and password is Change1t
+2016-03-08 09:51:48 login failed - username is ssangaraju and password is mytestorg@123
+2016-03-08 09:51:58 login failed - username is ssangaraju and password is mytestorg@111
+2016-03-08 09:52:14 login failed - username is vbalaji and password is mytestorg@A123
+2016-03-08 09:53:48 login failed - username is vbalaji and password is CHange9t
+2016-03-08 09:53:59 login failed - username is vbalaji and password is Change9t
+2016-03-08 09:54:10 login failed - username is vbalaji and password is Change9t
+2016-03-08 09:54:24 login failed - username is vbalaji and password is Change9t
+2016-03-08 09:54:34 login failed - username is vbalaji and password is Change9t
+2016-03-08 09:57:35 ssangaraju logging in
+2016-03-08 10:16:16 sandy logging in
+2016-03-08 11:56:02 login failed - username is gmohan and password is Change1t
+2016-03-08 11:56:19 login failed - username is gmohan and password is Change1t
+2016-03-08 11:56:59 login failed - username is gmohan and password is Change1t
+2016-03-08 11:57:17 cmohanasundaram logging in
+2016-03-08 12:31:10 cmohanasundaram handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1live restart
+2016-03-08 12:41:27 login failed - username is harir and password is Change1t
+2016-03-08 12:41:39 login failed - username is harir and password is Xhange1t
+2016-03-08 12:41:48 login failed - username is root and password is sysc0nf
+2016-03-08 20:35:50 jayaprakash logging in
+2016-03-08 22:21:08 jayaprakash logging in
+2016-03-08 22:24:21 jayaprakash handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-08 22:27:46 jayaprakash handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-09 00:23:05 sandy logging in
+2016-03-09 01:01:04 sandy handling a service on asp1m by executing following command - hipaa_cbrlive stop
+2016-03-09 01:05:31 sramamurthy logging in
+2016-03-09 01:20:19 sandy handling a service on asp1m by executing following command - hipaa_cbrlive start
+2016-03-09 01:25:18 sandy handling a service on asp1m by executing following command - lxcomsvr_cbrlive stop
+2016-03-09 01:28:55 sandy handling a service on asp1m by executing following command - lxcomsvr_cbrlive start
+2016-03-09 01:36:44 vinodk logging in
+2016-03-09 01:38:43 vinodk handling a service on asp1m by executing following command - socketserver_tps stop
+2016-03-09 01:42:28 vinodk handling a service on asp1m by executing following command - lxcomsvr_cwblive restart
+2016-03-09 01:46:04 vinodk handling a service on asp1m by executing following command - socketserver_tps start
+2016-03-09 01:46:40 vinodk handling a service on asp1m by executing following command - lxcomsvr_tpslive restart
+2016-03-09 01:47:46 vinodk handling a service on asp1m by executing following command - lxcomsvr_slilive restart
+2016-03-09 01:49:39 vinodk handling a service on asp1m by executing following command - lxcomsvr_liflive restart
+2016-03-09 01:56:37 vinodk handling a service on asp2m by executing following command - hipaa_asilive start
+2016-03-09 01:57:07 vinodk handling a service on asp2m by executing following command - lxcomsvr_asilive restart
+2016-03-09 02:21:55 jayaprakash logging in
+2016-03-09 02:22:46 jayaprakash handling a service on asp2m by executing following command - lxcomsvr_slilive start
+2016-03-09 02:33:37 sandy logging in
+2016-03-09 02:56:50 sandy handling a service on asp1m by executing following command - lxcomsvr_cbrbba stop
+2016-03-09 02:57:56 sandy handling a service on asp1m by executing following command - lxcomsvr_cbrbba start
+2016-03-09 02:59:25 sandy handling a service on asp1m by executing following command - lxcomsvr_cbrblue start
+2016-03-09 04:51:49 sandy logging in
+2016-03-09 07:48:46 sandy logging in
+2016-03-09 07:54:58 sramamurthy logging in
+2016-03-09 07:56:43 sramamurthy handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1live start
+2016-03-09 22:54:14 surenderl logging in
+2016-03-09 22:57:31 surenderl handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-09 23:00:26 surenderl handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-09 23:02:53 surenderl handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-09 23:28:21 tkuppuswamy logging in
+2016-03-10 00:41:05 msundaram logging in
+2016-03-10 00:51:09 tkuppuswamy logged out
+2016-03-10 07:55:18 login failed - username is Ssangaraju and password is Change1t
+2016-03-10 07:55:41 login failed - username is Ssangaraju and password is mytestorg@A!23
+2016-03-10 07:55:55 login failed - username is Ssangaraju and password is mytestorg@A123
+2016-03-10 07:56:21 login failed - username is Ssangaraju and password is mytestorg@A123
+2016-03-10 07:57:26 login failed - username is Ssangaraju and password is mytestorg@A123
+2016-03-10 07:57:45 ssangaraju logging in
+2016-03-10 12:29:48 login failed - username is and password is
+2016-03-10 12:30:18 schinnadurai logging in
+2016-03-10 12:32:30 schinnadurai handling a service on asp1m by executing following command - lxcomsvr_gaslive restart
+2016-03-10 12:39:11 cmohanasundaram logging in
+2016-03-10 14:30:26 cmohanasundaram logging in
+2016-03-10 15:26:42 login failed - username is and password is
+2016-03-10 15:26:51 login failed - username is and password is
+2016-03-10 15:27:10 login failed - username is and password is
+2016-03-10 15:27:52 login failed - username is schinnadurai and password is Chane1t
+2016-03-10 15:28:00 schinnadurai logging in
+2016-03-10 15:32:46 devendran logging in
+2016-03-10 15:33:34 devendran logging in
+2016-03-10 22:25:44 surenderl logging in
+2016-03-10 22:26:42 surenderl handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-11 01:04:23 msundaram logging in
+2016-03-11 01:06:51 msundaram handling a service on asp2m by executing following command - dbcd_rha restart
+2016-03-11 01:08:01 msundaram handling a service on asp2m by executing following command - lxcomsvr_rhalive restart
+2016-03-11 01:09:19 msundaram handling a service on asp2m by executing following command - dbcd_cba restart
+2016-03-11 01:09:51 sandy logging in
+2016-03-11 01:10:01 msundaram handling a service on asp2m by executing following command - lxcomsvr_cbalive restart
+2016-03-11 01:28:12 msundaram handling a service on asp2m by executing following command - dbcd_aba restart
+2016-03-11 01:28:55 msundaram handling a service on asp2m by executing following command - dbcd_aba stop
+2016-03-11 01:30:05 msundaram handling a service on asp2m by executing following command - dbcd_aba start
+2016-03-11 01:31:06 msundaram handling a service on asp2m by executing following command - lxcomsvr_abalive restart
+2016-03-11 22:16:27 login failed - username is cmohanasundaram and password is Change4t
+2016-03-11 22:16:44 cmohanasundaram logging in
+2016-03-11 22:18:14 cmohanasundaram handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-12 08:09:55 sandy logging in
+2016-03-12 08:11:30 sandy handling a service on asptest1n by executing following command - socketserver_aba stop
+2016-03-12 08:12:09 sandy handling a service on asptest1n by executing following command - socketserver_aba restart
+2016-03-12 08:13:14 sandy handling a service on asptest1n by executing following command - socketserver_aba start
+2016-03-12 08:13:45 sandy handling a service on asptest1n by executing following command - socketserver_aba start
+2016-03-12 08:14:19 sandy handling a service on asptest1n by executing following command - socketserver_aba start
+2016-03-12 08:14:45 sandy handling a service on asptest1n by executing following command - socketserver_aba start
+2016-03-12 08:15:12 sandy handling a service on asptest1n by executing following command - socketserver_aba start
+2016-03-12 08:15:28 sandy handling a service on asptest1n by executing following command - socketserver_aba start
+2016-03-12 08:15:50 sandy handling a service on asptest1n by executing following command - socketserver_aba start
+2016-03-12 08:23:49 sandy handling a service on asptest1n by executing following command - dbcd_aba restart
+2016-03-12 08:24:09 sandy handling a service on asptest1n by executing following command - dbcd_aba stop
+2016-03-12 08:25:08 sandy handling a service on asptest1n by executing following command - dbcd_aba start
+2016-03-12 08:27:07 sandy handling a service on asptest1n by executing following command - hipaa_alilive start
+2016-03-12 08:27:28 sandy handling a service on asptest1n by executing following command - lxcomsvr_alilive start
+2016-03-12 08:28:52 sandy handling a service on asptest1n by executing following command - lxcomsvr_alilive start
+2016-03-12 08:29:35 sandy handling a service on asptest1n by executing following command - lxcomsvr_alilive start
+2016-03-12 08:57:50 sandy handling a service on asptest1n by executing following command - dbcd_aba stop
+2016-03-12 08:58:08 sandy handling a service on asptest1n by executing following command - lxcomsvr_abalive restart
+2016-03-12 08:59:23 sandy handling a service on asptest1n by executing following command - dbcd_aba start
+2016-03-12 08:59:37 sandy handling a service on asptest1n by executing following command - lxcomsvr_abalive restart
+2016-03-12 22:17:10 login failed - username is gmohan and password is Change1t
+2016-03-12 22:17:37 login failed - username is bkumar and password is Change1t
+2016-03-12 22:19:33 dineshp logging in
+2016-03-12 22:20:54 dineshp handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-13 04:47:54 dineshp logging in
+2016-03-13 04:49:10 dineshp handling a service on asp2m by executing following command - hipaa_ihclive start
+2016-03-13 08:30:27 sandy logging in
+2016-03-13 08:32:16 sandy handling a service on asp1m by executing following command - socketserver_amw stop
+2016-03-13 08:33:14 sandy handling a service on asp1m by executing following command - socketserver_amw stop
+2016-03-13 08:36:38 sandy handling a service on asp1m by executing following command - socketserver_amw start
+2016-03-13 08:37:37 sandy handling a service on asp1m by executing following command - socketserver_amw stop
+2016-03-13 08:38:45 sandy handling a service on asp1m by executing following command - socketserver_amw start
+2016-03-13 08:57:14 sandy handling a service on asp1m by executing following command - socketserver_amw stop
+2016-03-13 08:58:07 sandy handling a service on asp1m by executing following command - folio_amw stop
+2016-03-13 08:58:55 sandy handling a service on asp1m by executing following command - socketserver_amw start
+2016-03-13 09:09:00 sandy handling a service on asp1m by executing following command - folio_amw start
+2016-03-13 09:14:54 sandy handling a service on asp1m by executing following command - socketserver_amw stop
+2016-03-13 09:17:12 sandy handling a service on asp1m by executing following command - socketserver_amw start
+2016-03-13 09:18:08 sandy handling a service on asp1m by executing following command - socketserver_amw start
+2016-03-13 22:15:25 login failed - username is cmohansundaram and password is Change@4t
+2016-03-13 22:15:42 login failed - username is cmohansundaram and password is Change@4t
+2016-03-13 22:15:57 cmohanasundaram logging in
+2016-03-13 22:17:08 login failed - username is surenderl and password is Change7t
+2016-03-13 22:17:16 login failed - username is surenderl and password is Change7t
+2016-03-13 22:17:56 cmohanasundaram handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-14 00:54:55 cmohanasundaram logging in
+2016-03-14 00:55:32 msundaram logging in
+2016-03-14 00:56:48 msundaram handling a service on asp2m by executing following command - dbcd_clf stop
+2016-03-14 00:57:44 msundaram handling a service on asp2m by executing following command - dbcd_clf start
+2016-03-14 00:58:21 msundaram handling a service on asp2m by executing following command - lxcomsvr_clflive restart
+2016-03-14 01:19:12 msundaram handling a service on asp1m by executing following command - dbcd_amw stop
+2016-03-14 01:20:13 msundaram handling a service on asp1m by executing following command - dbcd_amw start
+2016-03-14 01:20:53 msundaram handling a service on asp1m by executing following command - lxcomsvr_amwlive restart
+2016-03-14 01:21:50 msundaram handling a service on asp1m by executing following command - lxcomsvr_amwlive3 restart
+2016-03-14 01:22:47 msundaram handling a service on asp1m by executing following command - dbcfs_amw restart
+2016-03-14 01:23:14 msundaram handling a service on asp1m by executing following command - dbcfs_amw stop
+2016-03-14 01:24:04 msundaram handling a service on asp1m by executing following command - dbcfs_amw start
+2016-03-14 01:55:18 msundaram handling a service on asp1m by executing following command - dbcd_aom stop
+2016-03-14 02:14:34 cmohanasundaram logging in
+2016-03-14 02:16:12 cmohanasundaram handling a service on asp1m by executing following command - dbcd_aom start
+2016-03-14 02:24:06 msundaram handling a service on asp1m by executing following command - lxcomsvr_aomlive restart
+2016-03-14 02:32:36 msundaram handling a service on asp1m by executing following command - lxcomsvr_cbrbba restart
+2016-03-14 02:33:24 msundaram handling a service on asp1m by executing following command - dbcd_cbr stop
+2016-03-14 02:34:16 msundaram handling a service on asp1m by executing following command - dbcd_cbr start
+2016-03-14 07:07:20 login failed - username is vinodk and password is Xsw2#edc
+2016-03-14 07:07:32 login failed - username is vinodk and password is Xsw2#edc
+2016-03-14 07:07:40 vinodk logging in
+2016-03-14 09:59:03 sramamurthy logging in
+2016-03-14 12:22:55 vbalaji logging in
+2016-03-14 22:16:20 login failed - username is surenderl and password is Change7t
+2016-03-14 22:16:31 login failed - username is surenderl and password is change7t
+2016-03-14 22:16:40 login failed - username is surenderl and password is Change7t
+2016-03-14 22:17:06 schinnadurai logging in
+2016-03-14 22:24:41 schinnadurai handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-14 22:28:04 schinnadurai handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-15 01:49:17 msundaram logging in
+2016-03-15 03:51:53 msundaram logging in
+2016-03-15 03:52:04 msundaram logging in
+2016-03-15 03:54:38 msundaram handling a service on asp1m by executing following command - lxcomsvr_cbrlive restart
+2016-03-15 03:55:28 msundaram handling a service on asp1m by executing following command - dbcfs_cbr restart
+2016-03-15 03:56:32 msundaram handling a service on asp1m by executing following command - lxcomsvr_cbrebpa restart
+2016-03-15 03:57:44 msundaram handling a service on asp1m by executing following command - hipaa_cbrebpa restart
+2016-03-15 04:03:15 msundaram handling a service on asp2m by executing following command - dbcd_hdm stop
+2016-03-15 04:04:26 msundaram handling a service on asp2m by executing following command - dbcd_hdm start
+2016-03-15 04:04:56 msundaram handling a service on asp2m by executing following command - lxcomsvr_hdmlive restart
+2016-03-15 04:08:41 msundaram handling a service on asp2m by executing following command - dbcd_sli stop
+2016-03-15 04:10:08 msundaram handling a service on asp2m by executing following command - dbcd_sli start
+2016-03-15 04:13:02 msundaram handling a service on asp2m by executing following command - lxcomsvr_slilive restart
+2016-03-15 04:20:41 msundaram handling a service on asptest1n by executing following command - lxcomsvr_slilive start
+2016-03-15 04:31:54 vbalaji logging in
+2016-03-15 04:39:14 vbalaji handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue stop
+2016-03-15 04:39:37 vbalaji handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1blue restart
+2016-03-15 05:47:05 vbalaji logging in
+2016-03-15 09:37:21 sandy logging in
+2016-03-15 09:40:06 sandy handling a service on asptest2n by executing following command - dbcfs_sli stop
+2016-03-15 09:41:14 sandy handling a service on asptest2n by executing following command - dbcfs_sli start
+2016-03-15 12:26:42 jayaprakash logging in
+2016-03-15 16:16:11 jayaprakash logging in
+2016-03-15 16:18:12 jayaprakash handling a service on ncalivenew by executing following command - lxcomsvr_ncaliveh restart
+2016-03-15 16:18:54 jayaprakash handling a service on ncalivenew by executing following command - lxcomsvr_ncablueh start
+2016-03-15 22:25:14 login failed - username is Devendran and password is Change1t
+2016-03-15 22:25:33 devendran logging in
+2016-03-15 22:27:47 devendran handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-16 08:02:25 sramamurthy logging in
+2016-03-16 08:33:07 vinodk logging in
+2016-03-16 08:35:07 vinodk handling a service by executing following command - restart apache
+2016-03-16 08:35:36 vinodk handling a service by executing following command - restart apache
+2016-03-16 08:39:06 vinodk handling a service by executing following command - restart apache
+2016-03-16 09:24:24 login failed - username is vinodk and password is Xsw2#edc
+2016-03-16 09:24:58 login failed - username is vinodk and password is Xsw2#edc
+2016-03-16 09:25:26 vinodk logging in
+2016-03-16 09:37:13 schinnadurai logging in
+2016-03-16 11:44:14 tkuppuswamy logging in
+2016-03-16 11:49:07 tkuppuswamy handling a service by executing following command - start apache
+2016-03-16 11:54:30 tkuppuswamy logged out
+2016-03-16 12:54:31 jayaprakash logging in
+2016-03-16 17:42:07 jayaprakash logging in
+2016-03-16 22:19:44 ssangaraju logging in
+2016-03-16 22:20:22 ssangaraju handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-16 22:26:55 devendran logging in
+2016-03-17 03:34:02 login failed - username is and password is
+2016-03-17 03:34:27 vinodk logging in
+2016-03-17 07:24:17 vinodk logging in
+2016-03-17 07:25:15 vinodk handling a service by executing following command - restart apache
+2016-03-17 08:58:56 tkuppuswamy logging in
+2016-03-17 09:00:34 tkuppuswamy handling a service by executing following command - start keepalivetest
+2016-03-17 09:19:27 tkuppuswamy logged out
+2016-03-17 12:19:57 vbalaji logging in
+2016-03-17 17:08:05 jayaprakash logging in
+2016-03-17 17:08:44 jayaprakash handling a service on asp2m by executing following command - lxcomsvr_slilive start
+2016-03-17 17:11:44 jayaprakash handling a service on asp2m by executing following command - lxcomsvr_slilive start
+2016-03-17 17:14:37 jayaprakash handling a service on asp2m by executing following command - lxcomsvr_slilive start
+2016-03-17 17:21:06 jayaprakash handling a service on asp2m by executing following command - lxcomsvr_abalive start
+2016-03-17 17:24:43 jayaprakash handling a service on asp2m by executing following command - lxcomsvr_abalive start
+2016-03-17 22:28:08 sramamurthy logging in
+2016-03-17 22:30:39 sramamurthy handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-18 01:14:52 sramamurthy logging in
+2016-03-18 01:38:08 devendran logging in
+2016-03-18 01:39:08 devendran handling a service on asp2m by executing following command - lxcomsvr_slilive restart
+2016-03-18 02:53:20 sramamurthy logging in
+2016-03-18 02:54:17 sramamurthy handling a service by executing following command - start tomcat_test
+2016-03-18 03:00:29 msundaram logging in
+2016-03-18 13:00:47 cmohanasundaram logging in
+2016-03-18 13:03:20 cmohanasundaram logging in
+2016-03-18 13:12:32 cmohanasundaram logging in
+2016-03-18 13:13:24 cmohanasundaram handling a service on asp1m by executing following command - lxcomsvr_gaslive start
+2016-03-18 16:06:19 cmohanasundaram logging in
+2016-03-18 16:39:03 cmohanasundaram logging in
+2016-03-18 16:40:11 cmohanasundaram handling a service on asp2m by executing following command - lxcomsvr_slilive restart
+2016-03-18 17:52:28 cmohanasundaram logging in
+2016-03-18 21:54:52 cmohanasundaram logging in
+2016-03-18 22:50:50 dineshp logging in
+2016-03-18 22:53:30 dineshp handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-19 12:43:32 cmohanasundaram logging in
+2016-03-19 12:44:31 cmohanasundaram handling a service on asp2m by executing following command - lxcomsvr_slilive start
+2016-03-19 13:40:34 cmohanasundaram logging in
+2016-03-19 13:41:09 cmohanasundaram handling a service on asp2m by executing following command - lxcomsvr_slilive start
+2016-03-20 13:38:01 cmohanasundaram logging in
+2016-03-20 13:38:42 cmohanasundaram handling a service on asp2m by executing following command - lxcomsvr_slilive start
+2016-03-20 22:24:47 vbalaji logging in
+2016-03-20 22:26:11 vbalaji handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-21 01:20:31 sandy logging in
+2016-03-21 01:25:30 sandy handling a service by executing following command - start tomcat_test1
+2016-03-21 01:26:23 sandy handling a service by executing following command - stop keepalivetest1
+2016-03-21 01:28:00 sandy handling a service by executing following command - restart keepalivetest1
+2016-03-21 01:29:21 login failed - username is vbalaji and password is CHange99t
+2016-03-21 01:29:36 vbalaji logging in
+2016-03-21 01:30:49 vbalaji handling a service on asp2m by executing following command - lxcomsvr_slilive start
+2016-03-21 01:36:48 sandy handling a service by executing following command - start tomcat_test
+2016-03-21 01:37:46 sandy handling a service by executing following command - start apache
+2016-03-21 01:38:46 sandy handling a service by executing following command - start tomcat_test
+2016-03-21 01:39:44 sandy handling a service by executing following command - start tomcat_test
+2016-03-21 01:39:54 sandy handling a service by executing following command - start keepalive1
+2016-03-21 02:12:34 sandy handling a service by executing following command - start apache/tomcat1
+2016-03-21 02:32:00 sandy handling a service by executing following command - stop tomcat_test
+2016-03-21 04:08:57 handling a service by executing following command - start tomcat_test
+2016-03-21 04:09:05 sandy logging in
+2016-03-21 04:09:13 sandy handling a service by executing following command - start tomcat_test
+2016-03-21 04:17:41 login failed - username is vbalaji and password is CHange99t
+2016-03-21 04:18:11 vbalaji logging in
+2016-03-21 04:33:05 sandy logged out
+2016-03-21 05:42:53 jayaprakash logging in
+2016-03-21 06:37:04 login failed - username is vinodk and password is Xsw2#edc
+2016-03-21 06:37:15 vinodk logging in
+2016-03-21 07:08:25 jayaprakash logging in
+2016-03-21 07:09:48 jayaprakash handling a service on asp2m by executing following command - lxcomsvr_slilive start
+2016-03-21 07:49:51 sramamurthy logging in
+2016-03-21 09:48:52 dineshp logging in
+2016-03-21 09:48:54 dineshp logging in
+2016-03-21 09:51:11 dineshp handling a service on asp1m by executing following command - socketserver_fts start
+2016-03-21 10:00:52 dineshp handling a service on asp1m by executing following command - socketserver_fts start
+2016-03-21 10:52:36 jayaprakash logging in
+2016-03-21 10:58:55 jayaprakash handling a service on asp2m by executing following command - lxcomsvr_slilive start
+2016-03-21 11:02:20 dineshp logging in
+2016-03-21 11:05:29 dineshp handling a service on asp2m by executing following command - lxcomsvr_slilive start
+2016-03-21 11:13:31 jayaprakash handling a service on asp2m by executing following command - lxcomsvr_slilive start
+2016-03-21 11:30:46 jayaprakash handling a service on asp1m by executing following command - lxcomsvr_bcilive start
+2016-03-21 11:36:20 jayaprakash handling a service on asp1m by executing following command - lxcomsvr_bcilive start
+2016-03-21 11:42:03 jayaprakash handling a service on asp1m by executing following command - lxcomsvr_bcilive start
+2016-03-21 11:55:16 jayaprakash handling a service on asp2m by executing following command - lxcomsvr_slilive start
+2016-03-21 12:09:57 jayaprakash handling a service on asp1m by executing following command - lxcomsvr_gaslive start
+2016-03-21 12:16:34 jayaprakash handling a service on asp1m by executing following command - lxcomsvr_gaslive start
+2016-03-21 13:08:31 cmohanasundaram logging in
+2016-03-21 13:09:53 cmohanasundaram handling a service on asp1m by executing following command - lxcomsvr_gaslive start
+2016-03-21 13:16:12 cmohanasundaram handling a service on asp1m by executing following command - lxcomsvr_gaslive start
+2016-03-21 19:47:32 cmohanasundaram logging in
+2016-03-21 19:48:20 cmohanasundaram handling a service on asp1m by executing following command - hipaa_tlclive restart
+2016-03-21 19:49:36 cmohanasundaram handling a service on asp1m by executing following command - lxcomsvr_tlclive restart
+2016-03-21 22:24:10 login failed - username is surenderl and password is Change7t
+2016-03-21 22:25:13 vbalaji logging in
+2016-03-21 22:26:40 vbalaji handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-22 02:42:58 vbalaji logging in
+2016-03-22 02:45:49 vbalaji handling a service by executing following command - start apache
+2016-03-22 08:02:57 vinodk logging in
+2016-03-22 08:04:25 vinodk handling a service on asp1m by executing following command - dbcd_ida stop
+2016-03-22 08:05:46 vinodk handling a service on asp1m by executing following command - dbcd_ida start
+2016-03-22 08:07:51 vinodk handling a service on asp1m by executing following command - lxcomsvr_idalive restart
+2016-03-22 14:11:37 devendran logging in
+2016-03-22 14:15:46 login failed - username is gmohan and password is Change1t
+2016-03-22 14:16:55 gmohan logging in
+2016-03-22 15:28:14 login failed - username is gmojhan and password is Change@1t
+2016-03-22 15:28:25 gmohan logging in
+2016-03-22 15:37:12 gmohan handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1live start
+2016-03-22 15:41:30 gmohan handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1live restart
+2016-03-22 15:44:57 gmohan handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1live stop
+2016-03-22 22:25:58 vbalaji logging in
+2016-03-22 22:25:58 vbalaji logging in
+2016-03-22 22:30:17 vbalaji handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-23 01:55:42 vinodk logging in
+2016-03-23 01:56:28 vinodk handling a service on asp1m by executing following command - dbcd_ida stop
+2016-03-23 01:57:25 vinodk handling a service on asp1m by executing following command - dbcd_ida start
+2016-03-23 01:58:22 vinodk handling a service on asp1m by executing following command - dbcfs_ida restart
+2016-03-23 01:58:56 vinodk handling a service on asp1m by executing following command - lxcomsvr_idalive restart
+2016-03-23 08:33:24 jayaprakash logging in
+2016-03-23 09:25:54 jayaprakash logging in
+2016-03-23 10:17:27 jayaprakash handling a service on asp2m by executing following command - lxcomsvr_slilive start
+2016-03-23 10:20:37 jayaprakash handling a service on asp2m by executing following command - lxcomsvr_slilive start
+2016-03-23 10:27:51 jayaprakash handling a service by executing following command - start apache
+2016-03-23 13:23:10 devendran logging in
+2016-03-23 13:27:16 tkuppuswamy logging in
+2016-03-23 13:59:50 maxb logging in
+2016-03-23 14:37:01 devendran logging in
+2016-03-23 14:37:48 devendran handling a service on asp2m by executing following command - lxcomsvr_slilive start
+2016-03-23 14:42:26 tkuppuswamy logging in
+2016-03-23 22:19:55 schinnadurai logging in
+2016-03-23 22:21:16 schinnadurai handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-23 22:23:37 schinnadurai handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-24 01:56:13 vinodk logging in
+2016-03-24 02:11:29 vinodk is deploying a WAR file , details - host : lin3vz, container ID : 988 , tomcat name : tomcat , FTP Path : public/lin302/ , WAR Name : lin.war
+2016-03-24 02:11:36 vinodk is deploying a WAR file , details - host : , container ID : , tomcat name : , FTP Path : , WAR Name :
+2016-03-24 02:11:45 vinodk handling a service by executing following command - stop apache
+2016-03-24 02:12:58 vinodk is deploying a WAR file , details - host : lin3vz, container ID : 988 , tomcat name : tomcat , FTP Path : public/lin302/ , WAR Name : lin.war
+2016-03-24 02:14:58 vinodk handling a service by executing following command - start apache
+2016-03-24 04:47:15 jayaprakash logging in
+2016-03-24 05:14:21 cmohanasundaram logging in
+2016-03-24 05:15:10 cmohanasundaram logging in
+2016-03-24 05:17:13 cmohanasundaram handling a service on asptest2n by executing following command - hipaa_slilive start
+2016-03-24 05:19:23 cmohanasundaram handling a service on asptest2n by executing following command - hipaa_slilive restart
+2016-03-24 05:20:49 cmohanasundaram handling a service on asptest2n by executing following command - hipaa_alilive start
+2016-03-24 05:23:11 cmohanasundaram handling a service on asptest2n by executing following command - lxcomsvr_slilive start
+2016-03-24 07:24:25 vinodk logging in
+2016-03-24 08:48:46 jayaprakash logging in
+2016-03-24 11:06:04 cmohanasundaram logging in
+2016-03-24 11:49:06 cmohanasundaram logging in
+2016-03-24 11:50:02 cmohanasundaram handling a service on asp2m by executing following command - lxcomsvr_tbrlive start
+2016-03-24 13:46:13 devendran logging in
+2016-03-24 18:59:28 gmohan logging in
+2016-03-24 19:01:23 gmohan handling a service on asp1m by executing following command - hipaa_tlclive restart
+2016-03-24 19:02:36 gmohan handling a service on asp1m by executing following command - lxcomsvr_tlclive restart
+2016-03-24 22:24:22 sramamurthy logging in
+2016-03-24 22:25:35 sramamurthy handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-25 07:43:41 cmohanasundaram logging in
+2016-03-25 10:42:35 login failed - username is root and password is sysc0nf
+2016-03-25 10:43:17 login failed - username is psukumaran and password is Cde3
+2016-03-25 10:43:34 login failed - username is psukumaran and password is Passw0rd1
+2016-03-25 10:43:44 login failed - username is psukumaran and password is Zaq1@wsx
+2016-03-25 10:44:05 login failed - username is psukumaran and password is Passwo6r1
+2016-03-25 15:43:50 devendran logging in
+2016-03-25 15:43:59 tkuppuswamy logging in
+2016-03-25 15:45:33 tkuppuswamy handling a service on asp1m by executing following command - hipaa_ftslive start
+2016-03-25 15:59:36 tkuppuswamy logged out
+2016-03-25 17:33:04 tkuppuswamy logging in
+2016-03-25 17:47:26 tkuppuswamy logged out
+2016-03-25 22:21:48 gmohan logging in
+2016-03-25 22:22:45 gmohan handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-26 22:20:53 jayaprakash logging in
+2016-03-26 22:22:45 jayaprakash handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-26 23:12:02 jayaprakash logging in
+2016-03-27 02:35:05 jayaprakash logging in
+2016-03-27 21:21:49 schinnadurai logging in
+2016-03-27 21:22:53 schinnadurai handling a service by executing following command - start apache
+2016-03-27 21:23:39 schinnadurai handling a service by executing following command - start tomcat_test1
+2016-03-27 21:30:41 schinnadurai handling a service by executing following command - start apache
+2016-03-27 22:27:38 gmohan logging in
+2016-03-27 22:29:17 gmohan handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-28 01:25:45 gmohan logging in
+2016-03-28 01:32:47 gmohan logged out
+2016-03-28 01:33:09 gmohan logging in
+2016-03-28 02:18:22 vinodk logging in
+2016-03-28 04:20:00 vinodk logging in
+2016-03-28 04:22:22 vinodk handling a service on asptest1n by executing following command - hipaa_slilive start
+2016-03-28 04:25:16 vinodk handling a service on asptest1n by executing following command - lxcomsvr_slilive restart
+2016-03-28 04:27:08 vinodk handling a service on asptest1n by executing following command - hipaa_slilive start
+2016-03-28 09:41:49 login failed - username is balajiv and password is Change99t
+2016-03-28 09:41:59 vbalaji logging in
+2016-03-28 12:32:21 jayaprakash logging in
+2016-03-28 13:10:24 jayaprakash logging in
+2016-03-28 22:27:05 gmohan logging in
+2016-03-28 22:27:50 gmohan handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-29 02:18:40 gmohan logging in
+2016-03-29 02:31:54 login failed - username is vinodk and password is Xsw2#edc
+2016-03-29 02:32:03 vinodk logging in
+2016-03-29 10:22:42 login failed - username is psukumaran and password is P@ssw0rd1
+2016-03-29 10:39:51 psukumaran logging in
+2016-03-29 11:12:59 tkuppuswamy logging in
+2016-03-29 11:15:29 devendran logging in
+2016-03-29 11:55:51 tkuppuswamy logged out
+2016-03-29 15:18:36 jayaprakash logging in
+2016-03-29 15:19:03 jayaprakash handling a service on aiglive by executing following command - lxcomsvr_aiglive start
+2016-03-29 16:19:35 jayaprakash logging in
+2016-03-29 16:20:32 jayaprakash handling a service on asp1m by executing following command - lxcomsvr_idalive start
+2016-03-29 16:25:46 jayaprakash handling a service on asp1m by executing following command - lxcomsvr_idalive start
+2016-03-29 21:11:11 jayaprakash logging in
+2016-03-29 22:23:33 gmohan logging in
+2016-03-29 22:26:24 gmohan handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-30 01:35:22 vinodk logging in
+2016-03-30 02:32:03 vinodk logging in
+2016-03-30 02:40:17 vinodk is deploying a WAR file , details - host : lin3vz, container ID : 988 , tomcat name : tomcat , FTP Path : public/lin302/ , WAR Name : lin.war
+2016-03-30 12:57:59 jayaprakash logging in
+2016-03-30 13:14:37 jayaprakash handling a service on aiglive by executing following command - lxcomsvr_aiglive start
+2016-03-30 14:53:59 jayaprakash logging in
+2016-03-30 14:57:10 jayaprakash handling a service on asp2m by executing following command - lxcomsvr_acslive start
+2016-03-30 19:43:22 jayaprakash logging in
+2016-03-30 19:43:36 jayaprakash handling a service on aiglive by executing following command - lxcomsvr_aiglive start
+2016-03-30 22:24:39 tkuppuswamy logging in
+2016-03-30 22:27:19 tkuppuswamy handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-30 22:32:31 tkuppuswamy logged out
+2016-03-30 22:32:34 tkuppuswamy logged out
+2016-03-30 23:58:09 vinodk logging in
+2016-03-31 03:24:18 tkuppuswamy logging in
+2016-03-31 04:53:25 tkuppuswamy logged out
+2016-03-31 12:37:58 jayaprakash logging in
+2016-03-31 13:26:32 jayaprakash logging in
+2016-03-31 13:28:18 jayaprakash handling a service on asp2m by executing following command - hipaa_tpclive start
+2016-03-31 13:36:52 jayaprakash handling a service on asp2m by executing following command - lxcomsvr_slilive start
+2016-03-31 20:54:46 jayaprakash logging in
+2016-03-31 21:49:49 jayaprakash logging in
+2016-03-31 22:19:46 jayaprakash logging in
+2016-03-31 22:20:34 jayaprakash handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-03-31 22:27:46 surenderl logging in
+2016-03-31 22:32:08 dineshp logging in
+2016-04-01 09:12:03 login failed - username is vbalaji and password is Cyhange99t
+2016-04-01 09:12:12 vbalaji logging in
+2016-04-01 09:12:31 devendran logging in
+2016-04-01 13:01:34 jayaprakash logging in
+2016-04-01 15:15:28 jayaprakash logging in
+2016-04-01 15:16:31 jayaprakash handling a service on ncalivenew by executing following command - lxcomsvr_ncablueh start
+2016-04-01 20:43:03 schinnadurai logging in
+2016-04-01 20:57:16 jayaprakash logging in
+2016-04-01 21:29:31 jayaprakash handling a service on ncatestn by executing following command - lxcomsvr_ncav4r1live restart
+2016-04-01 22:19:57 jayaprakash logging in
+2016-04-01 22:20:45 jayaprakash handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-04-02 03:14:36 devendran logging in
+2016-04-02 05:04:12 dineshp logging in
+2016-04-02 05:34:39 devendran logging in
+2016-04-02 05:43:35 devendran handling a service by executing following command - start apache
+2016-04-02 05:53:11 devendran handling a service by executing following command - start keepalive1
+2016-04-02 07:05:29 dineshp logging in
+2016-04-02 07:18:42 dineshp handling a service by executing following command - start keepalivetest
+2016-04-02 07:20:00 dineshp handling a service by executing following command - start keepalivetest
+2016-04-02 21:49:47 dineshp logging in
+2016-04-02 21:53:04 dineshp handling a service by executing following command - start apache/tomcat2
+2016-04-02 21:59:53 dineshp handling a service by executing following command - start apache/tomcat2
+2016-04-02 22:01:13 dineshp handling a service by executing following command - start keepalive
+2016-04-02 22:02:49 dineshp handling a service by executing following command - start apache/tomcat2
+2016-04-02 22:23:17 dineshp handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-04-03 05:21:18 sandy logging in
+2016-04-03 05:25:35 sandy handling a service by executing following command - start apache
+2016-04-03 05:26:41 sandy handling a service by executing following command - start keepalive
+2016-04-03 05:28:51 sandy handling a service by executing following command - start keepalivetest1
+2016-04-03 05:29:01 sandy handling a service by executing following command - start tomcat_test1
+2016-04-03 07:30:54 sandy logging in
+2016-04-03 07:38:41 gmohan logging in
+2016-04-03 07:38:52 sandy is deploying a WAR file , details - host : lin4vz, container ID : 110 , tomcat name : tomcat , FTP Path : test , WAR Name : test
+2016-04-03 07:40:50 sandy is deploying a WAR file , details - host : lin4vz, container ID : 110 , tomcat name : , FTP Path : , WAR Name :
+2016-04-03 07:42:13 sandy is deploying a WAR file , details - host : lin4vz, container ID : 110 , tomcat name : , FTP Path : , WAR Name :
+2016-04-03 07:42:35 sandy is deploying a WAR file , details - host : lin4vz, container ID : 110 , tomcat name : tomcat , FTP Path : test , WAR Name : test
+2016-04-03 07:43:12 sandy is deploying a WAR file , details - host : lin4vz, container ID : 110 , tomcat name : , FTP Path : , WAR Name :
+2016-04-03 07:44:04 sandy is deploying a WAR file , details - host : lin4vz, container ID : 110 , tomcat name : tomcat , FTP Path : test , WAR Name : test
+2016-04-03 21:27:52 jayaprakash logging in
+2016-04-03 21:28:42 jayaprakash handling a service by executing following command - start apache
+2016-04-03 22:18:33 jayaprakash logging in
+2016-04-03 22:19:35 jayaprakash handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-04-03 22:27:57 jayaprakash handling a service by executing following command - start apache
+2016-04-04 09:05:17 dineshp logging in
+2016-04-04 14:25:25 tkuppuswamy logging in
+2016-04-04 14:31:39 tkuppuswamy handling a service on asp2m by executing following command - lxcomsvr_slilive start
+2016-04-04 14:41:53 tkuppuswamy logged out
+2016-04-04 14:41:56 tkuppuswamy logged out
+2016-04-04 15:23:04 devendran logging in
+2016-04-04 16:17:00 devendran logging in
+2016-04-04 21:43:50 jayaprakash logging in
+2016-04-04 21:54:59 jayaprakash handling a service by executing following command - start apache
+2016-04-04 22:21:24 jayaprakash handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-04-05 06:03:47 jayaprakash logging in
+2016-04-05 06:03:52 jayaprakash logged out
+2016-04-05 09:30:53 sandy logging in
+2016-04-05 09:43:49 sandy handling a service by executing following command - stop tomcat_test1
+2016-04-05 09:46:49 sandy is deploying a WAR file , details - host : linvz, container ID : 133 , tomcat name : tomcat_test1 , FTP Path : public/lin302/ , WAR Name : lin.war
+2016-04-05 09:48:10 sandy handling a service by executing following command - start tomcat_test1
+2016-04-05 21:35:42 jayaprakash logging in
+2016-04-05 22:00:10 jayaprakash handling a service by executing following command - start apache
+2016-04-06 16:13:24 gmohan logging in
+2016-04-06 16:14:58 gmohan handling a service by executing following command - start keepalive1
+2016-04-06 16:15:28 gmohan handling a service by executing following command - start tomcat_test1
+2016-04-06 16:17:37 devendran logging in
+2016-04-06 16:18:31 devendran handling a service by executing following command - start apache
+2016-04-06 16:19:17 gmohan handling a service by executing following command - start apache
+2016-04-06 21:48:17 schinnadurai logging in
+2016-04-06 21:49:22 schinnadurai handling a service by executing following command - start apache
+2016-04-06 21:50:13 schinnadurai handling a service by executing following command - start keepalive
+2016-04-07 22:25:32 cmohanasundaram logging in
+2016-04-07 22:26:29 cmohanasundaram handling a service on asp1m by executing following command - lxcomsvr_slilive start
+2016-04-08 06:27:58 sandy logging in
+2016-04-08 06:29:48 sandy logged out
+2016-04-08 06:29:53 sandy logging in
+2016-04-08 06:30:28 sandy logging in
+2016-04-08 06:34:25 sandy is deploying a WAR file , details - host : lin3vz, container ID : 111 , tomcat name : tomcat , FTP Path : test , WAR Name : test
+2016-04-08 06:38:06 sandy is deploying a WAR file , details - host : lin3vz, container ID : 111 , tomcat name : tomcat , FTP Path : test , WAR Name : test
+2016-04-08 10:19:01 schinnadurai logging in
+2016-04-08 10:19:31 vbalaji logging in
+2016-04-08 10:21:51 vbalaji handling a service by executing following command - start apache
+2016-04-08 21:58:36 cmohanasundaram logging in
+2016-04-08 21:59:59 cmohanasundaram handling a service by executing following command - start apache
+2016-04-09 03:33:50 sandy logging in
+2016-04-09 06:20:09 schinnadurai logging in
+2016-04-09 11:57:12 vinodk logging in
+2016-04-09 11:58:27 vinodk handling a service on asptest1n by executing following command - dbcd_cwb stop
+2016-04-09 11:58:42 vinodk handling a service on asptest1n by executing following command - dbcfs_cwb stop
+2016-04-09 11:58:57 vinodk handling a service on asptest1n by executing following command - hipaa_cwblive stop
+2016-04-09 11:59:45 vinodk handling a service on asptest1n by executing following command - lxcomsvr_cwblive stop
+2016-04-09 11:59:56 vinodk handling a service on asptest1n by executing following command - socketserver_cwb stop
+2016-04-09 12:01:44 vinodk handling a service on asptest1n by executing following command - dbcd_app stop
+2016-04-09 12:01:56 vinodk handling a service on asptest1n by executing following command - dbcfs_app stop
+2016-04-09 12:03:35 vinodk handling a service on asptest1n by executing following command - lxcomsvr_applive stop
+2016-04-09 12:03:49 vinodk handling a service on asptest1n by executing following command - socketserver_app stop
+2016-04-09 12:05:12 vinodk handling a service on asptest1n by executing following command - dbcd_ace stop
+2016-04-09 12:05:30 vinodk handling a service on asptest1n by executing following command - dbcd_tda stop
+2016-04-09 12:05:40 vinodk handling a service on asptest1n by executing following command - dbcfs_tda stop
+2016-04-09 12:05:52 vinodk handling a service on asptest1n by executing following command - hipaa_tdalive stop
+2016-04-09 12:07:22 vinodk handling a service on asptest1n by executing following command - lxcomsvr_tdalive stop
+2016-04-09 12:07:44 vinodk handling a service on asptest1n by executing following command - socketserver_tda stop
+2016-04-09 12:08:24 vinodk handling a service on asptest1n by executing following command - dbcd_bms stop
+2016-04-09 12:08:37 vinodk handling a service on asptest1n by executing following command - dbcfs_bms stop
+2016-04-09 12:08:49 vinodk handling a service on asptest1n by executing following command - hipaa_bmslive stop
+2016-04-09 12:09:53 vinodk handling a service on asptest1n by executing following command - lxcomsvr_bmslive stop
+2016-04-09 12:10:26 vinodk handling a service on asptest1n by executing following command - socketserver_bms stop
+2016-04-10 11:51:29 psukumaran logging in
+2016-04-10 12:36:03 jayaprakash logging in
+2016-04-10 13:31:21 jayaprakash logged out
+2016-04-10 13:33:26 jayaprakash logging in
+2016-04-10 13:35:56 jayaprakash logging in
+2016-04-10 14:54:06 sandy logging in
+2016-04-10 15:43:05 is reading logs
+2016-04-10 15:43:12 sandy logging in
+2016-04-10 15:43:21 sandy is reading logs
+2016-04-10 15:43:43 sandy is reading logs
+2016-04-10 15:43:46 sandy is reading logs
+2016-04-10 15:44:32 sandy is reading logs
+2016-04-10 15:46:36 sandy is reading logs
+2016-04-10 16:34:29 sandy logging in
+2016-04-10 16:34:41 sandy is reading logs
+2016-04-10 16:39:54 sandy is reading logs
+2016-04-10 16:47:58 sandy is reading logs
+2016-04-10 16:50:17 sandy is reading logs
+2016-04-10 16:54:33 sandy is reading logs
+2016-04-10 16:59:00 sandy is reading logs
+2016-04-10 21:02:35 login failed - username is psukumaran and password is G0toneSh0w
+2016-04-10 21:03:01 login failed - username is psukumaran and password is G0t1sh0w
+2016-04-10 21:03:30 login failed - username is psukumaran and password is Got1Sh0w
+2016-04-10 21:04:35 login failed - username is psukumaran and password is G0t1sh0w
+2016-04-10 21:21:40 jayaprakash logging in
+2016-04-10 21:22:25 jayaprakash handling a service by executing following command - start apache
+2016-04-10 21:55:26 login failed - username is psukumaran and password is G0t1sh0w
+2016-04-10 21:56:13 login failed - username is psukumaran and password is G0t1sh0w
+2016-04-10 21:56:30 psukumaran logged out
+2016-04-10 21:56:58 login failed - username is psukumaran and password is G0t1sh0w
+2016-04-10 22:30:46 cmohanasundaram logging in
+2016-04-10 22:33:27 cmohanasundaram handling a service by executing following command - start apache
+2016-04-11 01:11:36 login failed - username is balajiv and password is CHange99t
+2016-04-11 01:11:44 vbalaji logging in
+2016-04-11 01:12:56 vbalaji handling a service on asptest1n by executing following command - dbcd_ace start
+2016-04-11 01:14:51 vbalaji handling a service on asptest1n by executing following command - dbcd_app start
+2016-04-11 01:16:46 vbalaji handling a service on asptest1n by executing following command - dbcd_bms start
+2016-04-11 01:21:59 vbalaji handling a service on asptest1n by executing following command - dbcd_cbr start
+2016-04-11 01:22:15 msundaram logging in
+2016-04-11 01:25:44 vbalaji handling a service on asptest1n by executing following command - dbcd_cwb start
+2016-04-11 01:26:30 msundaram handling a service on asptest1n by executing following command - socketserver_app start
+2016-04-11 01:32:47 msundaram handling a service on asp1m by executing following command - hipaa_slilive start
+2016-04-11 01:34:15 msundaram handling a service on asp1m by executing following command - lxcomsvr_applive start
+2016-04-11 01:37:19 msundaram handling a service on asp1m by executing following command - lxcomsvr_applive stop
+2016-04-11 01:38:20 msundaram handling a service on asp1m by executing following command - lxcomsvr_applive start
+2016-04-11 01:45:18 vinodk logging in
+2016-04-11 01:46:13 vinodk handling a service on asptest1n by executing following command - hipaa_alilive start
+2016-04-11 01:47:48 vinodk handling a service on asptest1n by executing following command - lxcomsvr_alilive start
+2016-04-11 01:52:12 vinodk handling a service on asptest1n by executing following command - dbcfs_pca start
+2016-04-11 01:53:57 vinodk handling a service on asptest1n by executing following command - dbcfs_cbr start
+2016-04-11 01:55:07 vinodk handling a service on asptest1n by executing following command - lxcomsvr_cbrbba start
+2016-04-11 01:57:25 vinodk handling a service on asptest1n by executing following command - lxcomsvr_cbrblue start
+2016-04-11 01:59:36 vinodk handling a service on asptest1n by executing following command - lxcomsvr_cbrebpa start
+2016-04-11 02:00:43 vinodk handling a service on asptest1n by executing following command - lxcomsvr_cbrlive start
+2016-04-11 02:02:33 vinodk handling a service on asptest1n by executing following command - lxcomsvr_cbrlive2 start
+2016-04-11 02:03:34 vinodk handling a service on asptest1n by executing following command - hipaa_cbrbba start
+2016-04-11 02:04:36 vinodk handling a service on asptest1n by executing following command - hipaa_cbrebpa start
+2016-04-11 02:04:51 vinodk handling a service on asptest1n by executing following command - hipaa_cbrlive start
+2016-04-11 02:05:05 vinodk handling a service on asptest1n by executing following command - hipaa_cbrlive2 start
+2016-04-11 02:06:53 vinodk handling a service on asptest1n by executing following command - dbcfs_bms start
+2016-04-11 02:07:24 vinodk handling a service on asptest1n by executing following command - hipaa_bmslive start
+2016-04-11 02:08:29 vinodk handling a service on asptest1n by executing following command - lxcomsvr_bmslive start
+2016-04-11 02:09:17 vinodk handling a service on asptest1n by executing following command - socketserver_bms start
+2016-04-11 02:11:48 vinodk handling a service on asptest1n by executing following command - dbcfs_cwb start
+2016-04-11 02:12:51 vinodk handling a service on asptest1n by executing following command - hipaa_cwblive start
+2016-04-11 02:13:04 vinodk handling a service on asptest1n by executing following command - lxcomsvr_cwblive start
+2016-04-11 02:13:27 vinodk handling a service on asptest1n by executing following command - socketserver_cwb start
+2016-04-11 02:32:11 handling a service on asp1m by executing following command - lxcomsvr_applive start
+2016-04-11 02:43:15 handling a service on asp1m by executing following command - lxcomsvr_applive start
+2016-04-11 04:56:32 login failed - username is tkuppuswamy and password is P@ssw0rd11
+2016-04-11 04:56:41 login failed - username is tkuppuswamy and password is P@ssw0rd11
+2016-04-11 04:58:46 login failed - username is tkuppuswamy and password is P@ssw0rd11
+2016-04-11 04:59:19 login failed - username is tkuppuswamy and password is P@ssw0rd11
+2016-04-11 04:59:38 login failed - username is tkuppuswamy and password is P@ssw0rd11
+2016-04-11 05:01:18 sramamurthy logging in
+2016-04-11 05:01:31 login failed - username is tkuppuswamy and password is P@ssw0rd11
+2016-04-11 05:03:15 tkuppuswamy logging in
+2016-04-11 05:03:46 tkuppuswamy logged out
+2016-04-11 06:24:05 handling a service on asp1m by executing following command - lxcomsvr_applive start
+2016-04-11 06:24:42 psukumaran logging in
+2016-04-11 06:26:09 psukumaran handling a service on asp1m by executing following command - hipaa_applive restart
+2016-04-11 06:27:22 handling a service on asp1m by executing following command - lxcomsvr_applive start
+2016-04-11 06:28:57 vinodk logging in
+2016-04-11 06:30:12 vinodk handling a service on asp2m by executing following command - hipaa_asilive start
+2016-04-11 06:41:00 tkuppuswamy logging in
+2016-04-11 06:43:54 tkuppuswamy handling a service on asp1m by executing following command - hipaa_applive start
+2016-04-11 06:44:26 gmohan logging in
+2016-04-11 06:45:22 tkuppuswamy handling a service on asp1m by executing following command - lxcomsvr_applive start
+2016-04-11 06:46:37 tkuppuswamy handling a service on asp1m by executing following command - lxcomsvr_applive start
+2016-04-11 06:47:28 tkuppuswamy handling a service on asp1m by executing following command - socketserver_app start
+2016-04-11 06:53:14 tkuppuswamy handling a service on asp1m by executing following command - lxcomsvr_applive start
+2016-04-11 07:28:58 tkuppuswamy is reading logs
+2016-04-11 07:29:19 tkuppuswamy logged out
+2016-04-11 07:31:15 psukumaran logging in
+2016-04-11 07:40:11 handling a service on asp1m by executing following command - lxcomsvr_applive start
+2016-04-11 08:00:46 handling a service on asp1m by executing following command - lxcomsvr_applive start
+2016-04-11 08:12:18 psukumaran logging in
+2016-04-11 09:54:14 vinodk handling a service on asp1m by executing following command - lxcomsvr_gitlive restart
+2016-04-11 10:42:18 psukumaran logging in
+2016-04-11 11:32:28 gmohan logging in
+2016-04-11 11:34:01 tkuppuswamy logging in
+2016-04-11 11:35:16 tkuppuswamy handling a service on aiglive by executing following command - lxcomsvr_aiglive start
+2016-04-11 11:36:34 tkuppuswamy logged out
+2016-04-11 12:58:11 jayaprakash logging in
+2016-04-11 16:06:21 jayaprakash logging in
+2016-04-11 17:25:12 jayaprakash logging in
+2016-04-11 21:50:02 login failed - username is balajiv and password is 12345678*9
+2016-04-11 21:50:10 login failed - username is balajiv and password is Change99t
+2016-04-11 21:50:19 login failed - username is balajiv and password is CHange99t
+2016-04-11 21:50:22 devendran logging in
+2016-04-11 21:50:29 vbalaji logging in
+2016-04-11 21:51:21 vbalaji handling a service by executing following command - start apache
+2016-04-11 22:18:02 devendran logging in
+2016-04-12 02:00:14 devendran logging in
+2016-04-12 02:00:55 devendran handling a service on asp2m by executing following command - lxcomsvr_mcslive start
+2016-04-12 02:02:00 devendran handling a service on asp2m by executing following command - lxcomsvr_mbalive start
+2016-04-12 02:04:18 devendran handling a service on asp2m by executing following command - lxcomsvr_mcslive restart
+2016-04-12 02:31:49 login failed - username is sandys and password is mytestorg@123
+2016-04-12 02:33:10 login failed - username is sandyd and password is mytestorg@123
+2016-04-12 02:33:19 login failed - username is sandyd and password is dscdfsafcsf
+2016-04-12 02:33:30 sandy logging in
+2016-04-12 02:56:11 devendran logging in
+2016-04-12 03:16:41 vinodk logging in
+2016-04-12 03:20:35 sandy logging in
+2016-04-12 03:20:41 sandy is reading logs
+2016-04-12 03:21:35 sandy is reading logs
+2016-04-12 03:26:21 sandy is reading logs
+2016-04-12 04:11:10 login failed - username is vinodk and password is Xsw2#edc
+2016-04-12 04:11:17 vinodk logging in
+2016-04-12 04:11:21 vinodk is reading logs

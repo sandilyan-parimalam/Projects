@@ -1,0 +1,17 @@
+.maintable table {
+    border-collapse: collapse;
+}
+
+
+.maintable table, th, td {
+    border: 1.5px solid black;
+    padding: 11px;
+    text-align: left;
+}
+
+.maintable table, th {
+
+    text-align: center;
+
+
+}

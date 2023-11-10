@@ -1,0 +1,29 @@
+---
+#################################################################################################################################
+#                                                                                                                               #
+#        this playbook cannot be executed manually, this is a helper playbook of solr8-maintenance.yaml, Please run through it   #
+#                                                                                                                               #
+#################################################################################################################################
+
+
+
+ - name: Checking the status of {{ server_IP }}({{ server_name }}) in {{ server_upstream }} upstream
+   shell: curl http://{{ nginxsrv }}{{ api_context }}{{ server_upstream }}/servers/{{ server_id }} | jq | grep down | cut -d ':' -f2 | tr -d ' '
+   register: upstream_shutdown_result_op
+   args:
+     warn: false
+
+
+ - debug:
+     msg: "{{ server_upstream }} is UP, proceeding further"
+   when: upstream_shutdown_result_op.stdout == "false"
+
+
+ - name: Problem! {{ server_IP }}({{ server_name }}) is still disabled in {{ server_upstream }} upstream, Please troubleshoot and make sure it's active to proceed further.
+   pause:
+     prompt: "Please press enter to check again or terminate the playbook with ctrl + c and 'A' after"
+   when: upstream_shutdown_result_op.stdout != "false"
+
+
+ - include_tasks: prompt_start_upstream.yaml
+   when: upstream_shutdown_result_op.stdout != "false"

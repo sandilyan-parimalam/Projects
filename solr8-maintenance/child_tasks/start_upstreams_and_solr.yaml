@@ -1,0 +1,120 @@
+---
+#################################################################################################################################
+#                                                                                                                               #
+#        this playbook cannot be executed manually, this is a helper playbook of solr8-maintenance.yaml, Please run through it   #
+#                                                                                                                               #
+#################################################################################################################################
+
+
+
+
+ - name: Fetching Port number of {{ server_upstream }}
+   shell: curl http://{{ nginxsrv }}{{ api_context }}{{ server_upstream }} | jq | grep name | grep {{ server_IP }} | cut -d ':' -f3 | sed 's#",##g'
+   register: upstream_port_no_op
+   args:
+     warn: false
+   when: '"_update" not in server_upstream and perform == "start"'
+
+
+ - fail:
+     msg: "ERROR: unable to get the port number for {{ server_upstream }} , Please check"
+   when: upstream_port_no_op == "" and '"_update" not in server_upstream and perform == "start"'
+
+ - set_fact:
+     upstream_port_no: "{{ upstream_port_no_op.stdout }}"
+   when: '"_update" not in server_upstream and perform == "start"'
+
+
+ - set_fact:
+     upstream_info: "upstream_info-{{ active_coll_counts | select('match', server_upstream + '-' + server_IP) | list }}"
+   when: '"_update" not in server_upstream and perform != "start"'
+
+ - set_fact:
+     solr_instance_count: "{{ solr_instance_count | int  + 1 }}"
+   when: '"_update" not in server_upstream'
+
+
+ - set_fact:
+     upstream_port_no: "{{ upstream_info.split('-')[3] }}"
+     server_id: "{{ upstream_info.split('-')[5] }}"
+   when: '"_update" not in server_upstream and perform != "start"'
+
+
+ - set_fact:
+     solr_instance: "solr{{ solr_instance_count }}"
+   when: '"_update" not in server_upstream'
+
+
+ - set_fact:
+     last_coll_count: "{{ upstream_info.split('-')[4] }}"
+   when: '"_update" not in server_upstream and perform != "start"'
+
+
+ - set_fact:
+     server_id: "{{ upstream_info.split('-')[5] }}"
+   when: '"_update" in server_upstream and perform != "start"'
+
+ - set_fact:
+     new_coll_count: 0
+   when: '"_update" not in server_upstream and perform != "start"'
+
+
+ - fail:
+     msg: "ERROR: unable to get the port number or server ID or collection count before {{ perform }} for {{ server_upstream }} , Please check"
+   when: upstream_port_no == "" or server_id == "" and '"_update" not in server_upstream'
+
+ - fail:
+     msg: "ERROR: unable to get the collection count before {{ perform }} for {{ server_upstream }} , Please check"
+   when: 'perform != "start" and last_coll_count == ""'
+
+
+ - fail:
+     msg: "ERROR: unable to get the server ID for {{ server_upstream }} , Please check"
+   when: server_id == "" and '"_update" in server_upstream'
+
+
+
+ - name: Starting {{ solr_instance }} instance listening on {{ upstream_port_no }} and enabling it to start during boot on {{ server_IP }}({{ server_name }})
+   delegate_to: "{{ server_IP }}"
+   delegate_facts: True
+   systemd: name={{ solr_instance }} state=started enabled=yes
+   when: '"_update" not in server_upstream'
+
+ - pause: seconds=30
+
+ - name: Waiting for {{ solr_instance }} instance's latest active collection count ({{ new_coll_count.stdout }}) to match pre-{{ perform }} ({{ last_coll_count }})
+   shell: curl -s http://{{ server_IP }}:{{ upstream_port_no }}/solr/admin/cores?action=STATUS | grep -o active | wc -l
+   register: new_coll_count
+   args:
+     warn: false
+   until: "new_coll_count.stdout|int >= last_coll_count|int"
+   retries: 10
+   delay: 10
+   changed_when: false
+   ignore_errors: true
+   when: '"_update" not in server_upstream and perform != "start"' 
+  
+ - include_tasks: prompt_active_collection.yaml
+   when: new_coll_count.stdout is not defined 
+
+ - include_tasks: prompt_active_collection.yaml
+   when: "perform != 'start' and new_coll_count.stdout < last_coll_count|int and '_update' not in server_upstream"  
+
+
+ - name: Requesting NGINX to enable {{ server_IP }}({{ server_name }}) from  {{ server_upstream }} upstream and Retrying untill the action get completed
+   shell: curl -X PATCH -d '{"down":false}' http://{{ nginxsrv }}{{ api_context }}{{ server_upstream }}/servers/{{ server_id }} | jq | grep down | cut -d ':' -f2 | tr -d ' '
+   register: upstream_start_result_op
+   args:
+     warn: false
+   until: "upstream_start_result_op.stdout == 'false'"
+   retries: 5
+   delay: 10
+   changed_when: false
+
+
+ - include_tasks: prompt_start_upstream.yaml
+   when: upstream_start_result_op.stdout != "false"
+
+ - pause: seconds=10
+
+

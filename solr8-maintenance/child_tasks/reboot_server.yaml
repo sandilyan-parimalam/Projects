@@ -1,0 +1,49 @@
+---
+#################################################################################################################################
+#                                                                                                                               #
+#        this playbook cannot be executed manually, this is a helper playbook of solr8-maintenance.yaml, Please run through it   #
+#                                                                                                                               #
+#################################################################################################################################
+
+
+
+
+ - name: Waiting for all java process to die on {{ server_IP }}({{ server_name }})
+   shell: "pgrep -u solr java| wc -l"
+   delegate_to: "{{ server_IP }}"
+   delegate_facts: True
+   register: result
+   until: "result.stdout|int == 0"
+   retries: 6
+   delay: 10
+   ignore_errors: true
+   changed_when: false
+
+
+ - include_tasks: prompt_stop_solr_all.yaml
+   when: "result.stdout|int != 0"
+
+
+ - name: Rebooting {{ server_IP }}({{ server_name }})
+   delegate_to: "{{ server_IP }}"
+   delegate_facts: True
+   shell: "sleep 5 && reboot"
+   async: 1
+   poll: 0
+
+
+ - pause: seconds=30
+
+
+ - name: Waiting for SSH to come up on {{ server_IP }}({{ server_name }})
+   local_action: shell telnet {{ server_IP }} 22 2>>/dev/null | grep -s Connected ;rc=0
+   register: result
+   until: ('Connected' in result.stdout)
+   retries: 15
+   delay: 10
+   ignore_errors: true
+   changed_when: false
+
+
+ - include_tasks: prompt_start_ssh.yaml
+   when: ('Connected' not in result.stdout)

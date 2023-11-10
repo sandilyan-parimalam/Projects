@@ -1,0 +1,77 @@
+---
+#################################################################################################################################
+#																#
+#	 this playbook cannot be executed manually, this is a helper playbook of solr8-maintenance.yaml, Please run through it   #
+#																#
+#################################################################################################################################
+
+
+ - name: Checking Nested Playbook Execution
+   fail:
+     msg: "ERROR: Server IP is not passed to this playbook."
+   when: not item
+
+
+ - set_fact:
+     server_IP: "{{ item }}"
+
+
+ - name: Fetching Server name of "{{ server_IP }}"
+   shell: nslookup {{ server_IP }} | grep -w name | cut -d'=' -f2 | tr -d ' ' | rev | cut -d '.' -f2- | rev
+   register: server_name_op
+
+
+ - set_fact:
+     server_name: "{{ server_name_op.stdout }}"
+   when: server_name_op.stdout != ""
+
+
+ - set_fact:
+     server_name: "{{ server_IP }}"
+   when: server_name_op.stdout == ""
+
+
+ - include_tasks: get_solr_server_data.yaml
+
+ - include_tasks: check_kernal.yaml
+   when: ( perform == 'reboot' ) and ( latestkernal != 'NA' or latestkernal != '' )
+
+
+ - include_tasks: stop_zk.yaml
+   when: ( perform != "start" ) and ( svc == 'zookeeper' or svc == 'all' )
+
+
+ - set_fact:
+     solr_instance_count: 0
+
+
+ - name: Stopping Services on "{{ server_IP }}({{ server_name }})"
+   include_tasks: stop_upstreams_and_solr.yaml
+   loop: "{{ all_server_upstreams }}"
+   loop_control:
+     loop_var: server_upstream
+   when: (perform != "start") and ( svc == 'solr' or svc == 'all' )
+
+
+ - include_tasks: reboot_server.yaml
+   when: (perform == "reboot")
+
+
+ - include_tasks: check_kernal_again.yaml
+   when: ( perform == 'reboot' ) and ( latestkernal != 'NA' or latestkernal != '' )
+
+ 
+ - include_tasks: start_zk.yaml  
+   when: (perform != "stop") and ( svc == 'zookeeper' or svc == 'all' )
+
+
+ - set_fact:
+     solr_instance_count: 0
+
+
+ - name: Starting Services on "{{ server_IP }}({{ server_name }})"
+   include_tasks: start_upstreams_and_solr.yaml
+   loop: "{{ all_server_upstreams }}"
+   loop_control:
+     loop_var: server_upstream
+   when: (perform != "stop") and ( svc == 'solr' or svc == 'all' )

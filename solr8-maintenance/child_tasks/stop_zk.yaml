@@ -1,0 +1,53 @@
+---
+#################################################################################################################################
+#                                                                                                                               #
+#        this playbook cannot be executed manually, this is a helper playbook of solr8-maintenance.yaml, Please run through it   #
+#                                                                                                                               #
+#################################################################################################################################
+
+
+
+ - set_fact:
+     zk_avail: 0
+
+
+ - name: Checking if /usr/lib/systemd/system/zookeeper.service exist on {{ server_IP }}({{ server_name }})
+   delegate_to: "{{ server_IP }}"
+   delegate_facts: True
+   stat: path=/usr/lib/systemd/system/zookeeper.service
+   register: zk_avail_srv
+
+ - name: Checking if /var/lib/zookeeper/myid exist on {{ server_IP }}({{ server_name }})
+   delegate_to: "{{ server_IP }}"
+   delegate_facts: True
+   stat: path=/var/lib/zookeeper/myid
+   register: zk_avail_myid
+
+ - set_fact:
+     zk_avail: 1
+   when: zk_avail_srv.stat.exists and zk_avail_myid.stat.exists 
+
+ 
+ - name: Stopping zookeeper on {{ server_IP }}({{ server_name }})
+   delegate_to: "{{ server_IP }}"
+   delegate_facts: True
+   systemd: name=zookeeper state=stopped
+   when: zk_avail == 1
+
+ - name: waiting for zookeeper processes to die if exist on {{ server_IP }}({{ server_name }})
+   delegate_to: "{{ server_IP }}"
+   delegate_facts: True
+   shell: "pgrep -u zookpr java| wc -l"
+   register: result
+   until: "result.stdout|int <= 0"
+   retries: 10
+   delay: 10
+   changed_when: false
+   ignore_errors: true
+   when: zk_avail == 1
+
+
+
+ - include_tasks: prompt_stop_zk.yaml
+   when: result|int != 0 and zk_avail == 1
+

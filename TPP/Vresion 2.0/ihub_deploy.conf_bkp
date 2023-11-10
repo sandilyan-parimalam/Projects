@@ -1,0 +1,77 @@
+#this is a configuration file of ihub_deploy.sh
+declare -a build_jar_files
+
+
+#pleaase speacify the environment wether TPPP or IHUB
+env="TPP"
+
+
+
+# LOCAL PATH DICLARATION
+
+BASE_DIR="/opt/tppihub/"
+
+BLD_DIR="/opt/tppihub/new_build/"
+
+DPLY_DIR="/opt/tppihub/iHub/app/deploy/"
+
+CONF_DIR="/tmp/sandy/app/conf/"
+
+BKP_DIR="/opt/tppihub/backup/"
+
+WORK_DIR="/opt/tppihub/work/"
+
+DEPLOY_WORK_DIR=$WORK_DIR"deploy/"
+
+DATA_DIR="/opt/tppihub/iHub/app/data/"
+
+LOG_DIR="/opt/tppihub/logs/"
+
+
+
+# BACKUP File names
+
+BKP_FNAME=bundle_$(date '+%m%d%Y-%H-%M-%S')
+
+BKP_CONF_FNAME=conf_$(date '+%m%d%Y-%H-%M-%S')
+
+BKP_PATCH_FNAME=patch_$(date '+%m%d%Y-%H-%M-%S')
+
+log=$LOG_DIR"deploy-log-"$(date '+%m%d%Y-%H-%M-%S')
+
+
+
+#work files
+temp_log=$WORK_DIR"temp.txt"
+
+cfgfiles=$WORK_DIR"cfgfiles.txt"
+
+patch_files=$WORK_DIR"patch_files.txt"
+
+patch_local_path=$WORK_DIR"patch_local_path.txt"
+
+copy_patch_info=$WORK_DIR"copy_info.txt"
+
+
+
+# FTP VARIABLES
+
+FTPSRV=ftp.planetsoft.com
+
+UNAME=psmetlife
+
+PASSWORD=Bidb9yu@03
+
+ftp_log="/opt/tppihub/work/ftp.log"
+
+conf_ftp_log=$WORK_DIR"ftp_conf.log"
+
+patch_ftp_log=$WORK_DIR"ftp_patch.log"
+
+
+
+# Please place the ftp error statement or a unique word of the size command if the file not found on ftp
+ftp_size_err="550 Failed to open file"
+
+ftp_dir_err="550 Failed to change directory"
+

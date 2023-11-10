@@ -1,0 +1,30 @@
+---
+#################################################################################################################################
+#                                                                                                                               #
+#        this playbook cannot be executed manually, this is a helper playbook of solr8-maintenance.yaml, Please run through it   #
+#                                                                                                                               #
+#################################################################################################################################
+
+
+
+ - name: Fetching active java processes for solr user on {{ server_IP }}({{ server_name }})
+   shell: "pgrep -u solr java| wc -l;rc=0"
+   delegate_to: "{{ server_IP }}"
+   delegate_facts: True
+   register: java_count
+   changed_when: false
+
+
+ - debug:
+     msg: "Java is Down, proceeding further"
+   when: java_count.stdout|int == 0
+
+
+ - name: Java still Running for solr user on {{ server_IP }}({{ server_name }}), Please troubleshoot and make sure it's stopped to proceed further.
+   pause:
+     prompt: "Please press enter to check again or terminate the playbook with ctrl + c and 'A' after"
+   when: java_count.stdout|int != 0
+
+
+ - include_tasks: prompt_stop_solr_all.yaml
+   when: java_count.stdout|int != 0

@@ -43,6 +43,20 @@ variable "web_subnet_name" {
   default = "dev_web_subnet"
 }
 
+variable "web_subnet_1_cidr_block" {
+  default = "10.10.2.0/24"
+}
+
+variable "web_subnet_1_name" {
+  default = "dev_web_1_subnet"
+}
+variable "web_subnet_az" {
+  default = "us-east-1a"
+}
+variable "web_subnet_1_az" {
+  default = "us-east-1b"
+}
+
 variable "internet_gateway_name" {
   default = "dev_web_igw"
 }
@@ -83,7 +97,7 @@ variable "ssh_ingress_cidr_blocks" {
   default = ["0.0.0.0/0"]
 }
 
-variable "default_route_cidr_block" {
+variable "any_source_cidr_block" {
   default = "0.0.0.0/0"
 }
 
@@ -104,4 +118,33 @@ variable "web_server_instance_tags" {
   default = {
     Name = "DLW01"
   }
+}
+
+variable "dev_web_eks_iam_role" {
+  default = "dev_web_eks_iam_role"
+}
+variable "dev_web_eks_iam_policy_attachment" {
+  default = "dev_web_eks_iam_policy_attachment"
+}
+variable "dev_web_eks_node_iam_role" {
+  default = "dev_web_eks_node_iam_role"
+
+}
+variable "dev_web_eks_node_iam_policy_attachment" {
+  default = "dev_web_eks_node_iam_policy_attachment"
+}
+variable "dev_web_eks_node_iam_policy_attachment1" {
+  default = "dev_web_eks_node_iam_policy_attachment1"
+}
+variable "dev_web_eks_node_iam_policy_attachment2" {
+  default = "dev_web_eks_node_iam_policy_attachment2"
+}
+
+
+variable "dev_web_eks_cluster" {
+  default = "dev_web_eks_cluster"
+}
+
+variable "dev_web_eks_node_group" {
+  default = "dev_web_eks_node_group"
 }

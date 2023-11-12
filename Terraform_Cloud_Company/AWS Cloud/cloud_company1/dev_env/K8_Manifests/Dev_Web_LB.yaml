@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Service
+metadata:
+  name: dev_web_lb
+  namespace: dev
+spec:
+  selector:
+    matchLabels:
+      app: dev_web_app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: LoadBalancer
+  

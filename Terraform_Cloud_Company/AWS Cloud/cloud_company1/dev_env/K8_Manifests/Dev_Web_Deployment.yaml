@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dev_web_app_deployment
+  namespace: dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels: 
+      app: dev_web_app
+  template:
+    metadata:
+      labels:
+        app: dev_web_app
+    spec:
+      containers:
+        - name: dev_web_app
+          image: ngix:latest
+          ports:
+          - containerPort: 80

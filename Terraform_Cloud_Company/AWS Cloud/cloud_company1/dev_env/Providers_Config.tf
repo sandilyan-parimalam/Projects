@@ -4,9 +4,17 @@ terraform {
       source  = "hashicorp/aws"
       version = ">5.0"
     }
+    kubernetes = {
+      source = "hashicorp/kubernetes"
+    }
   }
+
 }
 
 provider "aws" {
   region = var.region
+}
+
+provider "kubernetes" {
+  config_path = "~/.kube/config"
 }
